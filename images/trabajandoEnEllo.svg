@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50">
+    <defs>
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");
+        </style>
+    </defs>
+    <style><![CDATA[svg text{stroke:bold}]]></style>
+    <text x="20" y="25" font-family="Roboto">Estamos Trabajando en Ello</text>
+</svg>

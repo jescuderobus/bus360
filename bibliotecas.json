@@ -69,12 +69,20 @@
         "como_llegar": [
             {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "Avda. Reina Mercedes",
-                "url": "Mates_campus.html",
+                "texto": "Campus R. Mercedes",
+                "url": "MATES_campus.html",
                 "target": "_self"
             }
         ],
-        "echar_un_vistazo":[]
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Puerta Biblioteca",
+                "url": "MATES_biblioteca.html",
+                "target": "_self"
+            }
+
+        ]
     },
     {
         "id": "inf",
@@ -220,12 +228,19 @@
         "lng": -5.97751,
         "direccion": "(Campus Ramón y Cajal)<br>Pirotecnia, s/n<br>41018 - Sevilla",
         "imagen":"",
-        "como_llegar": [],
-        "echar_un_vistazo":[
+        "como_llegar": [
             {
                 "imagen": "images/walk-svgrepo-com.svg",
                 "texto": "Avda. Presidente Cárdenas",
                 "url": "EDU_PdteCardenas.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "EDU_puerta.html",
                 "target": "_self"
             }
         ]
