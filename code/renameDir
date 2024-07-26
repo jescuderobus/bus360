@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Define the prefix to replace and the new prefix
+old_prefix="240222"
+new_prefix="SSCC"
+
+# Loop through directories that match the old prefix
+for dir in ${old_prefix}*; do
+    # Check if it's a directory
+    if [ -d "$dir" ]; then
+        # Define the new directory name
+        new_dir="${new_prefix}${dir#$old_prefix}"
+        # Rename the directory
+        mv "$dir" "$new_dir"
+    fi
+done
+
+echo "Renaming complete."
