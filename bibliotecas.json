@@ -7,14 +7,32 @@
         "direccion": "Avda. de la Guardia Civil s/n </br>41013 - Sevilla,",
         "como_llegar": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Biblioteca+de+la+Universidad+de+Sevilla+Av.+de+la+Guardia+Civil,+s%2Fn+41013+Sevilla+Espa%C3%B1a/@37.3698844,-5.9863977,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126c1884a36ba3:0x49ed5ea7a71f681!2m2!1d-5.9863977!2d37.3698844?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busR'>1</div><div class='busO'>3</div><div class='busR'>6</div></div><div class='busFlex'><div class='busB'>31</div><div class='busB'>34</div><div class='busB'>37</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            },
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "desde la Avda. de la <br>Guardia Civil",
+                "texto": "desde la <em>Avda. de la <br>Guardia Civil</em>",
                 "url": "SSCC_GuardiaCivil.html",
                 "target": "_self"
             },
             {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "desde la Avda. <br>Paseo de las Delicias",
+                "texto": "desde la Avda. <br><em>Paseo de las Delicias</em>",
                 "url": "SSCC_PaseoDelicias.html",
                 "target": "_self"
             }
@@ -232,7 +250,7 @@
                 },
                 {
                     "imagen": "images/bus-svgrepo-com.svg", 
-                    "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='busG'>C3</div><div class='busG'>C4</div></div><div class='busFlex'><div class='busB'>10</div><div class='busB'>13</div><div class='busB'>14</div></div>",
+                    "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='busG'>C3</div><div class='busG'>C4</div></div><div class='busFlex'><div class='busB'>10</div><div class='busB'>13</div><div class='busB'>14</div><div class='busR'>2</div></div>",
                     "url": "https://reddelineas.tussam.es/?lang=es",
                     "target": "_blank"
                 },
@@ -268,13 +286,44 @@
         "imagen":"",
         "como_llegar": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Biblioteca+de+la+Facultad+de+Bellas+Artes,+Calle+Gonzalo+Bilbao,+Seville,+Spain/@37.4079507,-5.9784545,14z/data=!3m1!5s0xd126bf94cf06dcb:0x1a81cd39aeed9ddc!4m8!4m7!1m0!1m5!1m1!1s0xd126ea819a31347:0x3a41ce06c00c391a!2m2!1d-5.9829246!2d37.3930085?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='busG'>C3</div><div class='busG'>C4</div></div><div class='busFlex'><div class='busB'>27</div><div class='busB'>32</div><div class='busR'>1</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            },
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "C/ Gonzalo de Bilbao",
-                "url": "BellasArtes_GonzaloBilbao.html",
+                "texto": "RUTA desde <i>C. Laraña</i> <br>hasta <i>C. Gonzalo de Bilbao</i>",
+                "url": "https://www.google.com/maps/dir/C.+Lara%C3%B1a,+Casco+Antiguo,+41003+Sevilla,+Spain/Biblioteca+de+la+Facultad+de+Bellas+Artes,+Calle+Gonzalo+Bilbao,+Seville,+Spain/@37.391017,-5.9899575,17z/data=!3m2!4b1!5s0xd126bf94cf06dcb:0x1a81cd39aeed9ddc!4m13!4m12!1m5!1m1!1s0xd126c05693c6bbd:0x9e32bc40ac71a3bb!2m2!1d-5.9930052!2d37.392799!1m5!1m1!1s0xd126ea819a31347:0x3a41ce06c00c391a!2m2!1d-5.9829246!2d37.3930085?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "<em>C. Gonzalo de Bilbao</em>",
+                "url": "BBAA_GonzaloBilbao.html",
                 "target": "_self"
             }
         ],
-        "echar_un_vistazo":[]
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "BBAA_puertaBib.html",
+                "target": "_self"
+            }
+        ]
     },
     {
         "id": "hum",
