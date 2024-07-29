@@ -127,17 +127,36 @@
         "imagen":"",
         "como_llegar": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//ETSI+(Escuela+T%C3%A9cnica+Superior+de+Ingenier%C3%ADa)+Camino+de+los+Descubrimientos+41092+Sevilla/@37.4108639,-6.0006831,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126b60eeaa078f:0x75484b48a0cbe5a7!2m2!1d-6.0006831!2d37.4108639?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='busR'>2</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            },
+
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "desde la Avda. de los <br>Descubrimientos",
-                "url": "ETSI_Autobus.html",
+                "texto": "desde C. Juan Bautista <br> Muñoz",
+                "url": "ETSI_JuanBautista.html",
                 "target": "_self"
             }
         ],
         "echar_un_vistazo":[
             {
                 "imagen": "images/eye-3-svgrepo-com.svg",
-                "texto": "desde la puerta",
-                "url": "ETSI_Biblioteca.html",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "ETSI_puertaBib.html",
                 "target": "_self"
             }
         ]
@@ -151,13 +170,51 @@
         "imagen":"",
         "como_llegar": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Facultad+de+Comunicaci%C3%B3n+.+Universidad+de+Sevilla+(FCom-US),+Calle+Am%C3%A9rico+Vespucio,+Sevilla/@37.4066255,-6.0051617,15.46z/data=!3m1!5s0xd126bf27b46072f:0xa10289bee5ee2039!4m8!4m7!1m0!1m5!1m1!1s0xd126c799e7aa087:0xe18b922adc40f7f3!2m2!1d-6.006518!2d37.410269?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='busR'>2</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            },
+
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "Avda. Américo Vespucio",
-                "url": "FCOM_Parada.html",
+                "texto": "desde Avd. Americo<br>Vespucio",
+                "url": "FCOM_AmericoVespucio.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde C. Leonardo<br>Da Vinci",
+                "url": "FCOM_LeonardoDaVinci.html",
                 "target": "_self"
             }
         ],
-        "echar_un_vistazo":[]
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "FCOM_puertaBib.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Videoteca",
+                "url": "FCOM_puertaVid.html",
+                "target": "_self"
+            }
+        ]
     },
     {
         "id": "salu",
@@ -218,8 +275,22 @@
         "lng": -5.97785,
         "direccion": "(Campus Ramón y Cajal)<br>Enramadilla, 18-20<br>41018 - Sevilla",
         "imagen":"",
-        "como_llegar": [],
-        "echar_un_vistazo":[]
+        "como_llegar": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "Avda. Presidente Cárdenas",
+                "url": "DER_calle.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "DER_puertaBib.html",
+                "target": "_self"
+            }
+        ]
     },
     {
         "id": "edu",
@@ -240,7 +311,7 @@
             {
                 "imagen": "images/eye-3-svgrepo-com.svg",
                 "texto": "Entrada de la Biblioteca",
-                "url": "EDU_puerta.html",
+                "url": "EDU_puertaBib.html",
                 "target": "_self"
             }
         ]
