@@ -4,7 +4,7 @@
 }
 
 .busG{
- flex: 1;
+ flex-direction: row;
  background-color:#008431 ;
  width: 40px;
  height: 40px;
@@ -16,8 +16,20 @@
 }
 
 .busR{
-    flex: 1;
+    flex-direction: row;
     background-color:#f54129;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+   }
+
+   .busB{
+    flex-direction: row;
+    background-color:#000d6f;
     width: 40px;
     height: 40px;
     text-align: center;
