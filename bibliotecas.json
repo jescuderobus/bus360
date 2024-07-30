@@ -411,7 +411,13 @@
                 "target": "_blank"
             },
             {
-                "imagen": "images/train-station-mark-svgrepo-com.svg", 
+                "imagen": "images/train-transportation-subway-rail-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div><img width='40px' style='background:white;border-radius:50%' src='./images/metroSevilla.svg'></div></div>",
+                "url": "https://www.metro-sevilla.es/mapa-y-trayectos",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/noun-train-29470.svg", 
                 "texto": "<div class='busFlex'><div class='trenC1'>C1</div><div class='trenC4'>C4</div><div class='trenC5'>C5</div></div>",
                 "url": "https://www.renfe.com/es/es/cercanias/cercanias-sevilla/lineas",
                 "target": "_blank"
