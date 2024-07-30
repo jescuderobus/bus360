@@ -1,0 +1,117 @@
+
+.busFlex{
+    display: flex;
+}
+
+.busG{
+ flex-direction: row;
+ background-color:#008431 ;
+ width: 34px;
+ height: 34px;
+ text-align: center;
+ align-content: center;
+ color: white;
+ font-weight: bold;
+ margin: 4px;
+}
+
+.busR{
+    flex-direction: row;
+    background-color:#f54129;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+   }
+
+
+   .tranviaR{
+    flex-direction: row;
+    background-color:#c60018;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+   }
+
+   .busB{
+    flex-direction: row;
+    background-color:#000d6f;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+   }
+
+   .busBB{
+    flex-direction: row;
+    background-color:#84c6e3;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+   }
+
+   .busO{
+    flex-direction: row;
+    background-color:orange;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+   }
+
+   .trenC1{
+    flex-direction: row;
+    background-color:#78b4e1;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    border-radius: 8px;
+   }
+
+   .trenC4{
+    flex-direction: row;
+    background-color:#7d2582;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    border-radius: 8px;
+   }
+
+
+   .trenC5{
+    flex-direction: row;
+    background-color:#0f3287;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    border-radius: 8px;
+   }

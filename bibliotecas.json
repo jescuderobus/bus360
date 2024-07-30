@@ -69,13 +69,44 @@
         "imagen":"",
         "como_llegar": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//CRAI+Antonio+de+Ulloa+.+Universidad+de+Sevilla+Av.+de+la+Reina+Mercedes,+s%2Fn+41012+Sevilla/@37.3598391,-5.9865516,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126c2b367ef0ab:0xde62f825f04649db!2m2!1d-5.98647!2d37.3598365?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busO'>3</div><div class='busR'>6</div><div class='busB'>34</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            },
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "Avda. Reina Mercedes",
-                "url": "CRAI.html",
+                "texto": "<em>Avda. Reina <br>Mercedes</em>",
+                "url": "CRAI_ReinaMercedes.html",
                 "target": "_self"
             }
         ],
-        "echar_un_vistazo":[]
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada CRAI<br>Planta Baja",
+                "url": "CRAI_puertaBib.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Salas Trabajo en Grupo<br>Planta Primera",
+                "url": "CRAI_trabajoGrupo_P1.html",
+                "target": "_self"
+            }
+        ]
     },
     {
         "id": "mat",
@@ -368,8 +399,32 @@
         "imagen":"",
         "como_llegar": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Facultad+de+Ciencias+de+la+Educaci%C3%B3n,+Calle+Pirotecnia,+Sevilla,+Espa%C3%B1a/@37.3765199,-6.0183308,13z/data=!3m1!5s0xd126bf27b46072f:0xa10289bee5ee2039!4m8!4m7!1m0!1m5!1m1!1s0xd126e9434f68549:0x2fee469803f98f44!2m2!1d-5.9771313!2d37.3764588?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='tranviaR' title='metrocentro'>T1</div><div class='busB'>22</div></div><div class='busFlex'><div class='busB'>25</div><div class='busB'>26</div><div class='busB'>28</div><div class='busB'>29</div></div><div class='busFlex'><div class='busB'>38</div><div class='busB'>52</div><div class='busBB'>B4</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/train-station-mark-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='trenC1'>C1</div><div class='trenC4'>C4</div><div class='trenC5'>C5</div></div>",
+                "url": "https://www.renfe.com/es/es/cercanias/cercanias-sevilla/lineas",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            },
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "Avda. Presidente Cárdenas",
+                "texto": "<em>Avda. Presidente <br>Cárdenas</em>",
                 "url": "EDU_PdteCardenas.html",
                 "target": "_self"
             }
@@ -377,7 +432,7 @@
         "echar_un_vistazo":[
             {
                 "imagen": "images/eye-3-svgrepo-com.svg",
-                "texto": "Entrada de la Biblioteca",
+                "texto": "Entrada de la <br>Biblioteca",
                 "url": "EDU_puertaBib.html",
                 "target": "_self"
             }
