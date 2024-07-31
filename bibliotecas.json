@@ -495,22 +495,41 @@
             {
                 "imagen": "images/google-maps-svgrepo-com.svg", 
                 "texto": "con Google Maps",
-                "url": "https://www.google.com/maps/dir//E.T.S.+de+Ingenier%C3%ADa+Agron%C3%B3mica,+Ctra.+de+Utrera,+km.1,+41005+Sevilla/@37.3528599,-5.9799195,13z/",
+                "url": "https://www.google.com/maps/dir//E.T.S.+de+Ingenier%C3%ADa+Agron%C3%B3mica,+Carretera+de+Utrera,+Seville/@37.3528599,-5.9799195,13z/data=!3m1!5s0xd126fad0adc1071:0xeb8c38f8f8f94f8!4m8!4m7!1m0!1m5!1m1!1s0xd126fcbe0633eef:0x9ffd54c98be075c8!2m2!1d-5.93872!2d37.3527988?entry=ttu",
                 "target": "_blank"
             },
             {
                 "imagen": "images/bus-svgrepo-com.svg", 
-                "texto": "en transporte público",
-                "url": "https://reddelineas.tussam.es/API/infotus-ui/cercanos/37359522/-5986400/24-02-2024T22:48:00?_=1708811311482",
+                "texto": "<div class='busFlex'><div class='busB' title='directo'>38</div><div class='busB' title='por Pítamo'>38A</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/train-transportation-subway-rail-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div><img width='40px' style='background:white;border-radius:50%' src='./images/metroSevilla.svg'></div></div>",
+                "url": "https://www.metro-sevilla.es/mapa-y-trayectos",
                 "target": "_blank"
             },
             {
                 "imagen": "images/bicycle-svgrepo-com.svg", 
-                "texto": "en bicicleta",
-                "url": "https://api.jcdecaux.com/vls/v3/stations?apiKey=frifk0jbxfefqqniqez09tw4jvk37wyf823b5j1i&contract=seville",
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
                 "target": "_blank"
+            },
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde Parada de <br>Metro",
+                "url": "AGRO_metro.html",
+                "target": "_self"
             }
         ],
-        "echar_un_vistazo":[]
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>Biblioteca",
+                "url": "AGRO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
     }
 ]
