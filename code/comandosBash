@@ -1,0 +1,19 @@
+# Para renombrar un conjunto de carpetas que se llaman 240506_ a BIBLIOTECA_ usamos:
+
+./renameDir
+
+# Para partir una foto 360º en un cubo con los niveles de profundidad que la resoluvión permita necesitmos el Dockerfile correspondiente y un script que lo lance.
+# Este fichero reside en /home/usuario/dockerteca/panellum
+# El fichero Docker está en /home/usuario/dockerteca/panellum/Dockerfile
+# La carpeta con las imagenes a convertir esta en /home/usuario/dockerteca/panellum/FOTOS
+# El resultado de la ejecución del docker se guardará en /home/usuario/dockerteca/panellum/FOTOS/LAST
+
+cd /home/usuario/dockerteca/panellum/FOTOS
+./scriptDockerPanellum
+
+
+
+# `generatePanellum.py` es un script que estaba en la página del autor de panellum y hacia lo mismo que el Docker pero nunca me llegó a funcionar
+
+# los fichero `generateXX.py` son intentos de generar rejillas en imagenes equirectangulares, hay que revisar que sean los correctos.
+

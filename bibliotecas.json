@@ -148,13 +148,38 @@
         "imagen":"",
         "como_llegar": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Escuela+T%C3%A9cnica+Superior+de+Ingenier%C3%ADa+Inform%C3%A1tica+Av.+de+la+Reina+Mercedes,+s%2Fn+41012+Sevilla/@37.3582083,-5.9871091,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126dd4a3055555:0x29c3f634f8a021b8!2m2!1d-5.9871091!2d37.3582083?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busO'>3</div><div class='busR'>6</div><div class='busB'>34</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            },
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "Avda. Reina Mercedes",
-                "url": "ETSIInformatica.html",
+                "texto": "desde <em>Avda. Reina <br>Mercedes</em>",
+                "url": "ETSII_ReinaMercedes.html",
                 "target": "_self"
             }
         ],
-        "echar_un_vistazo":[]
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "ETSII_puertaBib.html",
+                "target": "_self"
+            }
+        ]
     },
     {
         "id": "arqu",

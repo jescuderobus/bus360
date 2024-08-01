@@ -1,0 +1,8 @@
+#! /bin/bash
+
+for i in `ls |grep jpg|sed 's/\.jpg//g'`; do 
+	echo $i
+	docker run -it -v $PWD:/data generate-panorama --output /data/LAST/$i /data/$i.jpg
+done
+
+
