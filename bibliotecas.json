@@ -123,8 +123,26 @@
         "imagen":"",
         "como_llegar": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//University+of+Seville+Faculty+of+Mathematics+C.+Tarfia+41012+Sevilla/@37.35937,-5.9880926,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126dd35d59d14f:0x8e628875e7ac28cd!2m2!1d-5.9880861!2d37.3594687?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busO'>3</div><div class='busR'>6</div><div class='busB'>34</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            },
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "Campus R. Mercedes",
+                "texto": "desde <em>Campus Reina <br>Mercedes</em>",
                 "url": "MATES_campus.html",
                 "target": "_self"
             }
@@ -132,11 +150,10 @@
         "echar_un_vistazo":[
             {
                 "imagen": "images/eye-3-svgrepo-com.svg",
-                "texto": "Puerta Biblioteca",
-                "url": "MATES_biblioteca.html",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "MATES_puertaBib.html",
                 "target": "_self"
             }
-
         ]
     },
     {
@@ -190,13 +207,38 @@
         "imagen":"",
         "como_llegar": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Escuela+T%C3%A9cnica+Superior+de+Arquitectura+de+Sevilla+Av.+de+la+Reina+Mercedes,+2+41012+Sevilla/@37.3626305,-5.9863338,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126c2ba9ac22a5:0x87c4bbb322596692!2m2!1d-5.9863439!2d37.3626308?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busO'>3</div><div class='busR'>6</div><div class='busB'>34</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            },
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "Avda. Reina Mercedes",
-                "url": "Arquitectura.html",
+                "texto": "desde <em>Avda. Reina <br>Mercedes</em>",
+                "url": "EARQ_ReinaMercedes.html",
                 "target": "_self"
             }
         ],
-        "echar_un_vistazo":[]
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "EARQ_puertaBib.html",
+                "target": "_self"
+            }
+        ]
     },
     {
         "id": "ing",
@@ -394,8 +436,22 @@
         "lng": -5.99129,
         "direccion": "(Campus Rectorado)<br>Dª María de Padilla, s/n<br>41004 - Sevilla",
         "imagen":"",
-        "como_llegar": [],
-        "echar_un_vistazo":[]
+        "como_llegar": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la calle",
+                "url": "NO_calle.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "NO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
     },
     {
         "id": "der",
@@ -408,7 +464,7 @@
             {
                 "imagen": "images/walk-svgrepo-com.svg",
                 "texto": "Avda. Presidente Cárdenas",
-                "url": "DER_calle.html",
+                "url": "NO_calle.html",
                 "target": "_self"
             }
         ],
@@ -416,7 +472,7 @@
             {
                 "imagen": "images/eye-3-svgrepo-com.svg",
                 "texto": "Entrada de la Biblioteca",
-                "url": "DER_puertaBib.html",
+                "url": "NO_puertaBib.html",
                 "target": "_self"
             }
         ]
@@ -488,8 +544,22 @@
         "lng": -5.97637,
         "direccion": "(Campus Ramón y Cajal)<br>Avda. Ramón y Cajal, 1<br>41018 - Sevilla",
         "imagen":"",
-        "como_llegar": [],
-        "echar_un_vistazo":[]
+        "como_llegar": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la calle",
+                "url": "NO_calle.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "NO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
     },
     {
         "id": "tyf",
@@ -498,8 +568,22 @@
         "lng": -5.9763,
         "direccion": "(Campus Ramón y Cajal)<br>Avenida San Francisco Javier, s/n<br>41018 - Sevilla",
         "imagen":"",
-        "como_llegar": [],
-        "echar_un_vistazo":[]
+        "como_llegar": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la calle",
+                "url": "NO_calle.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "NO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
     },
     {
         "id": "psi",
@@ -508,8 +592,22 @@
         "lng": -5.97592,
         "direccion": "(Campus Ramón y Cajal)<br>Camilo José Cela, s/n<br>41018 - Sevilla",
         "imagen":"",
-        "como_llegar": [],
-        "echar_un_vistazo":[]
+        "como_llegar": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la calle",
+                "url": "NO_calle.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "NO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
     },
     {
         "id": "pol",
@@ -518,8 +616,22 @@
         "lng": -6.00256,
         "direccion": "Virgen de África, 7<br> 41011 - Sevilla",
         "imagen":"",
-        "como_llegar": [],
-        "echar_un_vistazo":[]
+        "como_llegar": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la calle",
+                "url": "NO_calle.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "NO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
     },
     {
         "id": "agr",
