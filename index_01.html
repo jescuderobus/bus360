@@ -13,6 +13,10 @@
 
     <!-- Incluir JS de Leaflet -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+
+    <!-- Incluir el archivo JSON con los datos de las bibliotecas -->
     
     <style>
         html, body {
@@ -156,7 +160,7 @@
 
             <hr>
 
-            <div class="menu-item" onclick="window.location.reload();">
+            <div class="menu-item" onclick="showHelpModal()">
                 <img class="img-item" src="images/help-question-svgrepo-com.svg" alt="Ayuda">
                 <span>Ayuda</span>
             </div>
@@ -172,7 +176,10 @@
             
         </div>
     </div>
-    
+
+
+
+
     <div class="brujula" id="brujula"></div>
     
     <script>
@@ -317,10 +324,21 @@
 });
 </script>
 
-
-
-
+    <!--Incluir html, css y js para manejar el modal de ayuda-->
     
+    <link rel="stylesheet" href="css/help.css" />
+
+    <!-- Modal HTML -->
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ayuda</h2>
+            <p>Aquí van las explicaciones sobre la página web...</p>
+        </div>
+    </div>
+
+    <script src="js/help.js"></script>
+
 
 
 
