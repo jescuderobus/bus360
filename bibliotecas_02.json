@@ -1,0 +1,713 @@
+[
+    {
+        "id": "sscc",
+        "nombre": "Biblioteca Rector Antonio <br>Machado y Núñez",
+        "lat": 37.37,
+        "lng": -5.98641,
+        "direccion": "Avda. de la Guardia Civil s/n </br>41013 - Sevilla,",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Biblioteca+de+la+Universidad+de+Sevilla+Av.+de+la+Guardia+Civil,+s%2Fn+41013+Sevilla+Espa%C3%B1a/@37.3698844,-5.9863977,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126c1884a36ba3:0x49ed5ea7a71f681!2m2!1d-5.9863977!2d37.3698844?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busR'>1</div><div class='busO'>3</div><div class='busR'>6</div></div><div class='busFlex'><div class='busB'>31</div><div class='busB'>34</div><div class='busB'>37</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+        "como_llegar_pie": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la <em>Avda. de la <br>Guardia Civil</em>",
+                "url": "SSCC_GuardiaCivil.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la Avda. <br><em>Paseo de las Delicias</em>",
+                "url": "SSCC_PaseoDelicias.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo": [
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "desde la puerta",
+                "url": "SSCC_PUERTA.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "sala de estudio",
+                "url": "SSCC_SalaEstudio.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "sala de investigadores",
+                "url": "SSCC_SalaInvestigacion.html",
+                "target": "_self"
+            }
+
+        ]
+
+    },
+    {
+        "id": "cau",
+        "nombre": "CRAI Antonio de Ulloa",
+        "lat": 37.3596,
+        "lng": -5.98657,
+        "direccion": "(Campus Reina Mercedes)<br>Avda. Reina Mercedes, s/n<br>41012 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//CRAI+Antonio+de+Ulloa+.+Universidad+de+Sevilla+Av.+de+la+Reina+Mercedes,+s%2Fn+41012+Sevilla/@37.3598391,-5.9865516,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126c2b367ef0ab:0xde62f825f04649db!2m2!1d-5.98647!2d37.3598365?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busO'>3</div><div class='busR'>6</div><div class='busB'>34</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+        "como_llegar_pie": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde <em>Avda. Reina <br>Mercedes</em>",
+                "url": "CRAI_ReinaMercedes.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada CRAI<br>Planta Baja",
+                "url": "CRAI_puertaBib.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Sala Navegación<br>Planta Primera",
+                "url": "CRAI_salaNavegacion_P1.html",
+                "target": "_self"
+            }, 
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Sala Observatorio<br>Planta Cuarta",
+                "url": "CRAI_salaObservatorio_P4.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "mat",
+        "nombre": "Biblioteca de Matemáticas",
+        "lat": 37.35938,
+        "lng": -5.98791,
+        "direccion": "(Campus Reina Mercedes)<br>Tarfia, s/n<br>41012 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//University+of+Seville+Faculty+of+Mathematics+C.+Tarfia+41012+Sevilla/@37.35937,-5.9880926,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126dd35d59d14f:0x8e628875e7ac28cd!2m2!1d-5.9880861!2d37.3594687?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busO'>3</div><div class='busR'>6</div><div class='busB'>34</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+            "como_llegar_pie": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde <em>Campus Reina <br>Mercedes</em>",
+                "url": "MATES_campus.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "MATES_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "inf",
+        "nombre": "Biblioteca de Informática",
+        "lat": 37.35771,
+        "lng": -5.98706,
+        "direccion": "(Campus Reina Mercedes)<br>Avda. Reina Mercedes, s/n<br>41012 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Escuela+T%C3%A9cnica+Superior+de+Ingenier%C3%ADa+Inform%C3%A1tica+Av.+de+la+Reina+Mercedes,+s%2Fn+41012+Sevilla/@37.3582083,-5.9871091,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126dd4a3055555:0x29c3f634f8a021b8!2m2!1d-5.9871091!2d37.3582083?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busO'>3</div><div class='busR'>6</div><div class='busB'>34</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+            "como_llegar_pie": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde <em>Avda. Reina <br>Mercedes</em>",
+                "url": "ETSII_ReinaMercedes.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "ETSII_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "arqu",
+        "nombre": "Biblioteca de Arquitectura",
+        "lat": 37.36283,
+        "lng": -5.98646,
+        "direccion": "(Campus de Reina Mercedes)<br>Avda. de Reina Mercedes, 2<br>41012 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Escuela+T%C3%A9cnica+Superior+de+Arquitectura+de+Sevilla+Av.+de+la+Reina+Mercedes,+2+41012+Sevilla/@37.3626305,-5.9863338,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126c2ba9ac22a5:0x87c4bbb322596692!2m2!1d-5.9863439!2d37.3626308?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busO'>3</div><div class='busR'>6</div><div class='busB'>34</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+            "como_llegar_pie": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde <em>Avda. Reina <br>Mercedes</em>",
+                "url": "EARQ_ReinaMercedes.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "EARQ_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "ing",
+        "nombre": "Biblioteca de Ingeniería",
+        "lat": 37.4113,
+        "lng": -6.00055,
+        "direccion": "(Campus Cartuja)<br>Camino de los Descubrimientos, s/n<br>41092 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//ETSI+(Escuela+T%C3%A9cnica+Superior+de+Ingenier%C3%ADa)+Camino+de+los+Descubrimientos+41092+Sevilla/@37.4108639,-6.0006831,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126b60eeaa078f:0x75484b48a0cbe5a7!2m2!1d-6.0006831!2d37.4108639?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='busR'>2</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+            "como_llegar_pie": [
+
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde C. Juan Bautista <br> Muñoz",
+                "url": "ETSI_JuanBautista.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "ETSI_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "com",
+        "nombre": "Biblioteca de Comunicación",
+        "lat": 37.41019,
+        "lng": -6.00658,
+        "direccion": "(Campus Cartuja)<br>Avda. Américo Vespucio, s/n<br>41092 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Facultad+de+Comunicaci%C3%B3n+.+Universidad+de+Sevilla+(FCom-US),+Calle+Am%C3%A9rico+Vespucio,+Sevilla/@37.4066255,-6.0051617,15.46z/data=!3m1!5s0xd126bf27b46072f:0xa10289bee5ee2039!4m8!4m7!1m0!1m5!1m1!1s0xd126c799e7aa087:0xe18b922adc40f7f3!2m2!1d-6.006518!2d37.410269?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='busR'>2</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+            "como_llegar_pie": [
+
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde Avd. Americo<br>Vespucio",
+                "url": "FCOM_AmericoVespucio.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde C. Leonardo<br>Da Vinci",
+                "url": "FCOM_LeonardoDaVinci.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "FCOM_puertaBib.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Videoteca",
+                "url": "FCOM_puertaVid.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "salu",
+        "nombre": "Biblioteca de Centros de la Salud",
+        "lat": 37.40635,
+        "lng": -5.98817,
+        "direccion": "(Campus Macarena)<br>Avda. Sánchez Pizjuán s/n<br>41009 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+                {
+                    "imagen": "images/google-maps-svgrepo-com.svg", 
+                    "texto": "con Google Maps",
+                    "url": "https://www.google.com/maps/dir//Biblioteca+de+Centros+de+la+Salud.+Campus+Macarena,+Avenida+de+S%C3%A1nchez+Pizju%C3%A1n,+Sevilla/@37.4065391,-6.0294118,13z/data=!3m1!5s0xd126b8d12ec5293:0xae2d6ee235494888!4m8!4m7!1m0!1m5!1m1!1s0xd126bfeb39e9021:0x66d750304588e77f!2m2!1d-5.9882123!2d37.4064781?entry=ttu",
+                    "target": "_blank"
+                },
+                {
+                    "imagen": "images/bus-svgrepo-com.svg", 
+                    "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='busG'>C3</div><div class='busG'>C4</div></div><div class='busFlex'><div class='busB'>10</div><div class='busB'>13</div><div class='busB'>14</div><div class='busR'>2</div></div>",
+                    "url": "https://reddelineas.tussam.es/?lang=es",
+                    "target": "_blank"
+                },
+                {
+                    "imagen": "images/bicycle-svgrepo-com.svg", 
+                    "texto": "en bicicleta / patinete",
+                    "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                    "target": "_blank"
+                }],
+                "como_llegar_pie": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "Avda. Sánchez Pizjuán",
+                "url": "SALUD_SanchezPizjuan.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "desde la puerta",
+                "url": "SALUD_puertaBib.html",
+                "target": "_self"
+            }
+
+        ]
+    },
+    {
+        "id": "bbaa",
+        "nombre": "Biblioteca de Bellas Artes",
+        "lat": 37.39301,
+        "lng": -5.98277,
+        "direccion": "Gonzalo Bilbao 7-9<br>41003 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Biblioteca+de+la+Facultad+de+Bellas+Artes,+Calle+Gonzalo+Bilbao,+Seville,+Spain/@37.4079507,-5.9784545,14z/data=!3m1!5s0xd126bf94cf06dcb:0x1a81cd39aeed9ddc!4m8!4m7!1m0!1m5!1m1!1s0xd126ea819a31347:0x3a41ce06c00c391a!2m2!1d-5.9829246!2d37.3930085?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='busG'>C3</div><div class='busG'>C4</div></div><div class='busFlex'><div class='busB'>27</div><div class='busB'>32</div><div class='busR'>1</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+            "como_llegar_pie": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "RUTA desde <i>C. Laraña</i> <br>hasta <i>C. Gonzalo de Bilbao</i>",
+                "url": "https://www.google.com/maps/dir/C.+Lara%C3%B1a,+Casco+Antiguo,+41003+Sevilla,+Spain/Biblioteca+de+la+Facultad+de+Bellas+Artes,+Calle+Gonzalo+Bilbao,+Seville,+Spain/@37.391017,-5.9899575,17z/data=!3m2!4b1!5s0xd126bf94cf06dcb:0x1a81cd39aeed9ddc!4m13!4m12!1m5!1m1!1s0xd126c05693c6bbd:0x9e32bc40ac71a3bb!2m2!1d-5.9930052!2d37.392799!1m5!1m1!1s0xd126ea819a31347:0x3a41ce06c00c391a!2m2!1d-5.9829246!2d37.3930085?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "<em>C. Gonzalo de Bilbao</em>",
+                "url": "BBAA_GonzaloBilbao.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>  Biblioteca",
+                "url": "BBAA_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "hum",
+        "nombre": "Biblioteca de Humanidades",
+        "lat": 37.38103,
+        "lng": -5.99129,
+        "direccion": "(Campus Rectorado)<br>Dª María de Padilla, s/n<br>41004 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la calle",
+                "url": "NO_calle.html",
+                "target": "_self"
+            }
+        ],
+        "como_llegar_pie": [
+
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "NO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "der",
+        "nombre": "Biblioteca de Derecho y Cc del Trabajo",
+        "lat": 37.37741,
+        "lng": -5.97785,
+        "direccion": "(Campus Ramón y Cajal)<br>Enramadilla, 18-20<br>41018 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "Avda. Presidente Cárdenas",
+                "url": "NO_calle.html",
+                "target": "_self"
+            }
+        ],
+        "como_llegar_pie": [
+            
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "NO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "edu",
+        "nombre": "Biblioteca de Educación",
+        "lat": 37.37674,
+        "lng": -5.97751,
+        "direccion": "(Campus Ramón y Cajal)<br>Pirotecnia, s/n<br>41018 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Facultad+de+Ciencias+de+la+Educaci%C3%B3n,+Calle+Pirotecnia,+Sevilla,+Espa%C3%B1a/@37.3765199,-6.0183308,13z/data=!3m1!5s0xd126bf27b46072f:0xa10289bee5ee2039!4m8!4m7!1m0!1m5!1m1!1s0xd126e9434f68549:0x2fee469803f98f44!2m2!1d-5.9771313!2d37.3764588?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='tranviaR' title='metrocentro'>T1</div><div class='busB'>22</div></div><div class='busFlex'><div class='busB'>25</div><div class='busB'>26</div><div class='busB'>28</div><div class='busB'>29</div></div><div class='busFlex'><div class='busB'>38</div><div class='busB'>52</div><div class='busBB'>B4</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/train-transportation-subway-rail-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div><img width='40px' style='background:white;border-radius:50%' src='./images/metroSevilla.svg'></div></div>",
+                "url": "https://www.metro-sevilla.es/mapa-y-trayectos",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/noun-train-29470.svg", 
+                "texto": "<div class='busFlex'><div class='trenC1'>C1</div><div class='trenC4'>C4</div><div class='trenC5'>C5</div></div>",
+                "url": "https://www.renfe.com/es/es/cercanias/cercanias-sevilla/lineas",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+            "como_llegar_pie": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "<em>C. Pirotecnia</em>",
+                "url": "EDU_Pirotecnia.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "<em>Avda. Presidente <br>Cárdenas</em>",
+                "url": "EDU_PdteCardenas.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>Biblioteca",
+                "url": "EDU_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "eco",
+        "nombre": "Biblioteca de Económicas",
+        "lat": 37.37818,
+        "lng": -5.97637,
+        "direccion": "(Campus Ramón y Cajal)<br>Avda. Ramón y Cajal, 1<br>41018 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la calle",
+                "url": "NO_calle.html",
+                "target": "_self"
+            }
+        ],
+        "como_llegar_pie": [
+            
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "NO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "tyf",
+        "nombre": "Biblioteca de Turismo",
+        "lat": 37.37919,
+        "lng": -5.9763,
+        "direccion": "(Campus Ramón y Cajal)<br>Avenida San Francisco Javier, s/n<br>41018 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la calle",
+                "url": "NO_calle.html",
+                "target": "_self"
+            }
+        ],
+        "como_llegar_pie": [
+            
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "NO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "psi",
+        "nombre": "Biblioteca de Filosofía y Psicología",
+        "lat": 37.37945,
+        "lng": -5.97592,
+        "direccion": "(Campus Ramón y Cajal)<br>Camilo José Cela, s/n<br>41018 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la calle",
+                "url": "NO_calle.html",
+                "target": "_self"
+            }
+        ],
+        "como_llegar_pie": [
+            
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "NO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "pol",
+        "nombre": "Biblioteca de Politécnica",
+        "lat": 37.37599,
+        "lng": -6.00256,
+        "direccion": "Virgen de África, 7<br> 41011 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde la calle",
+                "url": "NO_calle.html",
+                "target": "_self"
+            }
+        ],
+        "como_llegar_pie": [
+
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la Biblioteca",
+                "url": "NO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "agr",
+        "nombre": "Biblioteca de Ing. Agrónoma",
+        "lat": 37.35295,
+        "lng": -5.93864,
+        "direccion": "Ctra. Utrera, Km.1 (ant. Univ. Laboral)<br>41013 - Sevilla",
+        "imagen":"",
+        "como_llegar_tpublico": [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//E.T.S.+de+Ingenier%C3%ADa+Agron%C3%B3mica,+Carretera+de+Utrera,+Seville/@37.3528599,-5.9799195,13z/data=!3m1!5s0xd126fad0adc1071:0xeb8c38f8f8f94f8!4m8!4m7!1m0!1m5!1m1!1s0xd126fcbe0633eef:0x9ffd54c98be075c8!2m2!1d-5.93872!2d37.3527988?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busB' title='directo'>38</div><div class='busB' title='por Pítamo'>38A</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/train-transportation-subway-rail-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div><img width='40px' style='background:white;border-radius:50%' src='./images/metroSevilla.svg'></div></div>",
+                "url": "https://www.metro-sevilla.es/mapa-y-trayectos",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+        "como_llegar_pie": [
+            {
+                "imagen": "images/walk-svgrepo-com.svg",
+                "texto": "desde Parada de <br>Metro",
+                "url": "AGRO_metro.html",
+                "target": "_self"
+            }
+        ],
+        "echar_un_vistazo":[
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Entrada de la <br>Biblioteca",
+                "url": "AGRO_puertaBib.html",
+                "target": "_self"
+            }
+        ]
+    }
+]

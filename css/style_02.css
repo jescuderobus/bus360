@@ -1,0 +1,39 @@
+/* Estilos para el acordeon de bootstrap */
+
+.accordion-button {
+    background-color: #ddd;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* Estilos personalizados para eliminar los bordes del acordeón */
+.accordion-button {
+    border: none;
+    outline: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-collapse {
+    border: none;
+}
+.accordion-body {
+    padding: 5px 4px;
+    margin: 0 auto; /* Centra los elementos horizontalmente */
+}
+
+#customPopup{
+    min-width: 300px;
+}
+
+.leaflet-popup-content-wrapper{
+    min-width: 300px;
+}

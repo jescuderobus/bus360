@@ -2,6 +2,8 @@
 <html style="height:100%;">
 <head>
     <title>Bibliotecas de la Universidad de Sevilla</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,7 +16,12 @@
     <!-- Incluir JS de Leaflet -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!--Style02-->
+    <link rel="stylesheet" href="css/style_02.css" />
+    
 
     <!-- Incluir el archivo JSON con los datos de las bibliotecas -->
     
@@ -72,7 +79,7 @@
         .vistazo, .instruccion, .menu-item {
             cursor: pointer; 
             color: #0f0f0f;
-            background-color: #ccc; 
+            background-color: #ddd; 
             padding: 4px; 
             margin-bottom: 5px; 
             display: flex; 
@@ -202,7 +209,7 @@
         // Función para cargar y mostrar bibliotecas
         function loadBibliotecas() {
             console.log("function loadBibliotecas")
-            fetch('bibliotecas.json')
+            fetch('bibliotecas_02.json')
                 .then(function(response) {
                     return response.json();
                 })
@@ -213,13 +220,35 @@
 
                         var popupContent = `<div class="nom-bib">${biblioteca.nombre}</div><hr>${biblioteca.direccion}<hr>`;
                             popupContent += `<b>Cómo llegar ...</b><br>`;
-                            biblioteca.como_llegar.forEach(function(instruccion) {
+
+                            popupContent += `            
+                            <div class="accordion" style="padding: 5px 0px;">
+                                <div class="accordion-item">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mainCollapse" aria-expanded="true" aria-controls="mainCollapse" style="background-color: #ddd;">
+                                        <img class="img-item" src="images/google-maps-svgrepo-com.svg">
+                                        <img class="img-item" src="images/bus-svgrepo-com.svg">
+                                        <img class="img-item" src="images/bicycle-svgrepo-com.svg">
+                                    </button>
+                                <div id="mainCollapse" class="accordion-collapse collapse" aria-labelledby="mainHeading">
+                                    <div class="accordion-body">`;
+                            biblioteca.como_llegar_tpublico.forEach(function(instruccion) {
+                                popupContent += `
+                                    <div class="accordion-item" style="border:none;">
+                                    <div onclick="window.open('${instruccion.url}', '${instruccion.target}')" class="instruccion" >
+                                        <img class="img-item" src="${instruccion.imagen}" alt="Instrucciones">
+                                        <span>${instruccion.texto}</span>
+                                    </div></div>`;
+                            });
+                            popupContent += `</div></div></div></div>`;
+
+                            biblioteca.como_llegar_pie.forEach(function(instruccion) {
                                 popupContent += `
                                     <div onclick="window.open('${instruccion.url}', '${instruccion.target}')" class="instruccion" >
                                         <img class="img-item" src="${instruccion.imagen}" alt="Instrucciones">
                                         <span>${instruccion.texto}</span>
                                     </div>`;
                             });
+
                             popupContent += `<br><b>Echar un vistazo ...</b>`;
                             biblioteca.echar_un_vistazo.forEach(function(vistazo) {
                                 popupContent += `
@@ -340,7 +369,7 @@
     <script src="js/help.js"></script>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
