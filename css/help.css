@@ -17,19 +17,31 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Ancho del modal */
+    position: relative; /* Necesario para posicionar el botón de cerrar */
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 45px;
+    height: 45px;
+    background-color: #9b2130;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 2.5em;
     font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    background-color: darkred;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
-
