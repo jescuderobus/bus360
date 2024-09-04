@@ -641,22 +641,44 @@
         "lng": -6.00256,
         "direccion": "Virgen de África, 7<br> 41011 - Sevilla",
         "imagen":"",
-        "como_llegar_tpublico": [
+        "como_llegar_tpublico":  [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Escuela+Polit%C3%A9cnica+Superior,+Escuela+Polit%C3%A9cnica+Superior+de+la+Universidad+de+Sevilla,+Calle+Virgen+de+%C3%81frica,+Seville/@37.3762197,-6.043834,13z/data=!3m1!5s0xd126bf27b46072f:0xa10289bee5ee2039!4m8!4m7!1m0!1m5!1m1!1s0xd126c3f1514d7db:0xa6da392ca25e6a40!2m2!1d-6.0026345!2d37.3762268?entry=ttu&g_ep=EgoyMDI0MDkwMi4wIKXMDSoASAFQAw%3D%3D",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busR'>5</div><div class='busR'>6</div><div class='busB'>41</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/train-transportation-subway-rail-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div><img width='40px' style='background:white;border-radius:50%' src='./images/metroSevilla.svg'></div></div>",
+                "url": "https://www.metro-sevilla.es/mapa-y-trayectos",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+        "como_llegar_pie": [
             {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "desde la calle",
-                "url": "NO_calle.html",
+                "texto": "desde <em>Virgen de África</em>",
+                "url": "POLI_Africa.html",
                 "target": "_self"
             }
-        ],
-        "como_llegar_pie": [
-
         ],
         "echar_un_vistazo":[
             {
                 "imagen": "images/eye-3-svgrepo-com.svg",
                 "texto": "Entrada de la Biblioteca",
-                "url": "NO_puertaBib.html",
+                "url": "POLI_puertaBib.html",
                 "target": "_self"
             }
         ]
