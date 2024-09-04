@@ -10,6 +10,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biblioteca de la Escuela Politécnica</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--<script src="/cdn-cgi/apps/head/TEAHVq5cVsVoM9egFOAS6CBdXPk.js"></script>-->
     <link rel="stylesheet" href="https://pannellum.org/css/bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap-native.min.js"></script>
@@ -24,12 +25,13 @@
         <div id="panorama" style="width:100%;height:100%;"></div>
         <script>
         pannellum.viewer('panorama', {
-    "default": {
-        "firstScene": "POLI_16",
-        "author": "Tecnibus24",
-        "sceneFadeDuration": 1000,
-        "autoLoad": true
-    },
+            //"hotSpotDebug": true,
+            "default": {
+                "firstScene": "POLI_11",
+                "author": "Tecnibus24",
+                "sceneFadeDuration": 1000,
+                "autoLoad": true
+        },
     "scenes": {
         "POLI_1": {
             "title": "Entrada de la Escuela Politécnica Superior - Calle Virgen de África",
@@ -245,13 +247,13 @@
                     "type": "scene",
                     "text": "Seguimos hacia la Biblioteca",
                     "sceneId": "POLI_7",
-                    "targetYaw": 90.0,
+                    "targetYaw": -180.0,
                     "targetPitch": 0
                 }
             ]
         },
         "POLI_7": {
-            "title": "Facultad de Matemáticas. Entrada desde el parking.",
+            "title": "Escuela Politécnica Superior. Final Pasillo derecho.",
             "hfov": 150,
             "pitch": 0,
             "yaw": 180,
@@ -289,7 +291,7 @@
             ]
         },
         "POLI_8": {
-            "title": "Entrada de la Biblioteca",
+            "title": "Entrada de la Biblioteca Politécnica",
             "hfov": 150,
             "pitch": 0,
             "yaw": 180,
@@ -307,19 +309,26 @@
             },
             "hotSpots": [
                 {
+                    "pitch": -16.0,
+                    "yaw": 230.0,
+                    "type": "info",
+                    "text": "Buzón de Autodevolución",
+                    "URL": ""
+                },
+                {
                     "pitch": -2.2,
                     "yaw": 189.5,
                     "type": "scene",
-                    "text": "Entramos",
+                    "text": "Entramos a la Biblioteca",
                     "sceneId": "POLI_9",
-                    "targetYaw": 85.0,
+                    "targetYaw": 240,
                     "targetPitch": 0
                 },
                 {
                     "pitch": -1.0,
                     "yaw": 90,
                     "type": "scene",
-                    "text": "Volvemos",
+                    "text": "Volvemos al pasillo",
                     "sceneId": "POLI_7",
                     "targetYaw": 2.6,
                     "targetPitch": 0
@@ -327,7 +336,7 @@
             ]
         },
         "POLI_9": {
-            "title": "Pasillo de Entrada y Préstamo",
+            "title": "Mostrador de Préstamo y novedades",
             "hfov": 160,
             "pitch": 0,
             "yaw": 240,
@@ -346,29 +355,29 @@
             "hotSpots": [
                 {
                     "pitch": -3.0,
-                    "yaw": -3.0,
+                    "yaw": 360.0,
                     "type": "scene",
                     "text": "Volvemos al pasillo",
                     "sceneId": "POLI_8",
-                    "targetYaw": 65.0,
-                    "targetPitch": 0
+                    "targetYaw": 44,
+                    "targetPitch": -28
                 },
                 {
                     "pitch": -2.0,
                     "yaw": 184.0,
                     "type": "scene",
-                    "text": "Sala de Estudio y Biblioteca",
+                    "text": "Sala de la Biblioteca Politécnica",
                     "sceneId": "POLI_10",
-                    "targetYaw": -80.0,
-                    "targetPitch": 0
+                    "targetYaw": -117,
+                    "targetPitch": -2
                 }
             ]
         },
         "POLI_10": {
-            "title": "Biblioteca 0",
+            "title": "Sala de la Biblioteca Politécnica 0",
             "hfov": 150,
-            "pitch": -10,
-            "yaw": -140,
+            "pitch": -2,
+            "yaw": -117,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
@@ -403,7 +412,7 @@
             ]
         },
         "POLI_11": {
-            "title": "Biblioteca 1",
+            "title": "Sala de la Biblioteca Politécnica 1",
             "hfov": 150,
             "pitch": 0,
             "yaw": 180,
@@ -421,12 +430,37 @@
             },
             "hotSpots": [
                 {
-                    "pitch": -6.2,
+                    "pitch": -9.0,
+                    "yaw": 135.0,
+                    "type": "info",
+                    "text": "Ordenador de Consulta del catálogo",
+                    "URL": ""
+                },
+                {
+                    "pitch": -6,
                     "yaw": 177.9,
                     "type": "scene",
-                    "text": "Biblioteca 2",
+                    "text": "Biblioteca Politecnica 4",
+                    "sceneId": "POLI_14",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -12,
+                    "yaw": 177.9,
+                    "type": "scene",
+                    "text": "Biblioteca Politecnica 3",
+                    "sceneId": "POLI_13",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -28,
+                    "yaw": 177.9,
+                    "type": "scene",
+                    "text": "Biblioteca Politecnica 2",
                     "sceneId": "POLI_12",
-                    "targetYaw": -42.0,
+                    "targetYaw": 180,
                     "targetPitch": 0
                 },
                 {
@@ -435,7 +469,7 @@
                     "type": "scene",
                     "text": "Panoramica de la Entrada",
                     "sceneId": "POLI_10",
-                    "targetYaw": 0.0,
+                    "targetYaw": -117,
                     "targetPitch": 0
                 },
                 {
@@ -450,10 +484,10 @@
             ]
         },
         "POLI_12": {
-            "title": "Facultad de Matemáticas. Acceso a Biblioteca.",
+            "title": "Sala de la Biblioteca Politécnica 2.",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 180,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
@@ -468,42 +502,28 @@
             },
             "hotSpots": [
                 {
-                    "pitch": 8.0,
-                    "yaw": -170.0,
-                    "type": "info",
-                    "text": "Departamentos",
-                    "URL": ""
-                },
-                {
-                    "pitch": -10.0,
-                    "yaw": -70.8,
-                    "type": "info",
-                    "text": "Buzón de autodevolución",
-                    "URL": ""
-                },
-                {
-                    "pitch": -2.5,
-                    "yaw": -93.0,
+                    "pitch": -16.5,
+                    "yaw": -180,
                     "type": "scene",
-                    "text": "Volver",
+                    "text": "Biblioteca Politécnica 3",
                     "sceneId": "POLI_13",
-                    "targetYaw": 177.0,
+                    "targetYaw": 180.0,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -8.1,
-                    "yaw": 1.1,
+                    "pitch": -8,
+                    "yaw": -180,
                     "type": "scene",
-                    "text": "Entrar a la Biblioteca",
+                    "text": "Biblioteca Politécnica 4",
                     "sceneId": "POLI_14",
-                    "targetYaw": -94.0,
+                    "targetYaw": 180.0,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -6.2,
-                    "yaw": 86.0,
+                    "pitch": -18,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "Volver",
+                    "text": "Biblioteca Politécnica 1",
                     "sceneId": "POLI_11",
                     "targetYaw": 0.0,
                     "targetPitch": 0
@@ -511,7 +531,7 @@
             ]
         },
         "POLI_13": {
-            "title": "Biblioteca 3.",
+            "title": "Sala de la Biblioteca Politécnica 3.",
             "hfov": 150,
             "pitch": 0,
             "yaw": 0,
@@ -529,44 +549,39 @@
             },
             "hotSpots": [
                 {
-                    "pitch": -2.0,
-                    "yaw": -75.0,
-                    "type": "info",
-                    "text": "Biblioteca",
-                    "URL": "https://bib.us.es/matematicas/"
-                },
-                {
-                    "pitch": 6.0,
-                    "yaw": 82.0,
-                    "type": "info",
-                    "text": "Departamentos",
-                    "URL": ""
-                },
-                {
-                    "pitch": -20.0,
-                    "yaw": -18.5,
+                    "pitch": -18.0,
+                    "yaw": -2.2,
                     "type": "scene",
-                    "text": "Bajar",
-                    "sceneId": "POLI_6",
-                    "targetYaw": 180.0,
+                    "text": "Biblioteca Politécnica 2",
+                    "sceneId": "POLI_12",
+                    "targetYaw": 0,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -3.0,
-                    "yaw": -1.2,
+                    "pitch": -18.0,
+                    "yaw": 180.2,
                     "type": "scene",
-                    "text": "A la Biblioteca",
-                    "sceneId": "POLI_12",
-                    "targetYaw": 40.0,
+                    "text": "Biblioteca Politécnica 4",
+                    "sceneId": "POLI_14",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10.0,
+                    "yaw": -2.2,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 1",
+                    "sceneId": "POLI_11",
+                    "targetYaw": 0,
                     "targetPitch": 0
                 }
             ]
         },
         "POLI_14": {
-            "title": "Biblioteca 4",
+            "title": "Sala de la Biblioteca Politécnica 4",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 180,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
@@ -581,60 +596,57 @@
             },
             "hotSpots": [
                 {
-                    "pitch": -24.0,
-                    "yaw": 24.0,
-                    "type": "info",
-                    "text": "Buzón de sugerencias",
-                    "URL": ""
-                },
-                {
-                    "pitch": -10.0,
-                    "yaw": 151.0,
-                    "type": "info",
-                    "text": "Mostrador de información y préstamo",
-                    "URL": ""
-                },
-                {
-                    "pitch": 0.0,
-                    "yaw": -70.0,
-                    "type": "info",
-                    "text": "Administración de la Biblioteca",
-                    "URL": ""
-                },
-                {
-                    "pitch": -8.0,
-                    "yaw": 0.0,
+                    "pitch": -4.0,
+                    "yaw": 140,
                     "type": "scene",
-                    "text": "Avanzar",
+                    "text": "Biblioteca Politecnica Salida de Emergencia",
                     "sceneId": "POLI_15",
                     "targetYaw": -176.0,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -12.6,
-                    "yaw": -176.0,
+                    "pitch": -4,
+                    "yaw": 220.0,
                     "type": "scene",
-                    "text": "Avanzar",
+                    "text": "Biblioteca Politécnica 6",
                     "sceneId": "POLI_16",
                     "targetYaw": -177.5,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -8.2,
-                    "yaw": 86.0,
+                    "pitch": -20,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "Salir",
+                    "text": "Biblioteca Politécnica 3",
+                    "sceneId": "POLI_13",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -12,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 2",
                     "sceneId": "POLI_12",
-                    "targetYaw": -179.0,
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -7.2,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 1",
+                    "sceneId": "POLI_11",
+                    "targetYaw": 0,
                     "targetPitch": 0
                 }
             ]
         },
         "POLI_15": {
-            "title": "Biblioteca 5",
+            "title": "Sala de la Biblioteca Politécnica 5",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": -176,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
@@ -649,28 +661,37 @@
             },
             "hotSpots": [
                 {
-                    "pitch": 5.0,
-                    "yaw": -22.5,
+                    "pitch": -9.0,
+                    "yaw": 0.0,
                     "type": "info",
-                    "text": "Acceso a la Hemeroteca",
+                    "text": "Salida de Emergencia",
                     "URL": ""
                 },
                 {
-                    "pitch": -7.5,
-                    "yaw": 3.9,
+                    "pitch": 0,
+                    "yaw": -176,
                     "type": "scene",
-                    "text": "Volver",
-                    "sceneId": "POLI_14",
+                    "text": "Biblioteca Politecnica 6",
+                    "sceneId": "POLI_16",
                     "targetYaw": -176.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -2,
+                    "yaw": -123,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 4",
+                    "sceneId": "POLI_14",
+                    "targetYaw": 0.0,
                     "targetPitch": 0
                 }
             ]
         },
         "POLI_16": {
-            "title": "Biblioteca 6",
+            "title": "Sala de la Biblioteca Politécnica 6",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 200,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
@@ -685,69 +706,20 @@
             },
             "hotSpots": [
                 {
-                    "pitch": -7.5,
-                    "yaw": 31.0,
-                    "type": "info",
-                    "text": "Mostrador de información y préstamo",
-                    "URL": ""
-                },
-                {
-                    "pitch": -18.0,
-                    "yaw": -30.0,
-                    "type": "info",
-                    "text": "Novedades",
-                    "URL": ""
-                },
-                {
-                    "pitch": -6.0,
-                    "yaw": -52.5,
-                    "type": "info",
-                    "text": "Ordenadores de consulta",
-                    "URL": ""
-                },
-                {
-                    "pitch": -7.0,
-                    "yaw": -95.0,
-                    "type": "info",
-                    "text": "Ordenadores de consulta",
-                    "URL": ""
-                },
-                {
-                    "pitch": -9.0,
-                    "yaw": 78.5,
-                    "type": "info",
-                    "text": "Novedades",
-                    "URL": ""
-                },
-                {
-                    "pitch": -8.0,
-                    "yaw": -116.0,
-                    "type": "info",
-                    "text": "Distribución de la Biblioteca",
-                    "URL": ""
-                },
-                {
-                    "pitch": -9.3,
-                    "yaw": 102.2,
-                    "type": "info",
-                    "text": "Salida de emergencia",
-                    "URL": ""
-                },
-                {
-                    "pitch": -6.0,
-                    "yaw": -177.5,
+                    "pitch": -5.5,
+                    "yaw": -157.5,
                     "type": "scene",
-                    "text": "Avanzar",
-                    "sceneId": "POLI_17",
-                    "targetYaw": 180.0,
+                    "text": "Biblioteca Politecnica 4",
+                    "sceneId": "POLI_14",
+                    "targetYaw": 0,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -12.7,
-                    "yaw": 3.0,
+                    "pitch": -2.7,
+                    "yaw": -90,
                     "type": "scene",
-                    "text": "Volver",
-                    "sceneId": "POLI_14",
+                    "text": "Biblioteca Politecnica 5",
+                    "sceneId": "POLI_15",
                     "targetYaw": 0.0,
                     "targetPitch": 0
                 }
