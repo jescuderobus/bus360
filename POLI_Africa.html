@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-    <html lang="es">
+    <html lang="en">
     <head>
     <meta name="generator" content="Hugo 0.48" />
-    <meta charset="utf-8">
-    <meta name="author" content="Álvaro Carmona Núñez,
-    Patricia Serrano Angorilla, 
-    Gonzalo Martínez Fernández, 
-    Javier Escudero"
-/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca de Ing. Agronómica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Álvaro Carmona Núñez, 
+                                 Patricia Serrano Angorilla, 
+                                 Gonzalo Martínez Fernández, 
+                                 Javier Escudero"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca de la Escuela Politécnica</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--<script src="/cdn-cgi/apps/head/TEAHVq5cVsVoM9egFOAS6CBdXPk.js"></script>-->
     <link rel="stylesheet" href="https://pannellum.org/css/bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap-native.min.js"></script>
@@ -24,23 +25,91 @@
         <div id="panorama" style="width:100%;height:100%;"></div>
         <script>
         pannellum.viewer('panorama', {
-    "default": {
-        "firstScene": "AGRO_1",
-        "author": "Tecnibus24",
-        "sceneFadeDuration": 1000,
-        "autoLoad": true
-    },
+            //"hotSpotDebug": true,
+            "default": {
+                "firstScene": "POLI_1",
+                "author": "Tecnibus24",
+                "sceneFadeDuration": 1000,
+                "autoLoad": true
+        },
     "scenes": {
-        "AGRO_1": {
-            "title": "Camino a la ETSIA. Estación de Metro Pablo de Olavide.",
+        "POLI_1": {
+            "title": "Entrada de la Escuela Politécnica Superior - Calle Virgen de África",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 179,
+            "yaw": 175,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
             "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_1",
+                "basePath": "./fotos360/OTRAS/POLI_1",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -7.0,
+                    "yaw": 181.0,
+                    "type": "scene",
+                    "text": "Patio de Entrada",
+                    "sceneId": "POLI_2",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "POLI_2": {
+            "title": "Patio de Entrada. Escuela Politécnica Superior.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 180,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/OTRAS/POLI_2",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -2.5,
+                    "yaw": -179.0,
+                    "type": "scene",
+                    "text": "Entrar",
+                    "sceneId": "POLI_3",
+                    "targetYaw": -179.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -2.5,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Calle Virgen de África",
+                    "sceneId": "POLI_1",
+                    "targetYaw": 156.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "POLI_3": {
+            "title": "Patio de Entrada. Escuela Politécnica Superior.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 180,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/OTRAS/POLI_3",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",
@@ -51,46 +120,34 @@
             "hotSpots": [
                 {
                     "pitch": 0.0,
-                    "yaw": 61.0,
-                    "type": "info",
-                    "text": "Parada de TUSSAM nº 869",
-                    "URL": ""
-                },
-                {
-                    "pitch": 4.0,
-                    "yaw": -7.6,
-                    "type": "info",
-                    "text": "Estación de Metro Pablo de Olavide",
-                    "URL": ""
-                },
-                {
-                    "pitch": -2.5,
-                    "yaw": 86.0,
-                    "type": "info",
-                    "text": "A la UPO",
-                    "URL": ""
-                },
-                {
-                    "pitch": -2.5,
-                    "yaw": 179.0,
+                    "yaw": -177.5,
                     "type": "scene",
-                    "text": "A la ETSIA",
-                    "sceneId": "AGRO_2",
-                    "targetYaw": -3.0,
+                    "text": "Entrar",
+                    "sceneId": "POLI_4",
+                    "targetYaw": -176.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -13.0,
+                    "yaw": 0.0,
+                    "type": "scene",
+                    "text": "Volver",
+                    "sceneId": "POLI_2",
+                    "targetYaw": 120.0,
                     "targetPitch": 0
                 }
             ]
         },
-        "AGRO_2": {
-            "title": "Camino a la ETSIA.",
+        "POLI_4": {
+            "title": "Escuela Politécnica Superior. Entrada principal.",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 150,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
             "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_2",
+                "basePath": "./fotos360/OTRAS/POLI_4",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",
@@ -99,88 +156,36 @@
                 "cubeResolution": 1928
             },
             "hotSpots": [
-                {
-                    "pitch": -1.8,
-                    "yaw": -3.0,
-                    "type": "scene",
-                    "text": "A la ETSIA",
-                    "sceneId": "AGRO_3",
-                    "targetYaw": -7.5,
-                    "targetPitch": 0
-                },
-                {
-                    "pitch": -2.5,
-                    "yaw": 177.1,
-                    "type": "scene",
-                    "text": "Al metro",
-                    "sceneId": "AGRO_1",
-                    "targetYaw": 0.0,
-                    "targetPitch": 0
-                }
-            ]
-        },
-        "AGRO_3": {
-            "title": "Camino a la ETSIA.",
-            "hfov": 150,
-            "pitch": 0,
-            "yaw": 0,
-            "compass": true,
-            "northOffset": 70,
-            "type": "multires",
-            "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_3",
-                "path": "/%l/%s%y_%x",
-                "fallbackPath": "/fallback/%s",
-                "extension": "jpg",
-                "tileResolution": 512,
-                "maxLevel": 3,
-                "cubeResolution": 1928
-            },
-            "hotSpots": [
-                {
-                    "pitch": 1.0,
-                    "yaw": -92.0,
-                    "type": "info",
-                    "text": "Universidad Pablo de Olavide",
-                    "URL": ""
-                },
-                {
-                    "pitch": 3.7,
-                    "yaw": 20.0,
-                    "type": "info",
-                    "text": "E.T.S. Ing. Agronómica",
-                    "URL": "https://etsia.us.es/"
-                },
-                {
-                    "pitch": 0.0,
-                    "yaw": -7.5,
-                    "type": "scene",
-                    "text": "Avanzar",
-                    "sceneId": "AGRO_4",
-                    "targetYaw": 2.4,
-                    "targetPitch": 0
-                },
                 {
                     "pitch": -2.0,
-                    "yaw": 179.0,
+                    "yaw": -180.0,
                     "type": "scene",
-                    "text": "Al metro",
-                    "sceneId": "AGRO_2",
-                    "targetYaw": 177.1,
+                    "text": "Hacia la Biblioteca",
+                    "sceneId": "POLI_5",
+                    "targetYaw": 180.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10.0,
+                    "yaw": 270,
+                    "type": "scene",
+                    "text": "Volver a la entrada",
+                    "sceneId": "POLI_3",
+                    "targetYaw": 0.0,
                     "targetPitch": 0
                 }
             ]
         },
-        "AGRO_4": {
-            "title": "E.T.S. de Ing. Agronómica.",
+        "POLI_5": {
+            "title": "Escuela Politécnica Superior. Pasillo Derecho.",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 180,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
             "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_4",
+                "basePath": "./fotos360/OTRAS/POLI_5",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",
@@ -190,42 +195,35 @@
             },
             "hotSpots": [
                 {
-                    "pitch": 10.0,
-                    "yaw": 60.0,
-                    "type": "info",
-                    "text": "E.T.S. Ing. Agronómica",
-                    "URL": "https://etsia.us.es/"
-                },
-                {
-                    "pitch": 0.0,
-                    "yaw": 2.4,
+                    "pitch": -5.0,
+                    "yaw": 180.0,
                     "type": "scene",
-                    "text": "A la Biblioteca",
-                    "sceneId": "AGRO_5",
-                    "targetYaw": 2.1,
+                    "text": "Hacia la Biblioteca",
+                    "sceneId": "POLI_6",
+                    "targetYaw": -178.0,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -1.0,
-                    "yaw": 178.0,
+                    "pitch": -8.0,
+                    "yaw": -2.5,
                     "type": "scene",
-                    "text": "Al metro",
-                    "sceneId": "AGRO_3",
-                    "targetYaw": 179.0,
+                    "text": "Entrada",
+                    "sceneId": "POLI_4",
+                    "targetYaw": -30.0,
                     "targetPitch": 0
                 }
             ]
         },
-        "AGRO_5": {
-            "title": "E.T.S. de Ing. Agronómica.",
+        "POLI_6": {
+            "title": "Escuela Politécnica Superior. Sala de estudios.",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 180,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
             "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_5",
+                "basePath": "./fotos360/OTRAS/POLI_6",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",
@@ -235,49 +233,35 @@
             },
             "hotSpots": [
                 {
-                    "pitch": 11.0,
-                    "yaw": 12.5,
-                    "type": "info",
-                    "text": "Torre de la ETSIA",
-                    "URL": ""
-                },
-                {
-                    "pitch": 8.5,
-                    "yaw": 89.0,
-                    "type": "info",
-                    "text": "E.T.S. Ing. Agronómica",
-                    "URL": "https://etsia.us.es/"
-                },
-                {
-                    "pitch": -2.5,
-                    "yaw": 2.1,
+                    "pitch": -5,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "A la Biblioteca",
-                    "sceneId": "AGRO_6",
+                    "text": "Volvemos al pasillo",
+                    "sceneId": "POLI_5",
                     "targetYaw": 0.0,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -2.5,
-                    "yaw": -177.5,
+                    "pitch": -4.0,
+                    "yaw": 180.0,
                     "type": "scene",
-                    "text": "Volver",
-                    "sceneId": "AGRO_4",
-                    "targetYaw": 178.0,
+                    "text": "Seguimos hacia la Biblioteca",
+                    "sceneId": "POLI_7",
+                    "targetYaw": -180.0,
                     "targetPitch": 0
                 }
             ]
         },
-        "AGRO_6": {
-            "title": "E.T.S. de Ing. Agronómica.",
+        "POLI_7": {
+            "title": "Escuela Politécnica Superior. Final Pasillo derecho.",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 180,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
             "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_6",
+                "basePath": "./fotos360/OTRAS/POLI_7",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",
@@ -287,49 +271,80 @@
             },
             "hotSpots": [
                 {
-                    "pitch": 10.0,
-                    "yaw": -14.0,
-                    "type": "info",
-                    "text": "Biblioteca de Agronómicas",
-                    "URL": "https://bib.us.es/agricola/"
-                },
-                {
-                    "pitch": 30.0,
-                    "yaw": 25.0,
-                    "type": "info",
-                    "text": "Torre de la ETSIA",
-                    "URL": ""
-                },
-                {
-                    "pitch": -1.0,
-                    "yaw": -33.8,
+                    "pitch": -8.5,
+                    "yaw": -180.0,
                     "type": "scene",
-                    "text": "A la Biblioteca",
-                    "sceneId": "AGRO_7",
-                    "targetYaw": -40.0,
+                    "text": "La entrada esta al final del pasillo",
+                    "sceneId": "POLI_8",
+                    "targetYaw": 180.0,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -4.5,
-                    "yaw": -177.5,
+                    "pitch": -2.5,
+                    "yaw": -4,
                     "type": "scene",
                     "text": "Volver",
-                    "sceneId": "AGRO_5",
-                    "targetYaw": -177.5,
+                    "sceneId": "POLI_6",
+                    "targetYaw": -2.5,
                     "targetPitch": 0
                 }
             ]
         },
-        "AGRO_7": {
-            "title": "E.T.S. de Ing. Agronómica. Exterior de la Biblioteca.",
+        "POLI_8": {
+            "title": "Entrada de la Biblioteca Politécnica",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 180,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
             "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_7",
+                "basePath": "./fotos360/OTRAS/POLI_8",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -16.0,
+                    "yaw": 230.0,
+                    "type": "info",
+                    "text": "Buzón de Autodevolución",
+                    "URL": ""
+                },
+                {
+                    "pitch": -2.2,
+                    "yaw": 189.5,
+                    "type": "scene",
+                    "text": "Entramos a la Biblioteca",
+                    "sceneId": "POLI_9",
+                    "targetYaw": 240,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -1.0,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Volvemos al pasillo",
+                    "sceneId": "POLI_7",
+                    "targetYaw": 2.6,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "POLI_9": {
+            "title": "Mostrador de Préstamo y novedades",
+            "hfov": 160,
+            "pitch": 0,
+            "yaw": 240,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/OTRAS/POLI_9",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",
@@ -340,41 +355,34 @@
             "hotSpots": [
                 {
                     "pitch": -3.0,
-                    "yaw": 15.9,
-                    "type": "info",
-                    "text": "Buzón de autodevolución",
-                    "URL": ""
+                    "yaw": 360.0,
+                    "type": "scene",
+                    "text": "Volvemos al pasillo",
+                    "sceneId": "POLI_8",
+                    "targetYaw": 44,
+                    "targetPitch": -28
                 },
                 {
-                    "pitch": -2.1,
-                    "yaw": -2.5,
+                    "pitch": -2.0,
+                    "yaw": 184.0,
                     "type": "scene",
-                    "text": "Entrar",
-                    "sceneId": "AGRO_8",
-                    "targetYaw": 0.0,
-                    "targetPitch": 0
-                },
-                {
-                    "pitch": -5.0,
-                    "yaw": 140.0,
-                    "type": "scene",
-                    "text": "Volver",
-                    "sceneId": "AGRO_6",
-                    "targetYaw": -177.5,
-                    "targetPitch": 0
+                    "text": "Sala de la Biblioteca Politécnica",
+                    "sceneId": "POLI_10",
+                    "targetYaw": -117,
+                    "targetPitch": -2
                 }
             ]
         },
-        "AGRO_8": {
-            "title": "Biblioteca de la ETSIA. Planta baja.",
+        "POLI_10": {
+            "title": "Sala de la Biblioteca Politécnica 0",
             "hfov": 150,
-            "pitch": 0,
-            "yaw": 0,
+            "pitch": -2,
+            "yaw": -117,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
             "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_8",
+                "basePath": "./fotos360/OTRAS/POLI_10",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",
@@ -384,132 +392,35 @@
             },
             "hotSpots": [
                 {
-                    "pitch": -10.0,
-                    "yaw": 90.0,
-                    "type": "info",
-                    "text": "Aseos",
-                    "URL": ""
-                },
-                {
-                    "pitch": -10.0,
-                    "yaw": -5.0,
+                    "pitch": -22.0,
+                    "yaw": 230.6,
                     "type": "scene",
-                    "text": "Subir a la Biblioteca",
-                    "sceneId": "AGRO_9",
-                    "targetYaw": -160.0,
+                    "text": "Echemos un vistazo",
+                    "sceneId": "POLI_11",
+                    "targetYaw": 177.9,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -4.0,
-                    "yaw": -179.0,
+                    "pitch": 0,
+                    "yaw": 10,
                     "type": "scene",
-                    "text": "Salir",
-                    "sceneId": "AGRO_7",
-                    "targetYaw": 177.5,
+                    "text": "Nos vamos",
+                    "sceneId": "POLI_9",
+                    "targetYaw": -91.0,
                     "targetPitch": 0
                 }
             ]
         },
-        "AGRO_9": {
-            "title": "Biblioteca de la ETSIA. Escaleras.",
+        "POLI_11": {
+            "title": "Sala de la Biblioteca Politécnica 1",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 180,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
             "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_9",
-                "path": "/%l/%s%y_%x",
-                "fallbackPath": "/fallback/%s",
-                "extension": "jpg",
-                "tileResolution": 512,
-                "maxLevel": 3,
-                "cubeResolution": 1928
-            },
-            "hotSpots": [
-                {
-                    "pitch": 19.0,
-                    "yaw": -17.0,
-                    "type": "scene",
-                    "text": "Entrar",
-                    "sceneId": "AGRO_10",
-                    "targetYaw": 0.0,
-                    "targetPitch": 0
-                },
-                {
-                    "pitch": -20.6,
-                    "yaw": -2.5,
-                    "type": "scene",
-                    "text": "Bajar",
-                    "sceneId": "AGRO_8",
-                    "targetYaw": -179.0,
-                    "targetPitch": 0
-                }
-            ]
-        },
-        "AGRO_10": {
-            "title": "Biblioteca de la ETSIA. Entrada.",
-            "hfov": 150,
-            "pitch": 0,
-            "yaw": 0,
-            "compass": true,
-            "northOffset": 70,
-            "type": "multires",
-            "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_10",
-                "path": "/%l/%s%y_%x",
-                "fallbackPath": "/fallback/%s",
-                "extension": "jpg",
-                "tileResolution": 512,
-                "maxLevel": 3,
-                "cubeResolution": 1928
-            },
-            "hotSpots": [
-                {
-                    "pitch": -15.0,
-                    "yaw": 107.5,
-                    "type": "info",
-                    "text": "Ordenadores de consulta",
-                    "URL": ""
-                },
-                {
-                    "pitch": -5.0,
-                    "yaw": 5.5,
-                    "type": "info",
-                    "text": "Mostrador de información y devolución",
-                    "URL": ""
-                },
-                {
-                    "pitch": -15.0,
-                    "yaw": -89.9,
-                    "type": "scene",
-                    "text": "Entrar",
-                    "sceneId": "AGRO_11",
-                    "targetYaw": -178.6,
-                    "targetPitch": 0
-                },
-                {
-                    "pitch": -10,
-                    "yaw": -167.6,
-                    "type": "scene",
-                    "text": "Salir",
-                    "sceneId": "AGRO_9",
-                    "targetYaw": 140.0,
-                    "targetPitch": 0
-                }
-            ]
-        },
-        "AGRO_11": {
-            "title": "Biblioteca de la ETSIA.(1)",
-            "hfov": 150,
-            "pitch": 0,
-            "yaw": 0,
-            "compass": true,
-            "northOffset": 70,
-            "type": "multires",
-            "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_11",
+                "basePath": "./fotos360/OTRAS/POLI_11",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",
@@ -520,104 +431,162 @@
             "hotSpots": [
                 {
                     "pitch": -9.0,
-                    "yaw": -76.0,
+                    "yaw": 135.0,
                     "type": "info",
-                    "text": "Ordenadores de consulta",
+                    "text": "Ordenador de Consulta del catálogo",
                     "URL": ""
                 },
                 {
-                    "pitch": 0.0,
-                    "yaw": -45.6,
-                    "type": "info",
-                    "text": "Mostrador de préstamo",
-                    "URL": ""
-                },
-                {
-                    "pitch": -9.9,
-                    "yaw": -178.6,
+                    "pitch": -6,
+                    "yaw": 177.9,
                     "type": "scene",
-                    "text": "Avanzar",
-                    "sceneId": "AGRO_12",
-                    "targetYaw": 180.0,
+                    "text": "Biblioteca Politecnica 4",
+                    "sceneId": "POLI_14",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -12,
+                    "yaw": 177.9,
+                    "type": "scene",
+                    "text": "Biblioteca Politecnica 3",
+                    "sceneId": "POLI_13",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -28,
+                    "yaw": 177.9,
+                    "type": "scene",
+                    "text": "Biblioteca Politecnica 2",
+                    "sceneId": "POLI_12",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -25.0,
+                    "yaw": 60,
+                    "type": "scene",
+                    "text": "Panoramica de la Entrada",
+                    "sceneId": "POLI_10",
+                    "targetYaw": -117,
                     "targetPitch": 0
                 },
                 {
                     "pitch": -5.0,
-                    "yaw": -125.0,
+                    "yaw": 40,
                     "type": "scene",
-                    "text": "A las escaleras",
-                    "sceneId": "AGRO_14",
-                    "targetYaw": -131.5,
+                    "text": "Salimos de la Biblioteca",
+                    "sceneId": "POLI_9",
+                    "targetYaw": 0.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "POLI_12": {
+            "title": "Sala de la Biblioteca Politécnica 2.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 180,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/OTRAS/POLI_12",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -16.5,
+                    "yaw": -180,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 3",
+                    "sceneId": "POLI_13",
+                    "targetYaw": 180.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -8,
+                    "yaw": -180,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 4",
+                    "sceneId": "POLI_14",
+                    "targetYaw": 180.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -18,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 1",
+                    "sceneId": "POLI_11",
+                    "targetYaw": 0.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "POLI_13": {
+            "title": "Sala de la Biblioteca Politécnica 3.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/OTRAS/POLI_13",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -18.0,
+                    "yaw": -2.2,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 2",
+                    "sceneId": "POLI_12",
+                    "targetYaw": 0,
                     "targetPitch": 0
                 },
                 {
                     "pitch": -18.0,
-                    "yaw": -12.5,
+                    "yaw": 180.2,
                     "type": "scene",
-                    "text": "Salir",
-                    "sceneId": "AGRO_10",
-                    "targetYaw": 75.0,
-                    "targetPitch": 0
-                }
-            ]
-        },
-        "AGRO_12": {
-            "title": "Biblioteca de la ETSIA.(2)",
-            "hfov": 150,
-            "pitch": 0,
-            "yaw": 0,
-            "compass": true,
-            "northOffset": 70,
-            "type": "multires",
-            "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_12",
-                "path": "/%l/%s%y_%x",
-                "fallbackPath": "/fallback/%s",
-                "extension": "jpg",
-                "tileResolution": 512,
-                "maxLevel": 3,
-                "cubeResolution": 1928
-            },
-            "hotSpots": [
-                {
-                    "pitch": -6.5,
-                    "yaw": -122.5,
-                    "type": "scene",
-                    "text": "A las escaleras",
-                    "sceneId": "AGRO_13",
-                    "targetYaw": -123.5,
-                    "targetPitch": 0
-                },
-                {
-                    "pitch": -6.5,
-                    "yaw": -62.5,
-                    "type": "scene",
-                    "text": "A las escaleras",
-                    "sceneId": "AGRO_14",
-                    "targetYaw": -44.0,
+                    "text": "Biblioteca Politécnica 4",
+                    "sceneId": "POLI_14",
+                    "targetYaw": 180,
                     "targetPitch": 0
                 },
                 {
                     "pitch": -10.0,
-                    "yaw": -2.5,
+                    "yaw": -2.2,
                     "type": "scene",
-                    "text": "A la entrada",
-                    "sceneId": "AGRO_11",
-                    "targetYaw": 0.0,
+                    "text": "Biblioteca Politécnica 1",
+                    "sceneId": "POLI_11",
+                    "targetYaw": 0,
                     "targetPitch": 0
                 }
             ]
         },
-        "AGRO_13": {
-            "title": "Biblioteca de la ETSIA.(3)",
+        "POLI_14": {
+            "title": "Sala de la Biblioteca Politécnica 4",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 180,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
             "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_13",
+                "basePath": "./fotos360/OTRAS/POLI_14",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",
@@ -627,51 +596,107 @@
             },
             "hotSpots": [
                 {
-                    "pitch": -5.0,
-                    "yaw": -160.0,
+                    "pitch": -4.0,
+                    "yaw": 140,
+                    "type": "scene",
+                    "text": "Biblioteca Politecnica Salida de Emergencia",
+                    "sceneId": "POLI_15",
+                    "targetYaw": -176.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -4,
+                    "yaw": 220.0,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 6",
+                    "sceneId": "POLI_16",
+                    "targetYaw": -177.5,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -20,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 3",
+                    "sceneId": "POLI_13",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -12,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 2",
+                    "sceneId": "POLI_12",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -7.2,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 1",
+                    "sceneId": "POLI_11",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "POLI_15": {
+            "title": "Sala de la Biblioteca Politécnica 5",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": -176,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/OTRAS/POLI_15",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -9.0,
+                    "yaw": 0.0,
                     "type": "info",
-                    "text": "Salida de emergencia",
+                    "text": "Salida de Emergencia",
                     "URL": ""
                 },
                 {
-                    "pitch": -10.0,
-                    "yaw": 0.0,
+                    "pitch": 0,
+                    "yaw": -176,
                     "type": "scene",
-                    "text": "A las otras escaleras",
-                    "sceneId": "AGRO_14",
+                    "text": "Biblioteca Politecnica 6",
+                    "sceneId": "POLI_16",
+                    "targetYaw": -176.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -2,
+                    "yaw": -123,
+                    "type": "scene",
+                    "text": "Biblioteca Politécnica 4",
+                    "sceneId": "POLI_14",
                     "targetYaw": 0.0,
                     "targetPitch": 0
-                },
-                {
-                    "pitch": -30.0,
-                    "yaw": -115.0,
-                    "type": "scene",
-                    "text": "Subir",
-                    "sceneId": "AGRO_15",
-                    "targetYaw": -4.5,
-                    "targetPitch": 0
-                },
-                {
-                    "pitch": -7.5,
-                    "yaw": 56.0,
-                    "type": "scene",
-                    "text": "Volver",
-                    "sceneId": "AGRO_12",
-                    "targetYaw": 65.0,
-                    "targetPitch": 0
                 }
             ]
         },
-        "AGRO_14": {
-            "title": "Biblioteca de la ETSIA.",
+        "POLI_16": {
+            "title": "Sala de la Biblioteca Politécnica 6",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 200,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
             "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_14",
+                "basePath": "./fotos360/OTRAS/POLI_16",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",
@@ -681,97 +706,21 @@
             },
             "hotSpots": [
                 {
-                    "pitch": -27.5,
-                    "yaw": -123.2,
+                    "pitch": -5.5,
+                    "yaw": -157.5,
                     "type": "scene",
-                    "text": "Subir",
-                    "sceneId": "AGRO_16",
-                    "targetYaw": -2.5,
+                    "text": "Biblioteca Politecnica 4",
+                    "sceneId": "POLI_14",
+                    "targetYaw": 0,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -7.0,
-                    "yaw": 55.0,
+                    "pitch": -2.7,
+                    "yaw": -90,
                     "type": "scene",
-                    "text": "A la entrada",
-                    "sceneId": "AGRO_11",
-                    "targetYaw": 42.0,
-                    "targetPitch": 0
-                },
-                {
-                    "pitch": -5.0,
-                    "yaw": 136.0,
-                    "type": "scene",
-                    "text": "Avanzar",
-                    "sceneId": "AGRO_12",
-                    "targetYaw": 117.5,
-                    "targetPitch": 0
-                },
-                {
-                    "pitch": -11.4,
-                    "yaw": -175.0,
-                    "type": "scene",
-                    "text": "A las otras escaleras",
-                    "sceneId": "AGRO_13",
-                    "targetYaw": 180.0,
-                    "targetPitch": 0
-                }
-            ]
-        },
-        "AGRO_15": {
-            "title": "Biblioteca de la ETSIA.(4)",
-            "hfov": 150,
-            "pitch": 0,
-            "yaw": 0,
-            "compass": true,
-            "northOffset": 70,
-            "type": "multires",
-            "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_15",
-                "path": "/%l/%s%y_%x",
-                "fallbackPath": "/fallback/%s",
-                "extension": "jpg",
-                "tileResolution": 512,
-                "maxLevel": 3,
-                "cubeResolution": 1928
-            },
-            "hotSpots": [
-                {
-                    "pitch": -35.0,
-                    "yaw": -172.5,
-                    "type": "scene",
-                    "text": "Bajar",
-                    "sceneId": "AGRO_13",
-                    "targetYaw": 65.0,
-                    "targetPitch": 0
-                }
-            ]
-        },
-        "AGRO_16": {
-            "title": "Biblioteca de la ETSIA.(5)",
-            "hfov": 150,
-            "pitch": 0,
-            "yaw": 0,
-            "compass": true,
-            "northOffset": 70,
-            "type": "multires",
-            "multiRes": {
-                "basePath": "./fotos360/OTRAS/AGRO_16",
-                "path": "/%l/%s%y_%x",
-                "fallbackPath": "/fallback/%s",
-                "extension": "jpg",
-                "tileResolution": 512,
-                "maxLevel": 3,
-                "cubeResolution": 1928
-            },
-            "hotSpots": [
-                {
-                    "pitch": -35.0,
-                    "yaw": -174.0,
-                    "type": "scene",
-                    "text": "Bajar",
-                    "sceneId": "AGRO_14",
-                    "targetYaw": 60.0,
+                    "text": "Biblioteca Politecnica 5",
+                    "sceneId": "POLI_15",
+                    "targetYaw": 0.0,
                     "targetPitch": 0
                 }
             ]

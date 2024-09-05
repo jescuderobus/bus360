@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    <title>Bibliotecas de la Universidad de Sevilla</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Tussam-->
+    <link rel="stylesheet" href="css/transportePublico.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Incluir CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<style>
+        
+        .img-item {
+                padding: 4px; 
+                width: 45px; 
+                height: 45px; 
+                margin-right: 10px;
+        }
+
+        .nom-bib{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4em;
+            font-weight: bold;
+            color: brown;
+            padding: 5px;
+            text-align: center;
+        }
+        .vistazo, .instruccion, .menu-item {
+            cursor: pointer; 
+            color: #0f0f0f;
+            background-color: #ddd; 
+            padding: 4px; 
+            margin-bottom: 5px; 
+            display: flex; 
+            align-items: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.4em;
+            border-radius: 5px;
+        }
+
+        .img-item {
+                padding: 4px; 
+                width: 45px; 
+                height: 45px; 
+                margin-right: 10px;
+        }
+
+        .accordion-button {
+            background-color: #ddd;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        /* Estilos personalizados para eliminar los bordes del acordeón */
+        .accordion-button {
+            border: none;
+            outline: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-item {
+            border: none;
+        }
+
+        .accordion-collapse {
+            border: none;
+        }
+        .accordion-body {
+            padding: 5px 4px;
+            margin: 0 auto; /* Centra los elementos horizontalmente */
+        }
+</style>
+
+
+<div class="leaflet-popup-content-wrapper">
+    <div class="leaflet-popup-content" style="width: 250px;">
+        <div class="nom-bib">Biblioteca de Educación</div>
+        <hr>
+            (Campus Ramón y Cajal)<br>Pirotecnia, s/n<br>41018 - Sevilla
+        <hr>
+            <b>Cómo llegar ...</b><br>
+
+
+            <div class="accordion" style="padding: 5px 0px;">
+                <div class="accordion-item">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mainCollapse" aria-expanded="true" aria-controls="mainCollapse" style="background-color: #ddd;">
+                      <img class="img-item" src="images/google-maps-svgrepo-com.svg">
+                      <img class="img-item" src="images/bus-svgrepo-com.svg">
+                      <img class="img-item" src="images/bicycle-svgrepo-com.svg">
+                      
+                    </button>
+                  <div id="mainCollapse" class="accordion-collapse collapse" aria-labelledby="mainHeading">
+                    <div class="accordion-body">
+                      
+                        <div class="accordion-item" style="border:none;">
+                            <div onclick="window.open('https://www.google.com/maps/dir//Facultad+de+Ciencias+de+la+Educaci%C3%B3n,+Calle+Pirotecnia,+Sevilla,+Espa%C3%B1a/@37.3765199,-6.0183308,13z/data=!3m1!5s0xd126bf27b46072f:0xa10289bee5ee2039!4m8!4m7!1m0!1m5!1m1!1s0xd126e9434f68549:0x2fee469803f98f44!2m2!1d-5.9771313!2d37.3764588?entry=ttu', '_blank')" class="instruccion">
+                                <img class="img-item" src="images/google-maps-svgrepo-com.svg" alt="Instrucciones">
+                                <span>con Google Maps</span>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div onclick="window.open('https://reddelineas.tussam.es/?lang=es', '_blank')" class="instruccion">
+                                <img class="img-item" src="images/bus-svgrepo-com.svg" alt="Instrucciones">
+                                <span><div class="busFlex"><div class="busG">C1</div><div class="busG">C2</div><div class="tranviaR" title="metrocentro">T1</div><div class="busB">22</div></div><div class="busFlex"><div class="busB">25</div><div class="busB">26</div><div class="busB">28</div><div class="busB">29</div></div><div class="busFlex"><div class="busB">38</div><div class="busB">52</div><div class="busBB">B4</div></div></span>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div onclick="window.open('https://www.metro-sevilla.es/mapa-y-trayectos', '_blank')" class="instruccion">
+                                <img class="img-item" src="images/train-transportation-subway-rail-svgrepo-com.svg" alt="Instrucciones">
+                                <span><div class="busFlex"><div><img width="40px" style="background:white;border-radius:50%" src="./images/metroSevilla.svg"></div></div></span>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div onclick="window.open('https://www.renfe.com/es/es/cercanias/cercanias-sevilla/lineas', '_blank')" class="instruccion">
+                                <img class="img-item" src="images/noun-train-29470.svg" alt="Instrucciones">
+                                <span><div class="busFlex"><div class="trenC1">C1</div><div class="trenC4">C4</div><div class="trenC5">C5</div></div></span>
+                            </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div onclick="window.open('https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI', '_blank')" class="instruccion">
+                            <img class="img-item" src="images/bicycle-svgrepo-com.svg" alt="Instrucciones">
+                            <span>en bicicleta / patinete</span>
+                        </div>
+                  </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+    <div onclick="window.open('EDU_Pirotecnia.html', '_self')" class="instruccion">
+        <img class="img-item" src="images/walk-svgrepo-com.svg" alt="Instrucciones">
+        <span><em>C. Pirotecnia</em></span>
+    </div>
+    <div onclick="window.open('EDU_PdteCardenas.html', '_self')" class="instruccion">
+        <img class="img-item" src="images/walk-svgrepo-com.svg" alt="Instrucciones">
+        <span><em>Avda. Presidente <br>Cárdenas</em></span>
+    </div><br><b>Echar un vistazo ...</b>
+    <div onclick="window.open('EDU_puertaBib.html', '_self')" class="vistazo">
+        <img class="img-item" src="images/eye-3-svgrepo-com.svg" alt="Vistazo">
+        <span>Entrada de la <br>Biblioteca</span>
+    </div></div></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
