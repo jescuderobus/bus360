@@ -4,7 +4,7 @@
     <meta name="generator" content="Hugo 0.48" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pannellum</title>
+    <title>Bibliotecas de Humanidades, Edificio Fábrica de Tabaco / Rectorado</title>
     <!--<script src="/cdn-cgi/apps/head/TEAHVq5cVsVoM9egFOAS6CBdXPk.js"></script>-->
     <link rel="stylesheet" href="https://pannellum.org/css/bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap-native.min.js"></script>
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/pannellum.css" />
     <script type="text/javascript" src="js/pannellum.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-hotspot.css">
+    <script src="js/custom-hotspot.js"></script>
     </head>
     <body>
 
@@ -45,10 +47,25 @@
             },
             "hotSpots": [
                 {
+                    "pitch": -0.9,
+                    "yaw": -25.4,
+                    "cssClass": "bulb_hotspot",
+                    "createTooltipFunc": bulb_hotspot,
+                    "createTooltipArgs": "Esta entrada proporciona el acceso más corto y directo a dos bibliotecas:<br><b>Bib. Sala de Manuales</b><br><b>Bib. Sala Bécquer</b>",
+
+                },
+                {
                     "pitch": "0",
                     "yaw": -85.0,
                     "type": "info",
-                    "text": "A la capilla",
+                    "text": "Capilla",
+                    "URL": ""
+                },
+                {
+                    "pitch": "0",
+                    "yaw": 86.0,
+                    "type": "info",
+                    "text": "Cárcel",
                     "URL": ""
                 },
                 {
@@ -62,7 +79,7 @@
                     "pitch": "55.5",
                     "yaw": 0.25,
                     "type": "info",
-                    "text": "Estatua de La Fama",
+                    "text": "Ángel de La Fama",
                     "URL": ""
                 },
                 {
@@ -78,7 +95,7 @@
                     "pitch": -5.0,
                     "yaw": 1.0,
                     "type": "scene",
-                    "text": "Entrar al Rectorado",
+                    "text": "Entrar a la Fábrica de Tabacos",
                     "sceneId": "HUM_3",
                     "targetYaw": -178.2,
                     "targetPitch": 0
@@ -103,6 +120,14 @@
                 "cubeResolution": 1928
             },
             "hotSpots": [
+            {
+                    "pitch": 2,
+                    "yaw": 15.4,
+                    "cssClass": "bulb_hotspot",
+                    "createTooltipFunc": bulb_hotspot,
+                    "createTooltipArgs": "Esta entrada proporciona el acceso más corto y directo a dos bibliotecas:<br><b>Bib. Sala de Arte</b><br><b>Bib. Sala Central</b>",
+
+                },
                 {
                     "pitch": "6",
                     "yaw": 169.0,
@@ -111,10 +136,17 @@
                     "URL": ""
                 },
                 {
+                    "pitch": "4",
+                    "yaw": 90.0,
+                    "type": "info",
+                    "text": "Cárcel (Dept. de Hª Moderna)",
+                    "URL": ""
+                },
+                {
                     "pitch": 0.0,
                     "yaw": -5.1,
                     "type": "scene",
-                    "text": "Entrar al Rectorado",
+                    "text": "Entrar a los patios - Bib. Sala de Arte y Bib. Sala Central",
                     "sceneId": "HUM_VESTIBULO",
                     "targetYaw": -5.0,
                     "targetPitch": 0
@@ -123,7 +155,7 @@
                     "pitch": -1.6,
                     "yaw": -99.5,
                     "type": "scene",
-                    "text": "Salir del recinto",
+                    "text": "Puerta Principal",
                     "sceneId": "HUM_1",
                     "targetYaw": -86.0,
                     "targetPitch": 0
@@ -149,10 +181,31 @@
             },
             "hotSpots": [
                 {
+                    "pitch": "6",
+                    "yaw": 76.0,
+                    "type": "info",
+                    "text": "Casa Hermandad de los Estudiantes",
+                    "URL": ""
+                },
+                {
+                    "pitch": "0",
+                    "yaw": -76.0,
+                    "type": "info",
+                    "text": "Registro General",
+                    "URL": ""
+                },
+                {
+                    "pitch": "0",
+                    "yaw": -104.0,
+                    "type": "info",
+                    "text": "Servicios Administrativos de la US",
+                    "URL": ""
+                },
+                {
                     "pitch": -6.0,
                     "yaw": -178.0,
                     "type": "scene",
-                    "text": "Hacia el patio del reloj",
+                    "text": "Hacia el patio del reloj/estatua de Santaella",
                     "sceneId": "HUM_4",
                     "targetYaw": -179.6,
                     "targetPitch": 0
@@ -169,10 +222,10 @@
             ]
         },
         "HUM_4": {
-            "title": "Acceso al patio del reloj.",
+            "title": "Acceso al patio del reloj/estatua de Santaella.",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 180,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
@@ -194,21 +247,40 @@
                     "URL": ""
                 },
                 {
-                    "pitch": "0",
+                    "pitch": -14,
+                    "yaw": -150.4,
+                    "cssClass": "arrow_right_hotspot",
+                    "createTooltipFunc": bulb_hotspot,
+                    "createTooltipArgs": "Primera puerta la derecha<br>TERCERA planta",
+
+                },
+                {
+                    "pitch": "-20",
                     "yaw": -150.0,
-                    "type": "info",
-                    "text": "Acceso a Sala de Manuales a la dcha",
-                    "URL": ""
+                    "type": "scene",
+                    "text": "Acceso a Sala de Manuales",
+                    "sceneId": "HUM_6",
+                    "targetYaw": 2.1,
+                    "targetPitch": 0
                 },
                 {
                     "pitch": -7.2,
                     "yaw": -179.6,
                     "type": "scene",
-                    "text": "Al patio",
+                    "text": "seguimos por el patio",
                     "sceneId": "HUM_5",
                     "targetYaw": 2.1,
                     "targetPitch": 0
                 },
+                {
+                    "pitch": -16,
+                    "yaw": -180.4,
+                    "cssClass": "arrow_delante_hotspot",
+                    "createTooltipFunc": arrow_hotspot,
+                    "createTooltipArgs": "segundo patio a la derecha<br> planta BAJA",
+
+                },
+
                 {
                     "pitch": -6.0,
                     "yaw": 0.1,
@@ -282,7 +354,7 @@
             ]
         },
         "HUM_6": {
-            "title": "Patio central. Acceso a la Sala de Manuales.",
+            "title": "Patio del reloj. Acceso a la Sala de Manuales.",
             "hfov": 150,
             "pitch": 0,
             "yaw": 0,
@@ -395,8 +467,8 @@
                     "pitch": "2.6",
                     "yaw": -82.5,
                     "type": "info",
-                    "text": "Comedor",
-                    "URL": ""
+                    "text": "Cafetería/Comedor",
+                    "URL": "https://sacu.us.es/spp-servicios-comedores"
                 },
                 {
                     "pitch": -7.6,
@@ -924,7 +996,7 @@
                     "pitch": -3.5,
                     "yaw": -166.0,
                     "type": "scene",
-                    "text": "Salir del Rectorado",
+                    "text": "Salir del Edificio <br>(calle San Fernando)",
                     "sceneId": "HUM_20",
                     "targetYaw": 0.0,
                     "targetPitch": 0
@@ -933,16 +1005,23 @@
                     "pitch": -10.0,
                     "yaw": -55.0,
                     "type": "scene",
-                    "text": "A la Sala Central",
+                    "text": "Escalera a la Sala Central<br> PRIMERA planta",
                     "sceneId": "HUM_21",
                     "targetYaw": -20.0,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -7.5,
-                    "yaw": -149.0,
+                    "pitch": -1.0,
+                    "yaw": -45.0,
+                    "type": "info",
+                    "text": "Frondosa Costilla de Adán<br>que impide ver la escalera",
+
+                },
+                {
+                    "pitch": -5,
+                    "yaw": -137.0,
                     "type": "scene",
-                    "text": "A la Sala de Arte",
+                    "text": "Puerta al patio de Arte<br>(detrás de la columna)",
                     "sceneId": "HUM_PUERTA",
                     "targetYaw": -35.0,
                     "targetPitch": 0
@@ -959,7 +1038,7 @@
             ]
         },
         "HUM_20": {
-            "title": "Entrada al patio",
+            "title": "Entrada al patio de Historia",
             "hfov": 150,
             "pitch": 0,
             "yaw": 0,
@@ -1528,21 +1607,21 @@
                     "pitch": "0",
                     "yaw": 50.0,
                     "type": "info",
-                    "text": "Recepción",
+                    "text": "Conserjería",
                     "URL": ""
                 },
                 {
                     "pitch": "-1",
                     "yaw": -40.0,
                     "type": "info",
-                    "text": "Sala de Manuales en 3ª planta",
+                    "text": "Sala de Manuales <br>en la TERCERA planta",
                     "URL": ""
                 },
                 {
                     "pitch": 10.0,
                     "yaw": -32.0,
                     "type": "scene",
-                    "text": "Subir a la 3ª planta",
+                    "text": "Escaleras para subir<br>a la TERCERA planta",
                     "sceneId": "HUM_32",
                     "targetYaw": 25.0,
                     "targetPitch": 0
@@ -1844,7 +1923,7 @@
             "title": "Patio de la Sala de Arte.",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 0,
+            "yaw": 180,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
@@ -1938,7 +2017,7 @@
                     "type": "scene",
                     "text": "A la Sala de Arte",
                     "sceneId": "HUM_PATIO",
-                    "targetYaw": 91.0,
+                    "targetYaw": 120.0,
                     "targetPitch": 0
                 }
             ]
@@ -1965,7 +2044,7 @@
                     "pitch": -9.0,
                     "yaw": 19.0,
                     "type": "scene",
-                    "text": "A la Sala Central",
+                    "text": "a la Sala Central<br>PRIMERA planta",
                     "sceneId": "HUM_20",
                     "targetYaw": 180.0,
                     "targetPitch": 0
@@ -1974,7 +2053,7 @@
                     "pitch": -9.0,
                     "yaw": -30.0,
                     "type": "scene",
-                    "text": "A la Sala de Arte",
+                    "text": "a la Sala de Arte<br>planta BAJA",
                     "sceneId": "HUM_PATIO",
                     "targetYaw": 135.0,
                     "targetPitch": 0
@@ -1983,13 +2062,34 @@
                     "pitch": -2.9,
                     "yaw": 179.0,
                     "type": "scene",
-                    "text": "Salir del Rectorado",
+                    "text": "Salir hacia San Fernando",
                     "sceneId": "HUM_2",
                     "targetYaw": 177.0,
                     "targetPitch": 0
                 }
             ]
         }
+    }
+});
+</script>
+
+
+
+<script>
+    // Espera a que el contenido de la página se haya cargado completamente
+document.addEventListener('DOMContentLoaded', function() {
+    // Encuentra el elemento div por sus clases
+    var compassElement = document.querySelector('.pnlm-compass.pnlm-controls.pnlm-control');
+
+    // Asegúrate de que el elemento existe en el documento
+    if(compassElement) {
+        // Agrega un event listener para el evento 'click'
+        compassElement.addEventListener('click', function() {
+            // Carga la página de Google
+            window.location.href = 'index.html';
+        });
+    } else {
+        console.log('El elemento con las clases pnlm-compass pnlm-controls pnlm-control no se encontró en el documento.');
     }
 });
 </script>
