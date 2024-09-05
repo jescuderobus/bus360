@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta name="generator" content="Hugo 0.48" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pannellum</title>
+    <!--<script src="/cdn-cgi/apps/head/TEAHVq5cVsVoM9egFOAS6CBdXPk.js"></script>-->
+    <link rel="stylesheet" href="https://pannellum.org/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap-native.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600%7CSource+Code+Pro:400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/pygments.css">
+    <link rel="stylesheet" href="css/pannellum.css" />
+    <script type="text/javascript" src="js/pannellum.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div id="panorama" style="width:100%;height:100%;"></div>
+        <script>
+        pannellum.viewer('panorama', {
+    "default": {
+        "firstScene": "HUM_24",
+        "author": "Tecnibus24",
+        "sceneFadeDuration": 1000,
+        "autoLoad": true
+    },
+    "scenes": {
+        "HUM_1": {
+            "title": "Entrada por calle San Fernando.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_1",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "0",
+                    "yaw": -85.0,
+                    "type": "info",
+                    "text": "A la capilla",
+                    "URL": ""
+                },
+                {
+                    "pitch": "5",
+                    "yaw": -178.2,
+                    "type": "info",
+                    "text": "Calle San Fernando",
+                    "URL": ""
+                },
+                {
+                    "pitch": "55.5",
+                    "yaw": 0.25,
+                    "type": "info",
+                    "text": "Estatua de La Fama",
+                    "URL": ""
+                },
+                {
+                    "pitch": -3.0,
+                    "yaw": 81.0,
+                    "type": "scene",
+                    "text": "Entrar por el patio de Historia",
+                    "sceneId": "HUM_2",
+                    "targetYaw": 30.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": 1.0,
+                    "type": "scene",
+                    "text": "Entrar al Rectorado",
+                    "sceneId": "HUM_3",
+                    "targetYaw": -178.2,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_2": {
+            "title": "Puerta a los patios de Historia.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_2",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "6",
+                    "yaw": 169.0,
+                    "type": "info",
+                    "text": "Calle San Fernando",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0.0,
+                    "yaw": -5.1,
+                    "type": "scene",
+                    "text": "Entrar al Rectorado",
+                    "sceneId": "HUM_VESTIBULO",
+                    "targetYaw": -5.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -1.6,
+                    "yaw": -99.5,
+                    "type": "scene",
+                    "text": "Salir del recinto",
+                    "sceneId": "HUM_1",
+                    "targetYaw": -86.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_3": {
+            "title": "Entrada al Rectorado de la Universidad de Sevilla.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_3",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -6.0,
+                    "yaw": -178.0,
+                    "type": "scene",
+                    "text": "Hacia el patio del reloj",
+                    "sceneId": "HUM_4",
+                    "targetYaw": -179.6,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.5,
+                    "yaw": 0.2,
+                    "type": "scene",
+                    "text": "Salir del edificio",
+                    "sceneId": "HUM_1",
+                    "targetYaw": -178.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_4": {
+            "title": "Acceso al patio del reloj.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_4",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "0-1",
+                    "yaw": -67.0,
+                    "type": "info",
+                    "text": "Acceso al Paraninfo",
+                    "URL": ""
+                },
+                {
+                    "pitch": "0",
+                    "yaw": -150.0,
+                    "type": "info",
+                    "text": "Acceso a Sala de Manuales a la dcha",
+                    "URL": ""
+                },
+                {
+                    "pitch": -7.2,
+                    "yaw": -179.6,
+                    "type": "scene",
+                    "text": "Al patio",
+                    "sceneId": "HUM_5",
+                    "targetYaw": 2.1,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -6.0,
+                    "yaw": 0.1,
+                    "type": "scene",
+                    "text": "A la entrada",
+                    "sceneId": "HUM_3",
+                    "targetYaw": 0.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_5": {
+            "title": "Patio del reloj.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_5",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "5",
+                    "yaw": 90.5,
+                    "type": "info",
+                    "text": "Maese Rodrigo Fernández de Santaella",
+                    "URL": ""
+                },
+                {
+                    "pitch": "2",
+                    "yaw": 42.8,
+                    "type": "info",
+                    "text": "Acceso a Gipsoteca",
+                    "URL": ""
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": 157.0,
+                    "type": "scene",
+                    "text": "Hacia la Sala de Manuales",
+                    "sceneId": "HUM_6",
+                    "targetYaw": 32.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -6.9,
+                    "yaw": 2.1,
+                    "type": "scene",
+                    "text": "Avanzar hacia el patio central",
+                    "sceneId": "HUM_7",
+                    "targetYaw": -87.57,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.5,
+                    "yaw": -178.2,
+                    "type": "scene",
+                    "text": "Volver a la entrada",
+                    "sceneId": "HUM_4",
+                    "targetYaw": 0.2,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_6": {
+            "title": "Patio central. Acceso a la Sala de Manuales.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_6",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -10.0,
+                    "yaw": 0.0,
+                    "type": "scene",
+                    "text": "A la Sala de Manuales",
+                    "sceneId": "HUM_31",
+                    "targetYaw": -10.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -7.2,
+                    "yaw": -119.0,
+                    "type": "scene",
+                    "text": "Seguir por el Rectorado",
+                    "sceneId": "HUM_5",
+                    "targetYaw": -50.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_7": {
+            "title": "Patio del reloj. Acceso al patio central.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_7",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -7.45,
+                    "yaw": -87.57,
+                    "type": "scene",
+                    "text": "Al patio central",
+                    "sceneId": "HUM_8",
+                    "targetYaw": 0.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0.0,
+                    "yaw": 4.5,
+                    "type": "scene",
+                    "text": "A la Gipsoteca",
+                    "sceneId": "HUM_17",
+                    "targetYaw": 0.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -7.5,
+                    "yaw": 92.6,
+                    "type": "scene",
+                    "text": "Al patio del reloj",
+                    "sceneId": "HUM_5",
+                    "targetYaw": -177.8,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_8": {
+            "title": "Patio central. Acceso al patio del reloj.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_8",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "-3",
+                    "yaw": 145.0,
+                    "type": "info",
+                    "text": "Aseos",
+                    "URL": ""
+                },
+                {
+                    "pitch": "2.6",
+                    "yaw": -82.5,
+                    "type": "info",
+                    "text": "Comedor",
+                    "URL": ""
+                },
+                {
+                    "pitch": -7.6,
+                    "yaw": 9.0,
+                    "type": "scene",
+                    "text": "A la fuente",
+                    "sceneId": "HUM_9",
+                    "targetYaw": 40.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": 44.0,
+                    "type": "scene",
+                    "text": "A la Sala Bécquer",
+                    "sceneId": "HUM_10",
+                    "targetYaw": -15.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -9.9,
+                    "yaw": -179.2,
+                    "type": "scene",
+                    "text": "Al patio del reloj",
+                    "sceneId": "HUM_7",
+                    "targetYaw": 92.5,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_9": {
+            "title": "Fuente del patio central.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_9",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -6.0,
+                    "yaw": 77.5,
+                    "type": "scene",
+                    "text": "A la Sala Bécquer",
+                    "sceneId": "HUM_10",
+                    "targetYaw": -0.2,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10.0,
+                    "yaw": -179.8,
+                    "type": "scene",
+                    "text": "Hacia el patio del reloj",
+                    "sceneId": "HUM_8",
+                    "targetYaw": -178.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_10": {
+            "title": "Patio central. Pasillo de la Sala Bécquer.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_10",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "4",
+                    "yaw": 85.5,
+                    "type": "info",
+                    "text": "Aseos",
+                    "URL": ""
+                },
+                {
+                    "pitch": -5.4,
+                    "yaw": -0.3,
+                    "type": "scene",
+                    "text": "A la Sala Bécquer",
+                    "sceneId": "HUM_11",
+                    "targetYaw": 2.5,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -4.0,
+                    "yaw": 115.8,
+                    "type": "scene",
+                    "text": "Al patio del reloj",
+                    "sceneId": "HUM_8",
+                    "targetYaw": -150.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10.0,
+                    "yaw": 172.5,
+                    "type": "scene",
+                    "text": "Avanzar hasta la fuente",
+                    "sceneId": "HUM_9",
+                    "targetYaw": -30.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_11": {
+            "title": "Acceso a la Sala Bécquer.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_11",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "0",
+                    "yaw": 94.5,
+                    "type": "info",
+                    "text": "Sala Bécquer",
+                    "URL": ""
+                },
+                {
+                    "pitch": -4.5,
+                    "yaw": 2.5,
+                    "type": "scene",
+                    "text": "Al patio de Geogr. e H.ª",
+                    "sceneId": "HUM_12",
+                    "targetYaw": 0.1,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -6.0,
+                    "yaw": -178.4,
+                    "type": "scene",
+                    "text": "Al patio central",
+                    "sceneId": "HUM_10",
+                    "targetYaw": -179.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_12": {
+            "title": "Patio de la Facultad de Geografía e Historia.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_12",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -4.52,
+                    "yaw": 0.2,
+                    "type": "scene",
+                    "text": "A la conserjería de Geogr. e H.ª",
+                    "sceneId": "HUM_13",
+                    "targetYaw": 5.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -4.0,
+                    "yaw": 179.75,
+                    "type": "scene",
+                    "text": "A la Sala Bécquer",
+                    "sceneId": "HUM_11",
+                    "targetYaw": -178.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_13": {
+            "title": "Acceso al patio desde calle Doña María de Padilla.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_13",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -5.5,
+                    "yaw": 5.0,
+                    "type": "scene",
+                    "text": "A la conserjería de Geogr. e H.ª",
+                    "sceneId": "HUM_14",
+                    "targetYaw": 0.2,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.5,
+                    "yaw": -175.0,
+                    "type": "scene",
+                    "text": "Al patio de Geogr. e H.ª",
+                    "sceneId": "HUM_12",
+                    "targetYaw": 179.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_14": {
+            "title": "Salida por calle Doña María de Padilla.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_14",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "-1",
+                    "yaw": 0.6,
+                    "type": "info",
+                    "text": "Salida por Doña María de Padilla",
+                    "URL": ""
+                },
+                {
+                    "pitch": "0",
+                    "yaw": -60.0,
+                    "type": "info",
+                    "text": "Conserjería",
+                    "URL": ""
+                },
+                {
+                    "pitch": "1",
+                    "yaw": -76.0,
+                    "type": "info",
+                    "text": "Copistería",
+                    "URL": ""
+                },
+                {
+                    "pitch": "0",
+                    "yaw": -89.0,
+                    "type": "info",
+                    "text": "A la Fac. de Filología",
+                    "URL": ""
+                },
+                {
+                    "pitch": -7.0,
+                    "yaw": 90.5,
+                    "type": "scene",
+                    "text": "Al patio de Historia",
+                    "sceneId": "HUM_15",
+                    "targetYaw": 2.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -7.5,
+                    "yaw": -179.0,
+                    "type": "scene",
+                    "text": "Al patio de Geogr. e H.ª",
+                    "sceneId": "HUM_13",
+                    "targetYaw": -175.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_15": {
+            "title": "Pasillo este. Facultad de Geografía e Historia.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_15",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "3",
+                    "yaw": 79.0,
+                    "type": "info",
+                    "text": "Medios Audiovisuales",
+                    "URL": ""
+                },
+                {
+                    "pitch": "5",
+                    "yaw": -72.5,
+                    "type": "info",
+                    "text": "Administración",
+                    "URL": ""
+                },
+                {
+                    "pitch": "1",
+                    "yaw": -149.0,
+                    "type": "info",
+                    "text": "Secretaría",
+                    "URL": ""
+                },
+                {
+                    "pitch": -13.0,
+                    "yaw": 2.0,
+                    "type": "scene",
+                    "text": "Al patio de Historia",
+                    "sceneId": "HUM_16",
+                    "targetYaw": -82.5,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.2,
+                    "yaw": -178.0,
+                    "type": "scene",
+                    "text": "A la conserjería de Geogr. e H.ª",
+                    "sceneId": "HUM_14",
+                    "targetYaw": -88.3,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_16": {
+            "title": "Pasillo este. Acceso a la Gipsoteca.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_16",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "3",
+                    "yaw": 175.0,
+                    "type": "info",
+                    "text": "Sala de Juntas",
+                    "URL": ""
+                },
+                {
+                    "pitch": -3.0,
+                    "yaw": 0.9,
+                    "type": "scene",
+                    "text": "A la Gipsoteca",
+                    "sceneId": "HUM_17",
+                    "targetYaw": 180.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -4.0,
+                    "yaw": -88.0,
+                    "type": "scene",
+                    "text": "Al patio de Historia",
+                    "sceneId": "HUM_18",
+                    "targetYaw": 0.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -8.0,
+                    "yaw": 90.5,
+                    "type": "scene",
+                    "text": "A la conserjería de Geogr. e H.ª",
+                    "sceneId": "HUM_15",
+                    "targetYaw": -177.6,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_17": {
+            "title": "Gipsoteca.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_17",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -1.5,
+                    "yaw": 180.0,
+                    "type": "scene",
+                    "text": "Salir al patio del reloj",
+                    "sceneId": "HUM_7",
+                    "targetYaw": -179.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -2.5,
+                    "yaw": 0.0,
+                    "type": "scene",
+                    "text": "Al pasillo de Geogr. e H.ª",
+                    "sceneId": "HUM_16",
+                    "targetYaw": 180.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_18": {
+            "title": "Pasillo este. Acceso al patio.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_18",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "-5",
+                    "yaw": 91.2,
+                    "type": "info",
+                    "text": "Aseos",
+                    "URL": ""
+                },
+                {
+                    "pitch": -6.0,
+                    "yaw": 8.0,
+                    "type": "scene",
+                    "text": "Salir al patio",
+                    "sceneId": "HUM_19",
+                    "targetYaw": -125.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -2.5,
+                    "yaw": -177.5,
+                    "type": "scene",
+                    "text": "Avanzar por el Rectorado",
+                    "sceneId": "HUM_16",
+                    "targetYaw": 91.5,
+                    "targetPitch": 2
+                }
+            ]
+        },
+        "HUM_19": {
+            "title": "Patio de los departamentos de Historia.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_19",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -3.5,
+                    "yaw": -166.0,
+                    "type": "scene",
+                    "text": "Salir del Rectorado",
+                    "sceneId": "HUM_20",
+                    "targetYaw": 0.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10.0,
+                    "yaw": -55.0,
+                    "type": "scene",
+                    "text": "A la Sala Central",
+                    "sceneId": "HUM_21",
+                    "targetYaw": -20.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -7.5,
+                    "yaw": -149.0,
+                    "type": "scene",
+                    "text": "A la Sala de Arte",
+                    "sceneId": "HUM_PUERTA",
+                    "targetYaw": -35.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": -10.0,
+                    "type": "scene",
+                    "text": "Seguir por el Rectorado",
+                    "sceneId": "HUM_18",
+                    "targetYaw": -178.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_20": {
+            "title": "Entrada al patio",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_20",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -15.0,
+                    "yaw": 9.0,
+                    "type": "scene",
+                    "text": "Salir del Rectorado",
+                    "sceneId": "HUM_VESTIBULO",
+                    "targetYaw": -162.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -19.0,
+                    "yaw": 169.0,
+                    "type": "scene",
+                    "text": "Avanzar por el patio",
+                    "sceneId": "HUM_PUERTA",
+                    "targetYaw": 110.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": -161.0,
+                    "type": "scene",
+                    "text": "A la fuente del patio",
+                    "sceneId": "HUM_19",
+                    "targetYaw": 0.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_21": {
+            "title": "Escaleras a la Sala Central. Acceso a la Sala de Arte.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_21",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "-2",
+                    "yaw": -62.4,
+                    "type": "info",
+                    "text": "Sala de Arte (entrada de personal)",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0.0,
+                    "yaw": 15.5,
+                    "type": "scene",
+                    "text": "Subir a la Sala Central",
+                    "sceneId": "HUM_22",
+                    "targetYaw": -34.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": -140.0,
+                    "type": "scene",
+                    "text": "A la Sala de Arte",
+                    "sceneId": "HUM_PUERTA",
+                    "targetYaw": -70.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10.0,
+                    "yaw": 176.0,
+                    "type": "scene",
+                    "text": "A la fuente",
+                    "sceneId": "HUM_19",
+                    "targetYaw": 145.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_22": {
+            "title": "Escaleras a la Sala Central.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_22",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "5",
+                    "yaw": 15.0,
+                    "type": "info",
+                    "text": "Acceso a departamentos",
+                    "URL": ""
+                },
+                {
+                    "pitch": -14.0,
+                    "yaw": 19.5,
+                    "type": "scene",
+                    "text": "Subir las escaleras",
+                    "sceneId": "HUM_23",
+                    "targetYaw": -65.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -32.0,
+                    "yaw": 75.0,
+                    "type": "scene",
+                    "text": "Bajar las escaleras",
+                    "sceneId": "HUM_21",
+                    "targetYaw": -175.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_23": {
+            "title": "Escaleras a la Sala Central.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_23",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0.0,
+                    "yaw": 0.0,
+                    "type": "scene",
+                    "text": "Subir a la Sala Central",
+                    "sceneId": "HUM_24",
+                    "targetYaw": -46.8,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -40.0,
+                    "yaw": 98.0,
+                    "type": "scene",
+                    "text": "Bajar las escaleras",
+                    "sceneId": "HUM_22",
+                    "targetYaw": 175.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_24": {
+            "title": "Acceso a la Sala Central de Geografía e Historia.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_24",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -10.0,
+                    "yaw": 0.0,
+                    "type": "scene",
+                    "text": "A la Sala Central",
+                    "sceneId": "HUM_25",
+                    "targetYaw": 0.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -18.0,
+                    "yaw": 66.0,
+                    "type": "scene",
+                    "text": "Volver al patio",
+                    "sceneId": "HUM_23",
+                    "targetYaw": 150.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_25": {
+            "title": "Sala Central. Entrada.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_25",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "-7",
+                    "yaw": -5.0,
+                    "type": "info",
+                    "text": "Zona de estudio",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-19",
+                    "yaw": 61.5,
+                    "type": "info",
+                    "text": "Puesto movilidad reducida",
+                    "URL": ""
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": 30.0,
+                    "type": "scene",
+                    "text": "A las mesas",
+                    "sceneId": "HUM_26",
+                    "targetYaw": 160.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": -27.0,
+                    "type": "scene",
+                    "text": "Al mostrador",
+                    "sceneId": "HUM_27",
+                    "targetYaw": 175.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10.0,
+                    "yaw": 179.6,
+                    "type": "scene",
+                    "text": "Salir",
+                    "sceneId": "HUM_24",
+                    "targetYaw": 180.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_26": {
+            "title": "Sala Central. Puestos de estudio.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_26",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -3.0,
+                    "yaw": 52.0,
+                    "type": "scene",
+                    "text": "Avanzar",
+                    "sceneId": "HUM_27",
+                    "targetYaw": 58.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": -42.8,
+                    "type": "scene",
+                    "text": "Volver",
+                    "sceneId": "HUM_25",
+                    "targetYaw": -160.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_27": {
+            "title": "Sala Central. Mostrador y oficinas.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_27",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "-3.5",
+                    "yaw": 7.0,
+                    "type": "info",
+                    "text": "Salida de emergencia",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-5",
+                    "yaw": 136.0,
+                    "type": "info",
+                    "text": "Administración de la Biblioteca",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-10",
+                    "yaw": 160.0,
+                    "type": "info",
+                    "text": "Ordenador de consulta",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-0.5",
+                    "yaw": -141.0,
+                    "type": "info",
+                    "text": "Ordenadores de consulta",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-25",
+                    "yaw": -85.0,
+                    "type": "info",
+                    "text": "Selección de destacados",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-15",
+                    "yaw": -42.0,
+                    "type": "info",
+                    "text": "Escáner",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-5",
+                    "yaw": -155.0,
+                    "type": "info",
+                    "text": "Mostrador de información y préstamo",
+                    "URL": ""
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": -30.0,
+                    "type": "scene",
+                    "text": "Salir",
+                    "sceneId": "HUM_25",
+                    "targetYaw": 165.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": -110.0,
+                    "type": "scene",
+                    "text": "A las mesas",
+                    "sceneId": "HUM_26",
+                    "targetYaw": -150.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_28": {
+            "title": "Sala de Arte. Entrada.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_28",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "-5",
+                    "yaw": 135.0,
+                    "type": "info",
+                    "text": "Mostrador de información y préstamo",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-6",
+                    "yaw": 77.5,
+                    "type": "info",
+                    "text": "Novedades",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-3",
+                    "yaw": -80.0,
+                    "type": "info",
+                    "text": "Ordenadores de consulta",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-2.8",
+                    "yaw": 38.0,
+                    "type": "info",
+                    "text": "Zona de estudio",
+                    "URL": ""
+                },
+                {
+                    "pitch": -12.0,
+                    "yaw": 21.0,
+                    "type": "scene",
+                    "text": "Avanzar",
+                    "sceneId": "HUM_29",
+                    "targetYaw": 35.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -4.5,
+                    "yaw": -148.0,
+                    "type": "scene",
+                    "text": "Salir",
+                    "sceneId": "HUM_PATIO",
+                    "targetYaw": -10.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_29": {
+            "title": "Sala de Arte. Puestos de estudio.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_29",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -6.0,
+                    "yaw": 28.0,
+                    "type": "scene",
+                    "text": "Avanzar",
+                    "sceneId": "HUM_30",
+                    "targetYaw": 0.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -14.0,
+                    "yaw": -105.5,
+                    "type": "scene",
+                    "text": "A la entrada",
+                    "sceneId": "HUM_28",
+                    "targetYaw": -170.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_30": {
+            "title": "Sala de Arte.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_30",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -7.0,
+                    "yaw": -173.0,
+                    "type": "scene",
+                    "text": "volver",
+                    "sceneId": "HUM_29",
+                    "targetYaw": -150.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_31": {
+            "title": "Acceso a la Sala de Manuales. Planta baja.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_31",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "-4",
+                    "yaw": -58.5,
+                    "type": "info",
+                    "text": "Ascensor",
+                    "URL": ""
+                },
+                {
+                    "pitch": "0",
+                    "yaw": 50.0,
+                    "type": "info",
+                    "text": "Recepción",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-1",
+                    "yaw": -40.0,
+                    "type": "info",
+                    "text": "Sala de Manuales en 3ª planta",
+                    "URL": ""
+                },
+                {
+                    "pitch": 10.0,
+                    "yaw": -32.0,
+                    "type": "scene",
+                    "text": "Subir a la 3ª planta",
+                    "sceneId": "HUM_32",
+                    "targetYaw": 25.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -12.0,
+                    "yaw": 172.0,
+                    "type": "scene",
+                    "text": "Salir al patio",
+                    "sceneId": "HUM_6",
+                    "targetYaw": -165.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_32": {
+            "title": "Acceso a la Sala de Manuales. Tercera planta.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_32",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "-5",
+                    "yaw": 162.0,
+                    "type": "info",
+                    "text": "Aseos",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-11",
+                    "yaw": 175.0,
+                    "type": "info",
+                    "text": "Ascensor",
+                    "URL": ""
+                },
+                {
+                    "pitch": -17.5,
+                    "yaw": 4.0,
+                    "type": "scene",
+                    "text": "Entrar",
+                    "sceneId": "HUM_33",
+                    "targetYaw": 15.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -30.0,
+                    "yaw": -115.0,
+                    "type": "scene",
+                    "text": "Bajar",
+                    "sceneId": "HUM_31",
+                    "targetYaw": 175.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_33": {
+            "title": "Acceso a la Sala de Manuales.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_33",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -7.0,
+                    "yaw": -6.0,
+                    "type": "scene",
+                    "text": "A la Sala de Manuales",
+                    "sceneId": "HUM_34",
+                    "targetYaw": 30.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -15.0,
+                    "yaw": -119.0,
+                    "type": "scene",
+                    "text": "Volver",
+                    "sceneId": "HUM_32",
+                    "targetYaw": -142.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_34": {
+            "title": "Sala de Manuales. Entrada.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_34",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -12.0,
+                    "yaw": -28.0,
+                    "type": "scene",
+                    "text": "Avanzar",
+                    "sceneId": "HUM_35",
+                    "targetYaw": -10.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10.0,
+                    "yaw": -125.0,
+                    "type": "scene",
+                    "text": "Salir de la sala",
+                    "sceneId": "HUM_33",
+                    "targetYaw": -170.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_35": {
+            "title": "Sala de Manuales. Puestos de estudio y consulta..",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_35",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "-5",
+                    "yaw": -120.0,
+                    "type": "info",
+                    "text": "Ordenadores de consulta",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-9.5",
+                    "yaw": -40.0,
+                    "type": "info",
+                    "text": "Zona de estudio",
+                    "URL": ""
+                },
+                {
+                    "pitch": -3.0,
+                    "yaw": -22.0,
+                    "type": "scene",
+                    "text": "Avanzar",
+                    "sceneId": "HUM_36",
+                    "targetYaw": 75.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -15.0,
+                    "yaw": 170.0,
+                    "type": "scene",
+                    "text": "A la entrada",
+                    "sceneId": "HUM_34",
+                    "targetYaw": 150.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_36": {
+            "title": "Sala de Manuales. Mostrador.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_36",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "-5",
+                    "yaw": -175.0,
+                    "type": "info",
+                    "text": "Mostrador de información y préstamo",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-17",
+                    "yaw": -99.0,
+                    "type": "info",
+                    "text": "Puestos personas con discapacidad",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-7",
+                    "yaw": 22.0,
+                    "type": "info",
+                    "text": "Zona de estudio",
+                    "URL": ""
+                },
+                {
+                    "pitch": -4.0,
+                    "yaw": 2.0,
+                    "type": "scene",
+                    "text": "Avanzar",
+                    "sceneId": "HUM_37",
+                    "targetYaw": 0.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -2.6,
+                    "yaw": -112.0,
+                    "type": "scene",
+                    "text": "Volver",
+                    "sceneId": "HUM_35",
+                    "targetYaw": 179.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_37": {
+            "title": "Sala de Manuales. Depósito.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_37",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": "8",
+                    "yaw": -25.0,
+                    "type": "info",
+                    "text": "Depósito",
+                    "URL": ""
+                },
+                {
+                    "pitch": "-10",
+                    "yaw": -120.0,
+                    "type": "info",
+                    "text": "Puesto personas con discapacidad",
+                    "URL": ""
+                },
+                {
+                    "pitch": -5.0,
+                    "yaw": -178.0,
+                    "type": "scene",
+                    "text": "Volver",
+                    "sceneId": "HUM_36",
+                    "targetYaw": -174.5,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_PATIO": {
+            "title": "Patio de la Sala de Arte.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_PATIO",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -4.0,
+                    "yaw": -50.5,
+                    "type": "scene",
+                    "text": "Salir del Rectorado",
+                    "sceneId": "HUM_VESTIBULO",
+                    "targetYaw": 120.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -7.0,
+                    "yaw": -90.0,
+                    "type": "scene",
+                    "text": "A la Sala Central",
+                    "sceneId": "HUM_PUERTA",
+                    "targetYaw": -174.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0.0,
+                    "yaw": 176.0,
+                    "type": "scene",
+                    "text": "A la Sala de Arte",
+                    "sceneId": "HUM_28",
+                    "targetYaw": 30.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_PUERTA": {
+            "title": "Acceso al patio de la Sala de Arte.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_PUERTA",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -9.5,
+                    "yaw": 138.0,
+                    "type": "scene",
+                    "text": "A la fuente del patio",
+                    "sceneId": "HUM_19",
+                    "targetYaw": 25.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -20.0,
+                    "yaw": -70.0,
+                    "type": "scene",
+                    "text": "Salir del Rectorado",
+                    "sceneId": "HUM_20",
+                    "targetYaw": -5.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -6.0,
+                    "yaw": 95.0,
+                    "type": "scene",
+                    "text": "A la Sala Central",
+                    "sceneId": "HUM_21",
+                    "targetYaw": 25.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -7.8,
+                    "yaw": 7.0,
+                    "type": "scene",
+                    "text": "A la Sala de Arte",
+                    "sceneId": "HUM_PATIO",
+                    "targetYaw": 91.0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "HUM_VESTIBULO": {
+            "title": "Acceso a los patios de Historia desde el exterior.",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/RECTORADO/HUM_VESTIBULO",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -9.0,
+                    "yaw": 19.0,
+                    "type": "scene",
+                    "text": "A la Sala Central",
+                    "sceneId": "HUM_20",
+                    "targetYaw": 180.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -9.0,
+                    "yaw": -30.0,
+                    "type": "scene",
+                    "text": "A la Sala de Arte",
+                    "sceneId": "HUM_PATIO",
+                    "targetYaw": 135.0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -2.9,
+                    "yaw": 179.0,
+                    "type": "scene",
+                    "text": "Salir del Rectorado",
+                    "sceneId": "HUM_2",
+                    "targetYaw": 177.0,
+                    "targetPitch": 0
+                }
+            ]
+        }
+    }
+});
+</script>
+
+</body>
+</html>

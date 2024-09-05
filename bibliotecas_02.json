@@ -445,24 +445,60 @@
         "lng": -5.99129,
         "direccion": "(Campus Rectorado)<br>Dª María de Padilla, s/n<br>41004 - Sevilla",
         "imagen":"",
-        "como_llegar_tpublico": [
+        "como_llegar_tpublico":  [
+            {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Universidad+de+Sevilla+Rectorado,+C.+San+Fernando,+21,+Casco+Antiguo,+41004+Sevilla/@37.381352,-5.9920094,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd126c1885db956b:0xda3a8b8479cb31e9!2m2!1d-5.9907212!2d37.3812909?entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='busG'>C3</div><div class='busG'>C4</div></div><div class='busFlex'><div class='busR'>1</div><div class='busR'>5</div><div class='tranviaR' title='metrocentro'>T1</div></div><div class='busFlex'><div class='busB'>2x</div><div class='busB'>3x</div><div class='busB'>4x</div></div></div>",
+                
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/train-transportation-subway-rail-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div><img width='40px' style='background:white;border-radius:50%' src='./images/metroSevilla.svg'></div></div>",
+                "url": "https://www.metro-sevilla.es/mapa-y-trayectos",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+        "como_llegar_pie": [
             {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "desde la calle",
-                "url": "NO_calle.html",
+                "texto": "desde <em>San Fernando</em>",
+                "url": "HUM_SANFERNANDO.html",
                 "target": "_self"
             }
-        ],
-        "como_llegar_pie": [
-
         ],
         "echar_un_vistazo":[
             {
                 "imagen": "images/eye-3-svgrepo-com.svg",
-                "texto": "Entrada de la Biblioteca",
-                "url": "NO_puertaBib.html",
+                "texto": "Sala Central",
+                "url": "HUM_puertaCentral.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Sala Manuales",
+                "url": "HUM_puertaManuales.html",
+                "target": "_self"
+            },
+            {
+                "imagen": "images/eye-3-svgrepo-com.svg",
+                "texto": "Sala Arte",
+                "url": "HUM_puertaArte.html",
                 "target": "_self"
             }
+
         ]
     },
     {
