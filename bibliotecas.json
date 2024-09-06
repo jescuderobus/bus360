@@ -510,13 +510,42 @@
         "imagen":"",
         "como_llegar_tpublico": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Biblioteca+de+Derecho+y+CC.+del+Trabajo,+Calle+Enramadilla,+Sevilla/@37.3773766,-6.0190022,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0xd126f50fa568c2b:0x7ab14aba546208d7!2m2!1d-5.9778027!2d37.3773155?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='tranviaR' title='metrocentro'>T1</div><div class='busB'>22</div></div><div class='busFlex'><div class='busB'>25</div><div class='busB'>26</div><div class='busB'>28</div><div class='busB'>29</div></div><div class='busFlex'><div class='busB'>38</div><div class='busB'>52</div><div class='busBB'>B4</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/train-transportation-subway-rail-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div><img width='40px' style='background:white;border-radius:50%' src='./images/metroSevilla.svg'></div></div>",
+                "url": "https://www.metro-sevilla.es/mapa-y-trayectos",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/noun-train-29470.svg", 
+                "texto": "<div class='busFlex'><div class='trenC1'>C1</div><div class='trenC4'>C4</div><div class='trenC5'>C5</div></div>",
+                "url": "https://www.renfe.com/es/es/cercanias/cercanias-sevilla/lineas",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+        "como_llegar_pie": [
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "Avda. Presidente Cárdenas",
+                "texto": "desde la calle",
                 "url": "NO_calle.html",
                 "target": "_self"
             }
-        ],
-        "como_llegar_pie": [
             
         ],
         "echar_un_vistazo":[
@@ -598,13 +627,42 @@
         "imagen":"",
         "como_llegar_tpublico": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Biblioteca+de+Derecho+y+CC.+del+Trabajo,+Calle+Enramadilla,+Sevilla/@37.3773766,-6.0190022,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0xd126f50fa568c2b:0x7ab14aba546208d7!2m2!1d-5.9778027!2d37.3773155?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='tranviaR' title='metrocentro'>T1</div><div class='busB'>22</div></div><div class='busFlex'><div class='busB'>25</div><div class='busB'>26</div><div class='busB'>28</div><div class='busB'>29</div></div><div class='busFlex'><div class='busB'>38</div><div class='busB'>52</div><div class='busBB'>B4</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/train-transportation-subway-rail-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div><img width='40px' style='background:white;border-radius:50%' src='./images/metroSevilla.svg'></div></div>",
+                "url": "https://www.metro-sevilla.es/mapa-y-trayectos",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/noun-train-29470.svg", 
+                "texto": "<div class='busFlex'><div class='trenC1'>C1</div><div class='trenC4'>C4</div><div class='trenC5'>C5</div></div>",
+                "url": "https://www.renfe.com/es/es/cercanias/cercanias-sevilla/lineas",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+        "como_llegar_pie": [
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
                 "texto": "desde la calle",
                 "url": "NO_calle.html",
                 "target": "_self"
             }
-        ],
-        "como_llegar_pie": [
             
         ],
         "echar_un_vistazo":[
@@ -625,13 +683,42 @@
         "imagen":"",
         "como_llegar_tpublico": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Facultad+de+Ciencias+de+la+Educaci%C3%B3n,+Calle+Pirotecnia,+Sevilla,+Espa%C3%B1a/@37.3765199,-6.0183308,13z/data=!3m1!5s0xd126bf27b46072f:0xa10289bee5ee2039!4m8!4m7!1m0!1m5!1m1!1s0xd126e9434f68549:0x2fee469803f98f44!2m2!1d-5.9771313!2d37.3764588?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='tranviaR' title='metrocentro'>T1</div><div class='busB'>22</div></div><div class='busFlex'><div class='busB'>25</div><div class='busB'>26</div><div class='busB'>28</div><div class='busB'>29</div></div><div class='busFlex'><div class='busB'>38</div><div class='busB'>52</div><div class='busBB'>B4</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/train-transportation-subway-rail-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div><img width='40px' style='background:white;border-radius:50%' src='./images/metroSevilla.svg'></div></div>",
+                "url": "https://www.metro-sevilla.es/mapa-y-trayectos",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/noun-train-29470.svg", 
+                "texto": "<div class='busFlex'><div class='trenC1'>C1</div><div class='trenC4'>C4</div><div class='trenC5'>C5</div></div>",
+                "url": "https://www.renfe.com/es/es/cercanias/cercanias-sevilla/lineas",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+        "como_llegar_pie": [
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
                 "texto": "desde la calle",
                 "url": "NO_calle.html",
                 "target": "_self"
             }
-        ],
-        "como_llegar_pie": [
             
         ],
         "echar_un_vistazo":[
@@ -652,13 +739,42 @@
         "imagen":"",
         "como_llegar_tpublico": [
             {
+                "imagen": "images/google-maps-svgrepo-com.svg", 
+                "texto": "con Google Maps",
+                "url": "https://www.google.com/maps/dir//Facultad+de+Ciencias+de+la+Educaci%C3%B3n,+Calle+Pirotecnia,+Sevilla,+Espa%C3%B1a/@37.3765199,-6.0183308,13z/data=!3m1!5s0xd126bf27b46072f:0xa10289bee5ee2039!4m8!4m7!1m0!1m5!1m1!1s0xd126e9434f68549:0x2fee469803f98f44!2m2!1d-5.9771313!2d37.3764588?entry=ttu",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bus-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div class='busG'>C1</div><div class='busG'>C2</div><div class='tranviaR' title='metrocentro'>T1</div><div class='busB'>22</div></div><div class='busFlex'><div class='busB'>25</div><div class='busB'>26</div><div class='busB'>28</div><div class='busB'>29</div></div><div class='busFlex'><div class='busB'>38</div><div class='busB'>52</div><div class='busBB'>B4</div></div>",
+                "url": "https://reddelineas.tussam.es/?lang=es",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/train-transportation-subway-rail-svgrepo-com.svg", 
+                "texto": "<div class='busFlex'><div><img width='40px' style='background:white;border-radius:50%' src='./images/metroSevilla.svg'></div></div>",
+                "url": "https://www.metro-sevilla.es/mapa-y-trayectos",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/noun-train-29470.svg", 
+                "texto": "<div class='busFlex'><div class='trenC1'>C1</div><div class='trenC4'>C4</div><div class='trenC5'>C5</div></div>",
+                "url": "https://www.renfe.com/es/es/cercanias/cercanias-sevilla/lineas",
+                "target": "_blank"
+            },
+            {
+                "imagen": "images/bicycle-svgrepo-com.svg", 
+                "texto": "en bicicleta / patinete",
+                "url": "https://sig.urbanismosevilla.org/VisorGis/geoSevilla.asp?Layers=BICI",
+                "target": "_blank"
+            }],
+        "como_llegar_pie": [
+            {
                 "imagen": "images/walk-svgrepo-com.svg",
                 "texto": "desde la calle",
                 "url": "NO_calle.html",
                 "target": "_self"
             }
-        ],
-        "como_llegar_pie": [
             
         ],
         "echar_un_vistazo":[

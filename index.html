@@ -17,7 +17,8 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
     <!-- Incluir Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--Style02-->
     <link rel="stylesheet" href="css/style_02.css" />
@@ -358,24 +359,57 @@
 
 
 
-    <!-- Modal HTML -->
-    <div id="helpModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Ayuda</h2>
-            <p>Esta aplicación hace un recorrido virtual por las Bibliotecas de la Universidad de Sevilla.</p>
-            <p>Si en su recorrido desea volver a esta página para recomenzar, pulse en la brújula que se encuentra en parte inferior derecha de todas las páginas. </p>
-            <p>Para todas las Bibliotecas tenemos en la sección <b>"Como llegar"</b> enlaces para desplazarte a estas usando transporte público (Tussam/Metro/tren), privado (rutas de Google/carriles bici) y a pie desde calles cercanas.</p>
-            <p>La sección <b>"Echar un vistazo"</b> hace un recorrido por las bibliotcas desde su puerta de entrada.</p>
-            <br>
-            <hr>
-            <p><small>
-                Esta aplicación ha sido realizada por los becarios de informática de la biblioteca <b>tecnibus24</b> (<em>Álvaro, Gonzalo y Patricia</em>).
-                Esperamos que disfrutes usando esta aplicación tanto como nosotros lo hemos hecho al hacerla para tí.
-            </small>
-            </p>
+<!-- Modal HTML -->
+<div id="helpModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="helpTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="help-tab" data-bs-toggle="tab" data-bs-target="#help-section" type="button" role="tab" aria-controls="help-section" aria-selected="true">Ayuda</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="credits-tab" data-bs-toggle="tab" data-bs-target="#credits-section" type="button" role="tab" aria-controls="credits-section" aria-selected="false">Créditos</button>
+            </li>
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content" id="helpTabsContent">
+            <!-- Help Section -->
+            <div class="tab-pane fade show active" id="help-section" role="tabpanel" aria-labelledby="help-tab">
+                <br>
+                <p><b>bus360</b> es una aplicación que muestra la ubicación y hace un recorrido virtual por las <b>Bibliotecas de la Universidad de Sevilla</b>.</p>
+                <p><img src="images/como_llegar.png"><br> La sección <b>"Como llegar"</b> contiene un desplegable con enlaces a mapas específicos para desplazarte a estas usando transporte público (Tussam/Metro/tren), privado (rutas de Google/carriles bici) y a pie desde la puerta de los edificios de la Universidad.</p>
+                <p><img src="images/echar_vistazo.png"><br>La sección <b>"Echar un vistazo"</b> hace un recorrido por las bibliotecas desde su puerta de entrada.</p>
+
+                <p><img src="images/brujula.png"><br><b>R E C U E R D A</b>, cuando te sientas perdido pulsa la brújula para volver a la página principal</p>
+            </div>
+
+            <!-- Credits Section -->
+            <div class="tab-pane fade" id="credits-section" role="tabpanel" aria-labelledby="credits-tab">
+                <p><br> Algunos apuntes sobre esta aplicación: </p>
+
+                <p>El <b>Servicio de Audiovisuales de la Universidad de Sevilla</b> nos ha prestado una cámara "Insta360 one R" con la que hemos realizado todas las fotos.</p>
+
+                <p>El mapa de portada es una implementación de <b>Open Street Maps</b> y de la librería leaflet creada por <b>Volodymyr Agafonkin</b>.</p>
+
+                <p>Los recorridos 360º son una implementación del software Pannellum programado por <b>Matthew Petroff</b>.</p>
+
+                <p>Ha sido realizada por los becarios de informática de la Biblioteca <b>tecnibus24</b> y por personal de la sección: 
+                    <ul>
+                        <li><b>Álvaro Carmona Núñez</b> (líder del proyecto)</li>
+                        <li><b>Gonzalo Martínez Fernández</b></li>
+                        <li><b>Patricia Serrano Angorilla</b></li>
+                        <li>Javier Escudero Infante</li>
+                    </ul>
+                </p>
+                <hr>        
+                    <p>Esperamos que disfrutes usando esta aplicación tanto como nosotros lo hemos hecho al hacerla para tí.</p>
+            </div>
         </div>
     </div>
+</div>
 
     <script src="js/help.js"></script>
 
