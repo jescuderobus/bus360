@@ -65,3 +65,15 @@
     color: white !important;
     text-decoration: none !important;
 }
+
+
+.nav-tabs .nav-link {
+    font-size: 1.2em;
+    color: black; /* Color de las pestañas inactivas */
+    font-weight: normal;
+}
+
+.nav-tabs .nav-link.active {
+    color: darkred; /* Color de la pestaña activa */
+    font-weight: bold; /* Negrita cuando está activo */
+}
