@@ -204,7 +204,7 @@
     },
     {
         "id": "arqu",
-        "nombre": "Biblioteca de Arquitectura",
+        "nombre": "Biblioteca de Arquitectura y Edificación",
         "lat": 37.36283,
         "lng": -5.98646,
         "direccion": "(Campus de Reina Mercedes)<br>Avda. de Reina Mercedes, 2<br>41012 - Sevilla",
@@ -542,8 +542,8 @@
         "como_llegar_pie": [
             {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "desde la calle",
-                "url": "NO_calle.html",
+                "texto": "desde la calle <em>Enramadilla</em>",
+                "url": "DCHO_Enramadilla.html",
                 "target": "_self"
             }
             
@@ -552,7 +552,7 @@
             {
                 "imagen": "images/eye-3-svgrepo-com.svg",
                 "texto": "Entrada de la Biblioteca",
-                "url": "NO_puertaBib.html",
+                "url": "DCHO_puertaBib.html",
                 "target": "_self"
             }
         ]

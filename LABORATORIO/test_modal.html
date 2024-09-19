@@ -7,7 +7,7 @@
     <meta name="author" content="Álvaro Carmona Núñez">
     <meta name="author" content="Patricia Serrano Angorilla, Gonzalo Martínez Fernández, Javier Escudero">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pannellum</title>
+    <title>Explorador Pannellum</title>
     <!--<script src="/cdn-cgi/apps/head/TEAHVq5cVsVoM9egFOAS6CBdXPk.js"></script>-->
     <link rel="stylesheet" href="https://pannellum.org/css/bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap-native.min.js"></script>
@@ -59,6 +59,9 @@
 
     <div id="panorama" style="width:100%;height:100%;"></div>
 <script>
+
+var openModal=function(){alert("hello")};
+
 pannellum.viewer('panorama', {   
     "default": {
         "firstScene": "TrabajandoEnEllo",
@@ -107,6 +110,13 @@ pannellum.viewer('panorama', {
                         imgWidth: "550px",
                         imgHeight: "150px"
                         }
+                },
+                {
+                    "pitch": 10,
+                    "yaw": -55,
+                    "type": "info",
+                    "text": "Abre Modal",
+                    "clickHandlerFunc": openModal
                 }
             ]
     }

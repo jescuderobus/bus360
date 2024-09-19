@@ -17,3 +17,7 @@ cd /home/usuario/dockerteca/panellum/FOTOS
 
 # los fichero `generateXX.py` son intentos de generar rejillas en imagenes equirectangulares, hay que revisar que sean los correctos.
 
+# Se pueden consultar los tiempos de paso por la parada de los autobuses en la dirección
+https://reddelineas.tussam.es/API/infotus-ui/tiempos/210?_=1726767447
+# donde 210 es el número de parada y 1726767447 es el timestamp de la petición.
+
