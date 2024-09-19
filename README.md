@@ -11,19 +11,19 @@ La aplicación ha sido realizada por personal de la BUS con el software [panellu
 - [X] Rector Machado
 - [X] Salud
 - [X] Bellas Artes
-- [ ] Educación
-- [ ] CRAI
-- [ ] Informática
-- [ ] Matemáticas
-- [ ] Arquitectura
+- [X] Educación
+- [X] CRAI
+- [X] Informática
+- [X] Matemáticas
+- [X] Arquitectura y Edificación
 
-- [ ] Humanidades
-- [ ] Derecho y Ciencias del trabajo
+- [X] Humanidades
+- [X] Derecho y Ciencias del trabajo
 - [ ] Económicas
 - [ ] Turismo
 - [ ] Psicología y Filosofía
-- [ ] Politécnica
-- [ ] Agronomía
+- [X] Politécnica
+- [X] Agronomía
 
 
 ### Han realizado esta aplicación
