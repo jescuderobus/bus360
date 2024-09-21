@@ -30,7 +30,17 @@ echo "idEscena,sceneId,pitch,yaw,text,targetYaw,targetPitch" > code/TURFIN/hotsp
 ```
 El procedimiento consiste ahora en ir rellenando cada uno de estos tres ficheros con la información pertinente, es importante conocer como define Pannellun cada uno de los elementos que usa y por ello para una comprensión plena no estaría demás visitar su documentación.
 
-Como ya tenemos las fotografias desensambladas para visualizarlas y encontrar los puntos singulares usaremos el fichero "TURFIN_VisorEscenas.html".
+Como ya tenemos las fotografias desensambladas para visualizarlas y encontrar los puntos singulares usaremos el fichero "TURFIN_VisorEscenas.html"
+
+PASO 1. creación del fichero escenas.csv 
+Usando "TURFIN_VisorEscenas.html" vamos cambiando el fichero objetivo y damos un título a cada una de las escenas y ponemos las rutas de los ficheros de fotos.
+
+PASO 2. creación del fichero hotspotinfo.csv
+Cada escena tendrá uno o dos puntos de información.
+
+PASO 3. creación del fichero hotspotescenas.csv
+Debe realizarse un recorrido de ida y de vuelta.
+Cada escena debe conectar con al menos DOS escenas.
 
 
 
