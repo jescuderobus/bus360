@@ -1,18 +1,5 @@
-idEscena,sceneId,pitch,yaw,text,targetYaw,targetPitch
-"TURFIN_1","","","","","","",""
-"TURFIN_2","","","","","","",""
-"TURFIN_3","","","","","","",""
-"TURFIN_4","","","","","","",""
-"TURFIN_5","","","","","","",""
-"TURFIN_6","","","","","","",""
-"TURFIN_7","","","","","","",""
-"TURFIN_8","","","","","","",""
-"TURFIN_9","","","","","","",""
-"TURFIN_10","","","","","","",""
-"TURFIN_11","","","","","","",""
-"TURFIN_12","","","","","","",""
-"TURFIN_13","","","","","","",""
-"TURFIN_14","","","","","","",""
-"TURFIN_15","","","","","","",""
+idEscena,sceneId,pitch,yaw,text,targetPitch,targetYaw
+"VIAPOL_14","TURFIN_1","0","180","Entrada al Edificio de Servicios Multiples","0","180"
+
 
 

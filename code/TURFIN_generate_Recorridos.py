@@ -16,18 +16,17 @@ class GeneratePathScript:
         BASE = '''<!DOCTYPE html>
     <html lang="en">
     <head>
-    <meta name="generator" content="Hugo 0.48" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pannellum</title>
+    <title>TURFIN</title>
     <!--<script src="/cdn-cgi/apps/head/TEAHVq5cVsVoM9egFOAS6CBdXPk.js"></script>-->
     <link rel="stylesheet" href="https://pannellum.org/css/bootstrap.min.css">
-    <script type="text/javascript" src="js/bootstrap-native.min.js"></script>
+    <script type="text/javascript" src="../../../js/bootstrap-native.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600%7CSource+Code+Pro:400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/pygments.css">
-    <link rel="stylesheet" href="css/pannellum.css" />
-    <script type="text/javascript" src="js/pannellum.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../../css/pygments.css">
+    <link rel="stylesheet" href="../../../css/pannellum.css" />
+    <script type="text/javascript" src="../../../js/pannellum.js"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
     </head>
     <body>
 
@@ -53,8 +52,8 @@ class GeneratePathScript:
             self.json_dict["scenes"][escena['idEscena']] = {
                 "title": escena['title'],
                 "hfov": 150,
-                "pitch": 0,
-                "yaw": 0,
+                "pitch": escena['pitch'],
+                "yaw": escena['yaw'],
                 "compass": True,
                 "northOffset": 70,
                 "type": "multires",
@@ -103,13 +102,13 @@ class GeneratePathScript:
         self.generate_json()
         self.join_document()
 
-        if not os.path.exists('out'):
-            os.mkdir('out')
+        if not os.path.exists('TURFIN/out'):
+            os.mkdir('TURFIN/out')
         current_date = datetime.now().strftime('%Y%m%d_%H%M%S')
-        with open(f'out/{current_date}.html','w',encoding='utf8') as fbase:
+        with open(f'TURFIN/out/TURFIN.html','w',encoding='utf8') as fbase:
             fbase.write(self.final_documento)
     
 
 if __name__ == '__main__':
-    GeneratePathScript('data').main()
+    GeneratePathScript('TURFIN').main()
     
