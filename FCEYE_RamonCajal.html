@@ -1,7 +1,6 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-    <meta name="generator" content="Hugo 0.48" />
     <meta charset="utf-8" />
     <meta name="author" content="Álvaro Carmona Núñez, 
                                  Patricia Serrano Angorilla, 
@@ -19,6 +18,8 @@
     <link rel="stylesheet" href="css/pannellum.css" />
     <script type="text/javascript" src="js/pannellum.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/puntosRejilla.css">
+    <script src="js/puntosRejilla.js"></script>
     </head>
     <body>
 
@@ -27,14 +28,56 @@
         pannellum.viewer('panorama', {
             //"hotSpotDebug": true,
             "default": {
-                "firstScene": "FCEYE_1",
+                "firstScene": "VIAPOL_10",
                 "author": "Tecnibus24",
                 "sceneFadeDuration": 1000,
                 "autoLoad": true
         },
     "scenes": {
+        "VIAPOL_10": {
+            "title": "Entrada de la Facultad de Ciencias Económicas y Empresariales - Avd. Ramón y Cajal, nº 1",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/VIAPOL_10",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 350,
+                    "type": "scene",
+                    "text": "Patio de Entrada",
+                    "sceneId": "FCEYE_1",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 210,
+                    "type": "info",
+                    "text": "Bar Marbella",
+                },
+                {
+                    "pitch": 4,
+                    "yaw": 240,
+                    "type": "info",
+                    "text": "Facultad de Derecho y Ciencias del Trabajo"
+
+                }
+            ]
+        },
         "FCEYE_1": {
-            "title": "Entrada de la Escuela Politécnica Superior - Calle Virgen de África",
+            "title": "Patio interno exterior FCEYE",
             "hfov": 150,
             "pitch": 0,
             "yaw": 175,
@@ -55,11 +98,33 @@
                     "pitch": -7.0,
                     "yaw": 181.0,
                     "type": "scene",
-                    "text": "Patio de Entrada",
-                    "sceneId": "FCEYE_2",
+                    "text": "Salir a la calle",
+                    "sceneId": "VIAPOL_10",
                     "targetYaw": 180,
                     "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Entrar al centro",
+                    "sceneId": "FCEYE_3",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 170,
+                    "type": "info",
+                    "text": "Secretaría del Centro",               
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 190,
+                    "type": "info",
+                    "text": "Delegación de Alumnos",               
                 }
+
             ]
         },
         "FCEYE_2": {
@@ -101,7 +166,7 @@
             ]
         },
         "FCEYE_3": {
-            "title": "Patio de Entrada. Escuela Politécnica Superior.",
+            "title": "Patio interno CENTRAL interior FCEYE",
             "hfov": 150,
             "pitch": 0,
             "yaw": 180,
@@ -118,6 +183,8 @@
                 "cubeResolution": 1928
             },
             "hotSpots": [
+                                {"pitch": 0,"yaw": 0,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:0"}, {"pitch": 0,"yaw": 15,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:15"}, {"pitch": 0,"yaw": 30,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:30"}, {"pitch": 0,"yaw": 45,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:45"}, {"pitch": 0,"yaw": 60,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:60"}, {"pitch": 0,"yaw": 75,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:75"}, {"pitch": 0,"yaw": 90,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:90"}, {"pitch": 0,"yaw": 105,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:105"}, {"pitch": 0,"yaw": 120,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:120"}, {"pitch": 0,"yaw": 135,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:135"}, {"pitch": 0,"yaw": 150,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:150"}, {"pitch": 0,"yaw": 165,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:165"}, {"pitch": 0,"yaw": 180,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:180"}, {"pitch": 0,"yaw": 195,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:195"}, {"pitch": 0,"yaw": 210,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:210"}, {"pitch": 0,"yaw": 225,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:225"}, {"pitch": 0,"yaw": 240,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:240"}, {"pitch": 0,"yaw": 255,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:255"}, {"pitch": 0,"yaw": 270,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:270"}, {"pitch": 0,"yaw": 285,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:285"}, {"pitch": 0,"yaw": 300,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:300"}, {"pitch": 0,"yaw": 315,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:315"}, {"pitch": 0,"yaw": 330,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:330"}, {"pitch": 0,"yaw": 345,"cssClass": "custom-hotspot-yellow","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:0<br>yaw:345"}, {"pitch": 15,"yaw": 0,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:0"}, {"pitch": 15,"yaw": 15,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:15"}, {"pitch": 15,"yaw": 30,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:30"}, {"pitch": 15,"yaw": 45,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:45"}, {"pitch": 15,"yaw": 60,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:60"}, {"pitch": 15,"yaw": 75,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:75"}, {"pitch": 15,"yaw": 90,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:90"}, {"pitch": 15,"yaw": 105,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:105"}, {"pitch": 15,"yaw": 120,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:120"}, {"pitch": 15,"yaw": 135,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:135"}, {"pitch": 15,"yaw": 150,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:150"}, {"pitch": 15,"yaw": 165,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:165"}, {"pitch": 15,"yaw": 180,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:180"}, {"pitch": 15,"yaw": 195,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:195"}, {"pitch": 15,"yaw": 210,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:210"}, {"pitch": 15,"yaw": 225,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:225"}, {"pitch": 15,"yaw": 240,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:240"}, {"pitch": 15,"yaw": 255,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:255"}, {"pitch": 15,"yaw": 270,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:270"}, {"pitch": 15,"yaw": 285,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:285"}, {"pitch": 15,"yaw": 300,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:300"}, {"pitch": 15,"yaw": 315,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:315"}, {"pitch": 15,"yaw": 330,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:330"}, {"pitch": 15,"yaw": 345,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:15<br>yaw:345"}, {"pitch": 30,"yaw": 0,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:0"}, {"pitch": 30,"yaw": 15,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:15"}, {"pitch": 30,"yaw": 30,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:30"}, {"pitch": 30,"yaw": 45,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:45"}, {"pitch": 30,"yaw": 60,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:60"}, {"pitch": 30,"yaw": 75,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:75"}, {"pitch": 30,"yaw": 90,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:90"}, {"pitch": 30,"yaw": 105,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:105"}, {"pitch": 30,"yaw": 120,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:120"}, {"pitch": 30,"yaw": 135,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:135"}, {"pitch": 30,"yaw": 150,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:150"}, {"pitch": 30,"yaw": 165,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:165"}, {"pitch": 30,"yaw": 180,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:180"}, {"pitch": 30,"yaw": 195,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:195"}, {"pitch": 30,"yaw": 210,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:210"}, {"pitch": 30,"yaw": 225,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:225"}, {"pitch": 30,"yaw": 240,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:240"}, {"pitch": 30,"yaw": 255,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:255"}, {"pitch": 30,"yaw": 270,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:270"}, {"pitch": 30,"yaw": 285,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:285"}, {"pitch": 30,"yaw": 300,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:300"}, {"pitch": 30,"yaw": 315,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:315"}, {"pitch": 30,"yaw": 330,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:330"}, {"pitch": 30,"yaw": 345,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:30<br>yaw:345"}, {"pitch": 45,"yaw": 0,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:0"}, {"pitch": 45,"yaw": 15,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:15"}, {"pitch": 45,"yaw": 30,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:30"}, {"pitch": 45,"yaw": 45,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:45"}, {"pitch": 45,"yaw": 60,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:60"}, {"pitch": 45,"yaw": 75,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:75"}, {"pitch": 45,"yaw": 90,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:90"}, {"pitch": 45,"yaw": 105,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:105"}, {"pitch": 45,"yaw": 120,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:120"}, {"pitch": 45,"yaw": 135,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:135"}, {"pitch": 45,"yaw": 150,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:150"}, {"pitch": 45,"yaw": 165,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:165"}, {"pitch": 45,"yaw": 180,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:180"}, {"pitch": 45,"yaw": 195,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:195"}, {"pitch": 45,"yaw": 210,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:210"}, {"pitch": 45,"yaw": 225,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:225"}, {"pitch": 45,"yaw": 240,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:240"}, {"pitch": 45,"yaw": 255,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:255"}, {"pitch": 45,"yaw": 270,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:270"}, {"pitch": 45,"yaw": 285,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:285"}, {"pitch": 45,"yaw": 300,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:300"}, {"pitch": 45,"yaw": 315,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:315"}, {"pitch": 45,"yaw": 330,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:330"}, {"pitch": 45,"yaw": 345,"cssClass": "custom-hotspot-red","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:45<br>yaw:345"}, {"pitch": -15,"yaw": 0,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:0"}, {"pitch": -15,"yaw": 15,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:15"}, {"pitch": -15,"yaw": 30,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:30"}, {"pitch": -15,"yaw": 45,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:45"}, {"pitch": -15,"yaw": 60,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:60"}, {"pitch": -15,"yaw": 75,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:75"}, {"pitch": -15,"yaw": 90,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:90"}, {"pitch": -15,"yaw": 105,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:105"}, {"pitch": -15,"yaw": 120,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:120"}, {"pitch": -15,"yaw": 135,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:135"}, {"pitch": -15,"yaw": 150,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:150"}, {"pitch": -15,"yaw": 165,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:165"}, {"pitch": -15,"yaw": 180,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:180"}, {"pitch": -15,"yaw": 195,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:195"}, {"pitch": -15,"yaw": 210,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:210"}, {"pitch": -15,"yaw": 225,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:225"}, {"pitch": -15,"yaw": 240,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:240"}, {"pitch": -15,"yaw": 255,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:255"}, {"pitch": -15,"yaw": 270,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:270"}, {"pitch": -15,"yaw": 285,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:285"}, {"pitch": -15,"yaw": 300,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:300"}, {"pitch": -15,"yaw": 315,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:315"}, {"pitch": -15,"yaw": 330,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:330"}, {"pitch": -15,"yaw": 345,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-15<br>yaw:345"}, {"pitch": -30,"yaw": 0,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:0"}, {"pitch": -30,"yaw": 15,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:15"}, {"pitch": -30,"yaw": 30,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:30"}, {"pitch": -30,"yaw": 45,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:45"}, {"pitch": -30,"yaw": 60,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:60"}, {"pitch": -30,"yaw": 75,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:75"}, {"pitch": -30,"yaw": 90,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:90"}, {"pitch": -30,"yaw": 105,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:105"}, {"pitch": -30,"yaw": 120,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:120"}, {"pitch": -30,"yaw": 135,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:135"}, {"pitch": -30,"yaw": 150,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:150"}, {"pitch": -30,"yaw": 165,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:165"}, {"pitch": -30,"yaw": 180,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:180"}, {"pitch": -30,"yaw": 195,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:195"}, {"pitch": -30,"yaw": 210,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:210"}, {"pitch": -30,"yaw": 225,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:225"}, {"pitch": -30,"yaw": 240,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:240"}, {"pitch": -30,"yaw": 255,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:255"}, {"pitch": -30,"yaw": 270,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:270"}, {"pitch": -30,"yaw": 285,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:285"}, {"pitch": -30,"yaw": 300,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:300"}, {"pitch": -30,"yaw": 315,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:315"}, {"pitch": -30,"yaw": 330,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:330"}, {"pitch": -30,"yaw": 345,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-30<br>yaw:345"}, {"pitch": -45,"yaw": 0,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:0"}, {"pitch": -45,"yaw": 15,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:15"}, {"pitch": -45,"yaw": 30,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:30"}, {"pitch": -45,"yaw": 45,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:45"}, {"pitch": -45,"yaw": 60,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:60"}, {"pitch": -45,"yaw": 75,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:75"}, {"pitch": -45,"yaw": 90,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:90"}, {"pitch": -45,"yaw": 105,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:105"}, {"pitch": -45,"yaw": 120,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:120"}, {"pitch": -45,"yaw": 135,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:135"}, {"pitch": -45,"yaw": 150,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:150"}, {"pitch": -45,"yaw": 165,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:165"}, {"pitch": -45,"yaw": 180,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:180"}, {"pitch": -45,"yaw": 195,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:195"}, {"pitch": -45,"yaw": 210,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:210"}, {"pitch": -45,"yaw": 225,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:225"}, {"pitch": -45,"yaw": 240,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:240"}, {"pitch": -45,"yaw": 255,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:255"}, {"pitch": -45,"yaw": 270,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:270"}, {"pitch": -45,"yaw": 285,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:285"}, {"pitch": -45,"yaw": 300,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:300"}, {"pitch": -45,"yaw": 315,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:315"}, {"pitch": -45,"yaw": 330,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:330"}, {"pitch": -45,"yaw": 345,"cssClass": "custom-hotspot-green","createTooltipFunc": hotspot,"createTooltipArgs": "pitch:-45<br>yaw:345"},
+
                 {
                     "pitch": 0.0,
                     "yaw": -177.5,
@@ -784,6 +851,8 @@
     }
 });
 </script>
+
+
 
 <script>
     // Espera a que el contenido de la página se haya cargado completamente

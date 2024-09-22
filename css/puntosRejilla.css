@@ -1,0 +1,53 @@
+
+.custom-hotspot-yellow {
+    height: 8px;
+    width: 8px;
+    background: yellow;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+
+.custom-hotspot-red {
+    height: 8px;
+    width: 8px;
+    background: red;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.custom-hotspot-green {
+    height: 8px;
+    width: 8px;
+    background: greenyellow;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+div.custom-tooltip span {
+    visibility: hidden;
+    position: absolute;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    max-width: 200px;
+    padding: 5px 10px;
+    margin-left: -220px;
+    cursor: default;
+}
+div.custom-tooltip:hover span{
+    visibility: visible;
+}
+div.custom-tooltip:hover span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    bottom: -20px;
+    left: -10px;
+    margin: 0 50%;
+}

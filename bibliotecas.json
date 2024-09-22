@@ -659,8 +659,8 @@
         "como_llegar_pie": [
             {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "desde la calle",
-                "url": "NO_calle.html",
+                "texto": "desde <em>Avda. Ramón y Cajal</em>",
+                "url": "FCEYE_RamonCajal.html",
                 "target": "_self"
             }
             
