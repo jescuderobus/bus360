@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="author" content="Álvaro Carmona Núñez, 
+                                         Patricia Serrano Angorilla, 
+                                         Gonzalo Martínez Fernández, 
+                                         Javier Escudero"
+            />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Biblioteca de Turismo y Finanzas</title>
+            <!--<script src="/cdn-cgi/apps/head/TEAHVq5cVsVoM9egFOAS6CBdXPk.js"></script>-->
+            <link rel="stylesheet" href="https://pannellum.org/css/bootstrap.min.css" />
+            <script type="text/javascript" src="js/bootstrap-native.min.js"></script>
+            <link
+              href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600%7CSource+Code+Pro:400,600"
+              rel="stylesheet"
+              type="text/css"
+            />
+            <link rel="stylesheet" href="css/pygments.css" />
+            <link rel="stylesheet" href="css/pannellum.css" />
+            <script type="text/javascript" src="js/pannellum.js"></script>
+            <link rel="stylesheet" href="css/style.css" />
+          </head>
+    <body>
+
+        <div id="panorama" style="width:100%;height:100%;"></div>
+        <script>
+        pannellum.viewer('panorama', {
+    "default": {
+        "firstScene": "VIAPOL_14",
+        "author": "Tecnibus24",
+        "sceneFadeDuration": 1000,
+        "autoLoad": true
+    },
+    "scenes": {
+        "VIAPOL_14": {
+            "title": "Entrada de Turismo próxima a Calle Barrau",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 150,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/VIAPOL_14",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -8,
+                    "yaw": 72,
+                    "type": "info",
+                    "text": "Puerta de Entrada peatonal al recinto",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 45,
+                    "type": "info",
+                    "text": "Cafetería Corner",
+                    "URL": ""
+                },
+                {
+                    "pitch": -8,
+                    "yaw": 330,
+                    "type": "info",
+                    "text": "Calle Barrau",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 210,
+                    "type": "info",
+                    "text": "Servicio de Hombres",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Entrada al Edificio de Servicios Multiples",
+                    "sceneId": "TURFIN_1",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "TURFIN_1": {
+            "title": "Entrada Lateral de Turismo",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 180,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_1",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 270,
+                    "type": "info",
+                    "text": "Servicios de Hombres",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Entrada al edificio",
+                    "sceneId": "TURFIN_2",
+                    "targetYaw": 180,
+                    "targetPitch": -5
+                },
+                {
+                    "pitch": -30,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Volvemos a la entrada",
+                    "sceneId": "VIAPOL_14",
+                    "targetYaw": 150,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "TURFIN_2": {
+            "title": "Pasillo - Máquinas Expendedoras",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_2",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": 200,
+                    "type": "info",
+                    "text": "Máquinas Expendedoras Snacks",
+                    "URL": ""
+                },
+                {
+                    "pitch": -4,
+                    "yaw": 190,
+                    "type": "info",
+                    "text": "Máquina de café",
+                    "URL": ""
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Avanzamos por el pasillo",
+                    "sceneId": "TURFIN_3",
+                    "targetYaw": 180,
+                    "targetPitch": -5
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Salimos a la calle",
+                    "sceneId": "TURFIN_1",
+                    "targetYaw": 15,
+                    "targetPitch": -15
+                }
+            ]
+        },
+        "TURFIN_3": {
+            "title": "Puerta de la Biblioteca de Turismo",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_3",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": 225,
+                    "type": "info",
+                    "text": "Buzón de Autodevolución",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 300,
+                    "type": "info",
+                    "text": "Ascensor",
+                    "URL": ""
+                },
+                {
+                    "pitch": -8,
+                    "yaw": 250,
+                    "type": "info",
+                    "text": "Fuente de Agua",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 175,
+                    "type": "scene",
+                    "text": "Entramos a la Biblioteca",
+                    "sceneId": "TURFIN_9",
+                    "targetYaw": 225,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -8,
+                    "yaw": 83,
+                    "type": "scene",
+                    "text": "Hacia el Campus",
+                    "sceneId": "TURFIN_4",
+                    "targetYaw": 225,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 270,
+                    "type": "scene",
+                    "text": "Hacia la calle",
+                    "sceneId": "TURFIN_2",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "TURFIN_4": {
+            "title": "Pasillo más cercano a la facultad",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_4",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -8,
+                    "yaw": 265,
+                    "type": "scene",
+                    "text": "Salimos al aparcamiento/campus",
+                    "sceneId": "TURFIN_5",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Subimos a la primera planta",
+                    "sceneId": "TURFIN_6",
+                    "targetYaw": 90,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -8,
+                    "yaw": 89,
+                    "type": "scene",
+                    "text": "Volvemos al la puerta de la Biblioteca",
+                    "sceneId": "TURFIN_3",
+                    "targetYaw": 210,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "TURFIN_5": {
+            "title": "Fin del pasillo Exterior",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_5",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 15,
+                    "type": "info",
+                    "text": "Edificio Principal de Facultad de Turismo y Finanzas",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 270,
+                    "type": "info",
+                    "text": "Facultad de Filosofía y Psicología",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Volvemos al pasillo",
+                    "sceneId": "TURFIN_4",
+                    "targetYaw": 210,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "TURFIN_6": {
+            "title": "Edificio usos multiples 1ª Planta",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 52,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_6",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 312,
+                    "type": "info",
+                    "text": "Depósito de la Biblioteca",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Volvemos a la planta baja",
+                    "sceneId": "TURFIN_4",
+                    "targetYaw": 150,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Hacia Salas de Trabajo en Grupo",
+                    "sceneId": "TURFIN_7",
+                    "targetYaw": 195,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "TURFIN_7": {
+            "title": "Pasillo 1ª Planta",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_7",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Entramos a las salas de trabajo en grupo",
+                    "sceneId": "TURFIN_8",
+                    "targetYaw": 225,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -8,
+                    "yaw": 85,
+                    "type": "scene",
+                    "text": "Volvemos a las escaleras",
+                    "sceneId": "TURFIN_6",
+                    "targetYaw": 225,
+                    "targetPitch": -15
+                }
+            ]
+        },
+        "TURFIN_8": {
+            "title": "Entrada Salas de trabajo en grupo",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_8",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Volvemos al pasillo",
+                    "sceneId": "TURFIN_6",
+                    "targetYaw": 0,
+                    "targetPitch": -5
+                }
+            ]
+        },
+        "TURFIN_9": {
+            "title": "Mostrador Biblioteca Turismo y Finanzas",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 180,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_9",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": 330,
+                    "type": "info",
+                    "text": "Ordenadores de Consulta/Catálogo",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 210,
+                    "type": "info",
+                    "text": "Mostrador de atención al público",
+                    "URL": ""
+                },
+                {
+                    "pitch": -8,
+                    "yaw": 158,
+                    "type": "info",
+                    "text": "Información Bibliotecaria",
+                    "URL": ""
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 105,
+                    "type": "scene",
+                    "text": "Sala Keynes",
+                    "sceneId": "TURFIN_10",
+                    "targetYaw": 30,
+                    "targetPitch": -15
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 270,
+                    "type": "scene",
+                    "text": "Sala Krugman",
+                    "sceneId": "TURFIN_11",
+                    "targetYaw": 105,
+                    "targetPitch": -15
+                },
+                {
+                    "pitch": -1,
+                    "yaw": 22,
+                    "type": "scene",
+                    "text": "Volvemos al pasillo",
+                    "sceneId": "TURFIN_3",
+                    "targetYaw": 315,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "TURFIN_10": {
+            "title": "Sala Keynes",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_10",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 322,
+                    "type": "info",
+                    "text": "Salida de emergencia",
+                    "URL": ""
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Volvemos a la entrada",
+                    "sceneId": "TURFIN_9",
+                    "targetYaw": 180,
+                    "targetPitch": -15
+                }
+            ]
+        },
+        "TURFIN_11": {
+            "title": "Sala Krugman - Entrada",
+            "hfov": 150,
+            "pitch": -15,
+            "yaw": 135,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_11",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 15,
+                    "yaw": 150,
+                    "type": "info",
+                    "text": "Estanterias con Guías de Viajes",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "Sello de Excelencia",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 240,
+                    "type": "info",
+                    "text": "Salida de Emergencia",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 330,
+                    "type": "scene",
+                    "text": "Volvemos a la entrada",
+                    "sceneId": "TURFIN_9",
+                    "targetYaw": 180,
+                    "targetPitch": -15
+                },
+                {
+                    "pitch": -8,
+                    "yaw": 240,
+                    "type": "scene",
+                    "text": "Exploramos la Biblioteca",
+                    "sceneId": "TURFIN_12",
+                    "targetYaw": 180,
+                    "targetPitch": -15
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 105,
+                    "type": "scene",
+                    "text": "Exploramos la Biblioteca",
+                    "sceneId": "TURFIN_15",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "TURFIN_12": {
+            "title": "Sala Krugman - Estanterias",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_12",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -14,
+                    "yaw": 195,
+                    "type": "info",
+                    "text": "Puestos de Estudio/consulta",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 45,
+                    "type": "scene",
+                    "text": "Volvemos a la entrada Krugman",
+                    "sceneId": "TURFIN_11",
+                    "targetYaw": 345,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Vamos al fondo de la Biblioteca",
+                    "sceneId": "TURFIN_13",
+                    "targetYaw": 255,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "TURFIN_13": {
+            "title": "Sala Krugman - Fondo",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_13",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 330,
+                    "type": "info",
+                    "text": "Salida de Emergencia",
+                    "URL": ""
+                },
+                {
+                    "pitch": -25,
+                    "yaw": 290,
+                    "type": "info",
+                    "text": "Taburete para alcanzar estanterias superiores",
+                    "URL": ""
+                },
+                {
+                    "pitch": -30,
+                    "yaw": 15,
+                    "type": "info",
+                    "text": "Carrito para depositar los libros consultados",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Volvemos a la entrada Krugman",
+                    "sceneId": "TURFIN_11",
+                    "targetYaw": 45,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Vamos al otro lado de la Biblioteca",
+                    "sceneId": "TURFIN_14",
+                    "targetYaw": 150,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "TURFIN_14": {
+            "title": "Sala Krugman - Mesas Estudio",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_14",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "info",
+                    "text": "Personal Bibliotecario",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 195,
+                    "type": "info",
+                    "text": "Puestos de consulta/estudio electrificados",
+                    "URL": ""
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Volvemos a la entrada Krugman",
+                    "sceneId": "TURFIN_15",
+                    "targetYaw": 300,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Vamos al otro lado de la Biblioteca",
+                    "sceneId": "TURFIN_13",
+                    "targetYaw": 90,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "TURFIN_15": {
+            "title": "Sala Krugman - Mesas de Estudio Individuales",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./fotos360/VIAPOL/TURFIN_15",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": 300,
+                    "type": "info",
+                    "text": "Puestos de consulta/estudio individuales",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 15,
+                    "type": "info",
+                    "text": "Personal Bibliotecario",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 240,
+                    "type": "info",
+                    "text": "Estanterías con Guías de Viajes",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 270,
+                    "type": "scene",
+                    "text": "Volvemos a la entrada Krugman",
+                    "sceneId": "TURFIN_11",
+                    "targetYaw": 330,
+                    "targetPitch": -15
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 255,
+                    "type": "scene",
+                    "text": "Exploramos la Biblioteca",
+                    "sceneId": "TURFIN_12",
+                    "targetYaw": 195,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 175,
+                    "type": "scene",
+                    "text": "Volvemos al fondo",
+                    "sceneId": "TURFIN_14",
+                    "targetYaw": 30,
+                    "targetPitch": 0
+                }
+            ]
+        }
+    }
+});
+</script>
+<script>
+    // Espera a que el contenido de la página se haya cargado completamente
+    document.addEventListener("DOMContentLoaded", function () {
+      // Encuentra el elemento div por sus clases
+      var compassElement = document.querySelector(
+        ".pnlm-compass.pnlm-controls.pnlm-control"
+      );
+
+      // Asegúrate de que el elemento existe en el documento
+      if (compassElement) {
+        // Agrega un event listener para el evento 'click'
+        compassElement.addEventListener("click", function () {
+          // Carga la página de Google
+          window.location.href = "index.html";
+        });
+      } else {
+        console.log(
+          "El elemento con las clases pnlm-compass pnlm-controls pnlm-control no se encontró en el documento."
+        );
+      }
+    });
+  </script>
+</body>
+</html>

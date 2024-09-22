@@ -676,7 +676,7 @@
     },
     {
         "id": "tyf",
-        "nombre": "Biblioteca de Turismo",
+        "nombre": "Biblioteca de Turismo y Finanzas",
         "lat": 37.37919,
         "lng": -5.9763,
         "direccion": "(Campus Ramón y Cajal)<br>Avenida San Francisco Javier, s/n<br>41018 - Sevilla",
@@ -715,8 +715,8 @@
         "como_llegar_pie": [
             {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "desde la calle",
-                "url": "NO_calle.html",
+                "texto": "desde la calle <em>Barrau</em>",
+                "url": "TURFIN_Barrau.html",
                 "target": "_self"
             }
             
@@ -725,7 +725,7 @@
             {
                 "imagen": "images/eye-3-svgrepo-com.svg",
                 "texto": "Entrada de la Biblioteca",
-                "url": "NO_puertaBib.html",
+                "url": "TURFIN_puertaBib.html",
                 "target": "_self"
             }
         ]
