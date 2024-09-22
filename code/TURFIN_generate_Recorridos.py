@@ -5,9 +5,9 @@ from datetime import datetime
 class GeneratePathScript:
 
     def __init__(self,filepath) -> None:
-        self.escenas = pandas.read_csv(f'{filepath}/escenas.csv')
-        self.hotspot_info = pandas.read_csv(f'{filepath}/hotspotinfo.csv')
-        self.hotspot_escenas = pandas.read_csv(f'{filepath}/hotspotescenas.csv')
+        self.escenas = pandas.read_csv(f'{filepath}/escenas.csv', comment='#')
+        self.hotspot_info = pandas.read_csv(f'{filepath}/hotspotinfo.csv', comment='#')
+        self.hotspot_escenas = pandas.read_csv(f'{filepath}/hotspotescenas.csv', comment='#')
         self.documento = ''
         self.final_documento = ''
 

@@ -1,5 +1,8 @@
 idEscena,sceneId,pitch,yaw,text,targetPitch,targetYaw
 "VIAPOL_14","TURFIN_1","0","180","Entrada al Edificio de Servicios Multiples","0","180"
-
-
-
+"TURFIN_1","TURFIN_2","0","180","Entrada al edificio","-5","180"
+"TURFIN_2","TURFIN_3","-10","180","Avanzamos por el pasillo","-5","180"
+# Desde el mostrador "TURFIN_9" vamos a tres posibles localizaciones krugman, keynes ó pasillo
+"TURFIN_9","TURFIN_10","-5","105","Sala Keynes","-15","30"
+"TURFIN_9","TURFIN_11","-5","270","Sala Krugman","-15","105"
+"TURFIN_9","TURFIN_3","-1","22","Volvemos al pasillo","0","315"
