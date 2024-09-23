@@ -102,13 +102,13 @@ class GeneratePathScript:
         self.generate_json()
         self.join_document()
 
-        if not os.path.exists('TURFIN/out'):
-            os.mkdir('TURFIN/out')
+        if not os.path.exists('./out'):
+            os.mkdir('./out')
         current_date = datetime.now().strftime('%Y%m%d_%H%M%S')
-        with open(f'TURFIN/out/TURFIN.html','w',encoding='utf8') as fbase:
+        with open(f'./out/PSICO.html','w',encoding='utf8') as fbase:
             fbase.write(self.final_documento)
     
 
 if __name__ == '__main__':
-    GeneratePathScript('TURFIN').main()
+    GeneratePathScript('./').main()
     

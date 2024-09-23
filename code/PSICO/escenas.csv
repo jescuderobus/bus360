@@ -1,0 +1,9 @@
+idEscena,title,pitch,yaw,basePath
+"VIAPOL_14","Entrada de Turismo próxima a Calle Barrau","0","150","../../../fotos360/VIAPOL/VIAPOL_14"
+# El primer elemento definido es el "default"
+"VIAPOL_14","Entrada de Turismo próxima a Calle Barrau","0","150","../../../fotos360/VIAPOL/VIAPOL_14"
+PSICO_1/         PSICO_6/         PSICO_9/         PSICO_BIBLIO_12/ PSICO_BIBLIO_17/ PSICO_BIBLIO_4/  PSICO_BIBLIO_9/
+PSICO_2/         PSICO_7/         PSICO_9_ARRIBA/  PSICO_BIBLIO_13/ PSICO_BIBLIO_18/ PSICO_BIBLIO_5/  PSICO_PATIO/
+PSICO_3/         PSICO_7_ARRIBA/  PSICO_BIBLIO_1/  PSICO_BIBLIO_14/ PSICO_BIBLIO_19/ PSICO_BIBLIO_6/
+PSICO_4/         PSICO_8/         PSICO_BIBLIO_10/ PSICO_BIBLIO_15/ PSICO_BIBLIO_2/  PSICO_BIBLIO_7/  
+PSICO_5/         PSICO_8_ARRIBA/  PSICO_BIBLIO_11/ PSICO_BIBLIO_16/ PSICO_BIBLIO_3/  PSICO_BIBLIO_8/
