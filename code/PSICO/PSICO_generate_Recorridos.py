@@ -18,7 +18,7 @@ class GeneratePathScript:
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TURFIN</title>
+    <title>PSICO</title>
     <!--<script src="/cdn-cgi/apps/head/TEAHVq5cVsVoM9egFOAS6CBdXPk.js"></script>-->
     <link rel="stylesheet" href="https://pannellum.org/css/bootstrap.min.css">
     <script type="text/javascript" src="../../../js/bootstrap-native.min.js"></script>
