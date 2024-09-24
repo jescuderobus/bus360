@@ -27,4 +27,7 @@ idEscena,sceneId,pitch,yaw,text,targetPitch,targetYaw
 # DESDE "PSICO_6"  VAMOS "PSICO_7" VOLVEMOS "PSICO_5"
 "PSICO_7","PSICO_6","0","268","Volvemos a puerta Central Patio","0","150"
 "PSICO_7","PSICO_8","0","180","Avanzamos por el pasillo Oeste hacia la Biblioteca","0","45"
-# DESDE "PSICO_7"  VAMOS "PSICO_8" VOLVEMOS "PSICO_6"
+# DESDE "PSICO_7"  VAMOS "PSICO_8", "PSICO_PATIO", "PSICO_7_ARRIBA" VOLVEMOS "PSICO_6"
+"PSICO_7","PSICO_8","-8","0","Vamos a la Puerta de la Biblioteca","0","0"
+# DESDE "PSICO_8"  VAMOS "PSICO_7", "PSICO_9", "PSICO_PATIO"
+"PSICO_8","PSICO_7","0","90","Vamos a la escalera Suroeste","0","180"
