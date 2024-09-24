@@ -19,22 +19,22 @@
         <script>
         pannellum.viewer('panorama', {
     "default": {
-        "firstScene": "PSICO_8",
+        "firstScene": "PSICO_PATIO",
         "author": "Tecnibus24",
         "sceneFadeDuration": 1000,
         "autoLoad": true
     },
     "scenes": {
-        "PSICO_8": {
-            "title": "Puerta de la Biblioteca - Planta Baja",
+        "PSICO_PATIO": {
+            "title": "Centro del Patio",
             "hfov": 150,
             "pitch": 0,
-            "yaw": 180,
+            "yaw": 0,
             "compass": true,
             "northOffset": 70,
             "type": "multires",
             "multiRes": {
-                "basePath": "../../../fotos360/VIAPOL/PSICO_8",
+                "basePath": "../../../fotos360/VIAPOL/PSICO_PATIO",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",
@@ -44,33 +44,55 @@
             },
             "hotSpots": [
                 {
-                    "pitch": -10,
-                    "yaw": -70,
+                    "pitch": -2,
+                    "yaw": -22,
                     "type": "info",
-                    "text": "Buzón de Autodevolución",
+                    "text": "Puerta Noreste Patio",
                     "URL": ""
                 },
                 {
-                    "pitch": -8,
-                    "yaw": 285,
-                    "type": "info",
-                    "text": "Fuente de Agua",
-                    "URL": ""
+                    "pitch": -1,
+                    "yaw": 18,
+                    "type": "scene",
+                    "text": "Puerta Sureste Patio",
+                    "sceneId": "PSICO_2",
+                    "targetYaw": 180,
+                    "targetPitch": 0
                 },
                 {
-                    "pitch": -15,
-                    "yaw": 0,
-                    "type": "info",
-                    "text": "BookCrossing",
-                    "URL": ""
-                },
-                {
-                    "pitch": 0,
+                    "pitch": -1,
                     "yaw": 90,
                     "type": "scene",
-                    "text": "Vamos a la escalera Suroeste",
+                    "text": "Puerta SurCentro Patio",
+                    "sceneId": "PSICO_5",
+                    "targetYaw": 330,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -1,
+                    "yaw": 152,
+                    "type": "scene",
+                    "text": "Puerta Suroeste Patio (Biblioteca)",
                     "sceneId": "PSICO_7",
-                    "targetYaw": 180,
+                    "targetYaw": 330,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -1,
+                    "yaw": 205,
+                    "type": "scene",
+                    "text": "Puerta Noroeste Patio (Biblioteca)",
+                    "sceneId": "PSICO_9",
+                    "targetYaw": 45,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 7,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Puerta Oeste Patio - 1ª Planta (Biblioteca)",
+                    "sceneId": "PSICO_8_ARRIBA",
+                    "targetYaw": 0,
                     "targetPitch": 0
                 }
             ]
@@ -335,13 +357,6 @@
             },
             "hotSpots": [
                 {
-                    "pitch": 0,
-                    "yaw": 120,
-                    "type": "info",
-                    "text": "Puerta de salida al patio",
-                    "URL": ""
-                },
-                {
                     "pitch": 15,
                     "yaw": 300,
                     "type": "info",
@@ -375,6 +390,15 @@
                     "type": "info",
                     "text": "Escalera Sureste",
                     "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Puerta Noreste de salida al patio",
+                    "sceneId": "PSICO_PATIO",
+                    "targetYaw": 0,
+                    "targetPitch": 0
                 },
                 {
                     "pitch": 0,
@@ -529,7 +553,7 @@
                     "pitch": 0,
                     "yaw": 292,
                     "type": "info",
-                    "text": "Directorio Realizado por los alumnos",
+                    "text": "Directorio Realizado por los alumnos, la Biblioteca está a la derecha",
                     "URL": ""
                 },
                 {
@@ -539,6 +563,15 @@
                     "text": "Volvemos al pasillo Este",
                     "sceneId": "PSICO_4",
                     "targetYaw": 255,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -4,
+                    "yaw": 82,
+                    "type": "scene",
+                    "text": "Vamos al Patio",
+                    "sceneId": "PSICO_PATIO",
+                    "targetYaw": 0,
                     "targetPitch": 0
                 },
                 {
@@ -637,13 +670,6 @@
                     "URL": ""
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 105,
-                    "type": "info",
-                    "text": "Puerta de Salida al Patio",
-                    "URL": ""
-                },
-                {
                     "pitch": -15,
                     "yaw": 180,
                     "type": "info",
@@ -659,28 +685,46 @@
                 },
                 {
                     "pitch": 0,
-                    "yaw": 268,
+                    "yaw": 198,
                     "type": "scene",
-                    "text": "Volvemos a puerta Central Patio",
+                    "text": "Volvemos a pasillo Sur",
                     "sceneId": "PSICO_6",
-                    "targetYaw": 150,
+                    "targetYaw": 315,
                     "targetPitch": 0
                 },
                 {
                     "pitch": 0,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "Avanzamos por el pasillo Oeste hacia la Biblioteca",
-                    "sceneId": "PSICO_8",
+                    "text": "Curioseamos la Entreplanta",
+                    "sceneId": "PSICO_7_ARRIBA",
                     "targetYaw": 45,
                     "targetPitch": 0
                 },
                 {
-                    "pitch": -8,
+                    "pitch": -10,
                     "yaw": 0,
                     "type": "scene",
                     "text": "Vamos a la Puerta de la Biblioteca",
                     "sceneId": "PSICO_8",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -4,
+                    "yaw": 4,
+                    "type": "scene",
+                    "text": "Puerta Noroeste Patio",
+                    "sceneId": "PSICO_9",
+                    "targetYaw": 240,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 105,
+                    "type": "scene",
+                    "text": "Puerta Suroeste Patio",
+                    "sceneId": "PSICO_PATIO",
                     "targetYaw": 0,
                     "targetPitch": 0
                 }
@@ -703,7 +747,76 @@
                 "maxLevel": 3,
                 "cubeResolution": 1928
             },
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -20,
+                    "yaw": 184,
+                    "type": "scene",
+                    "text": "Volvemos a Planta Baja",
+                    "sceneId": "PSICO_7",
+                    "targetYaw": 45,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "PSICO_8": {
+            "title": "Puerta de la Biblioteca - Planta Baja",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 180,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "../../../fotos360/VIAPOL/PSICO_8",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": -70,
+                    "type": "info",
+                    "text": "Buzón de Autodevolución",
+                    "URL": ""
+                },
+                {
+                    "pitch": -8,
+                    "yaw": 285,
+                    "type": "info",
+                    "text": "Fuente de Agua",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "BookCrossing",
+                    "URL": ""
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 78,
+                    "type": "scene",
+                    "text": "Puerta Suroeste al Patio",
+                    "sceneId": "PSICO_7",
+                    "targetYaw": 135,
+                    "targetPitch": -4
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -78,
+                    "type": "scene",
+                    "text": "Puerta Noroeste al Patio",
+                    "sceneId": "PSICO_9",
+                    "targetYaw": 240,
+                    "targetPitch": 0
+                }
+            ]
         },
         "PSICO_8_ARRIBA": {
             "title": "Puerta de la Biblioteca - Planta Primera",
@@ -722,7 +835,17 @@
                 "maxLevel": 3,
                 "cubeResolution": 1928
             },
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Vamos al centro del Patio",
+                    "sceneId": "PSICO_PATIO",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                }
+            ]
         },
         "PSICO_9": {
             "title": "Puerta Noroeste del Patio - Escalera Noroeste - Pasillo Biblioteca",
@@ -741,7 +864,65 @@
                 "maxLevel": 3,
                 "cubeResolution": 1928
             },
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": 315,
+                    "type": "info",
+                    "text": "Fuente de Agua",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 328,
+                    "type": "info",
+                    "text": "Buzón de Autodevolución de Libros",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 180,
+                    "type": "info",
+                    "text": "Escalera Noroeste",
+                    "URL": ""
+                },
+                {
+                    "pitch": -4,
+                    "yaw": -8,
+                    "type": "scene",
+                    "text": "Puerta Suroeste Patio",
+                    "sceneId": "PSICO_7",
+                    "targetYaw": 135,
+                    "targetPitch": -4
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 266,
+                    "type": "scene",
+                    "text": "Vamos al centro del Patio",
+                    "sceneId": "PSICO_PATIO",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Vamos a la Puerta de la Biblioteca",
+                    "sceneId": "PSICO_8",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 15,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Curioseamos la Entreplanta",
+                    "sceneId": "PSICO_9_ARRIBA",
+                    "targetYaw": 145,
+                    "targetPitch": 0
+                }
+            ]
         },
         "PSICO_9_ARRIBA": {
             "title": "Escalera Suroeste - EntePlanta",
@@ -760,7 +941,17 @@
                 "maxLevel": 3,
                 "cubeResolution": 1928
             },
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -20,
+                    "yaw": 184,
+                    "type": "scene",
+                    "text": "Volvemos a Planta Baja",
+                    "sceneId": "PSICO_9",
+                    "targetYaw": 45,
+                    "targetPitch": 0
+                }
+            ]
         },
         "PSICO_BIBLIO_1": {
             "title": "Biblioteca Planta Baja - Entrada",
@@ -1114,25 +1305,6 @@
             "type": "multires",
             "multiRes": {
                 "basePath": "../../../fotos360/VIAPOL/PSICO_BIBLIO_19",
-                "path": "/%l/%s%y_%x",
-                "fallbackPath": "/fallback/%s",
-                "extension": "jpg",
-                "tileResolution": 512,
-                "maxLevel": 3,
-                "cubeResolution": 1928
-            },
-            "hotSpots": []
-        },
-        "PSICO_PATIO": {
-            "title": "Centro del Patio",
-            "hfov": 150,
-            "pitch": 0,
-            "yaw": 0,
-            "compass": true,
-            "northOffset": 70,
-            "type": "multires",
-            "multiRes": {
-                "basePath": "../../../fotos360/VIAPOL/PSICO_PATIO",
                 "path": "/%l/%s%y_%x",
                 "fallbackPath": "/fallback/%s",
                 "extension": "jpg",

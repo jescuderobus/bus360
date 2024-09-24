@@ -1,5 +1,5 @@
 idEscena,title,pitch,yaw,basePath
-"PSICO_8","Puerta de la Biblioteca - Planta Baja","0","180","../../../fotos360/VIAPOL/PSICO_8"
+"PSICO_PATIO","Centro del Patio","0","0","../../../fotos360/VIAPOL/PSICO_PATIO"
 # El primer elemento definido es el "default"
 "VIAPOL_23","Entrada Psicología desde Camilo José Cela","8","290","../../../fotos360/VIAPOL/VIAPOL_23"
 "VIAPOL_22","Entrada Psicologia desde lateral de Catalana Occidente","0","0","../../../fotos360/VIAPOL/VIAPOL_22"
