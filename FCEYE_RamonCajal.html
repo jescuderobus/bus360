@@ -28,105 +28,35 @@
         pannellum.viewer('panorama', {
             //"hotSpotDebug": true,
             "default": {
-                "firstScene": "FCEYE_3",
+                "firstScene": "VIAPOL_10",
                 "author": "Tecnibus24",
                 "sceneFadeDuration": 1000,
                 "autoLoad": true
         },
     "scenes": {
-        "VIAPOL_10": {
-            "title": "Entrada de la Facultad de Ciencias Económicas y Empresariales - Avd. Ramón y Cajal, nº 1",
-            "hfov": 150,
-            "pitch": 0,
-            "yaw": 0,
-            "compass": true,
-            "northOffset": 70,
-            "type": "multires",
-            "multiRes": {
-                "basePath": "./fotos360/VIAPOL/VIAPOL_10",
-                "path": "/%l/%s%y_%x",
-                "fallbackPath": "/fallback/%s",
-                "extension": "jpg",
-                "tileResolution": 512,
-                "maxLevel": 3,
-                "cubeResolution": 1928
-            },
-            "hotSpots": [
-                {
-                    "pitch": 0,
-                    "yaw": 350,
-                    "type": "scene",
-                    "text": "Patio de Entrada",
-                    "sceneId": "FCEYE_1",
-                    "targetYaw": 0,
-                    "targetPitch": 0
-                },
-                {
-                    "pitch": 0,
-                    "yaw": 210,
-                    "type": "info",
-                    "text": "Bar Marbella",
-                },
-                {
-                    "pitch": 4,
-                    "yaw": 240,
-                    "type": "info",
-                    "text": "Facultad de Derecho y Ciencias del Trabajo"
 
-                }
+"VIAPOL_10": {
+"title": "Entrada de la Facultad de Ciencias Económicas y Empresariales - Avd. Ramón y Cajal, nº 1","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/VIAPOL_10", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Patio de Entrada","pitch": 0,"yaw": 350, "sceneId": "FCEYE_1", "targetPitch": 0, "targetYaw": 0},
+{"type": "info","text": "Bar Marbella","pitch": 0,"yaw": 210},
+{"type": "info","text": "Facultad de Derecho y Ciencias del Trabajo","pitch": 4,"yaw": 240}
             ]
         },
-        "FCEYE_1": {
-            "title": "Patio interno exterior FCEYE",
-            "hfov": 150,
-            "pitch": 0,
-            "yaw": 175,
-            "compass": true,
-            "northOffset": 70,
-            "type": "multires",
-            "multiRes": {
-                "basePath": "./fotos360/VIAPOL/FCEYE_1",
-                "path": "/%l/%s%y_%x",
-                "fallbackPath": "/fallback/%s",
-                "extension": "jpg",
-                "tileResolution": 512,
-                "maxLevel": 3,
-                "cubeResolution": 1928
-            },
-            "hotSpots": [
-                {
-                    "pitch": -7.0,
-                    "yaw": 181.0,
-                    "type": "scene",
-                    "text": "Salir a la calle",
-                    "sceneId": "VIAPOL_10",
-                    "targetYaw": 180,
-                    "targetPitch": 0
-                },
-                {
-                    "pitch": 0,
-                    "yaw": 0,
-                    "type": "scene",
-                    "text": "Entrar al centro",
-                    "sceneId": "FCEYE_3",
-                    "targetYaw": 180,
-                    "targetPitch": 0
-                },
-                {
-                    "pitch": 0,
-                    "yaw": 170,
-                    "type": "info",
-                    "text": "Secretaría del Centro",               
-                },
-                {
-                    "pitch": 0,
-                    "yaw": 190,
-                    "type": "info",
-                    "text": "Delegación de Alumnos",               
-                }
 
+"FCEYE_1": {
+"title": "Patio interno exterior FCEYE","pitch": 0,"yaw": 175,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/FCEYE_1", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Salir a la calle","pitch": -7,"yaw": 181, "sceneId": "VIAPOL_10", "targetPitch": 0, "targetYaw": 180},
+{"type": "scene","text": "Entrar al centro","pitch": 0,"yaw": 0, "sceneId": "FCEYE_3", "targetPitch": 0, "targetYaw": 180},
+{"type": "info","text": "Secretaría del centro","pitch": 0,"yaw": 170},
+{"type": "info","text": "Delegación de Alumnos","pitch": 0,"yaw": 190}
             ]
         },
+
+        
         "FCEYE_2": {
             "title": "Patio de Entrada. Escuela Politécnica Superior.",
             "hfov": 150,
