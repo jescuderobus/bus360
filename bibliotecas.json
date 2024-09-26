@@ -669,7 +669,7 @@
             {
                 "imagen": "images/eye-3-svgrepo-com.svg",
                 "texto": "Entrada de la Biblioteca",
-                "url": "NO_puertaBib.html",
+                "url": "FCEYE_puertaBib.html",
                 "target": "_self"
             }
         ]
