@@ -732,7 +732,7 @@
     },
     {
         "id": "psi",
-        "nombre": "Biblioteca de Filosofía y Psicología",
+        "nombre": "Biblioteca de Psicología y Filosofía",
         "lat": 37.37945,
         "lng": -5.97592,
         "direccion": "(Campus Ramón y Cajal)<br>Camilo José Cela, s/n<br>41018 - Sevilla",
@@ -772,7 +772,7 @@
             {
                 "imagen": "images/walk-svgrepo-com.svg",
                 "texto": "desde la calle",
-                "url": "NO_calle.html",
+                "url": "PSICO_CJCela.html",
                 "target": "_self"
             }
             
@@ -781,7 +781,7 @@
             {
                 "imagen": "images/eye-3-svgrepo-com.svg",
                 "texto": "Entrada de la Biblioteca",
-                "url": "NO_puertaBib.html",
+                "url": "PSICO_puertaBib.html",
                 "target": "_self"
             }
         ]

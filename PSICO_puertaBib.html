@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Álvaro Carmona Núñez,Patricia Serrano Angorilla, Gonzalo Martínez Fernández, Javier Escudero">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Psicología y Filosofía</title>
+    <!--<script src="/cdn-cgi/apps/head/TEAHVq5cVsVoM9egFOAS6CBdXPk.js"></script>-->
+    <link rel="stylesheet" href="https://pannellum.org/css/bootstrap.min.css">
+    <script type="text/javascript" src="./js/bootstrap-native.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600%7CSource+Code+Pro:400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/pygments.css">
+    <link rel="stylesheet" href="./css/pannellum.css" />
+    <script type="text/javascript" src="./js/pannellum.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+<style>
+
+    .custom-hotspot-yellow {
+        height: 8px;
+        width: 8px;
+        background: yellow;
+        border-radius: 50%;
+        border: 2px solid #000;
+    }
+
+    
+    .custom-hotspot-red {
+        height: 8px;
+        width: 8px;
+        background: red;
+        border-radius: 50%;
+        border: 2px solid #000;
+    }
+
+    .custom-hotspot-green {
+        height: 8px;
+        width: 8px;
+        background: greenyellow;
+        border-radius: 50%;
+        border: 2px solid #000;
+    }
+
+    div.custom-tooltip span {
+        visibility: hidden;
+        position: absolute;
+        border-radius: 3px;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        max-width: 200px;
+        padding: 5px 10px;
+        margin-left: -220px;
+        cursor: default;
+    }
+    div.custom-tooltip:hover span{
+        visibility: visible;
+    }
+    div.custom-tooltip:hover span:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #fff transparent transparent transparent;
+        bottom: -20px;
+        left: -10px;
+        margin: 0 50%;
+    }
+</style></head>
+
+
+
+<body>
+
+    <div id="panorama" style="width:100%;height:100%;"></div>
+        <script>
+        pannellum.viewer('panorama', {
+            // "hotSpotDebug": true,
+            "default": {
+                "firstScene": "PSICO_8",
+                "author": "Tecnibus24",
+                "sceneFadeDuration": 1000,
+                "autoLoad": true
+        },
+    "scenes": {
+
+"PSICO_BIBLIO_1": {
+"title": "Entrada de la Biblioteca de Psicología y Filosofía","pitch": 0,"yaw": 180,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_1", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Volvemos al pasillo","pitch": 0,"yaw": 0, "sceneId": "PSICO_8", "targetPitch": 0, "targetYaw": 0},
+{"type": "info","text": "Máquina de autopréstamo","pitch": -4,"yaw": 145},
+{"type": "info","text": "Puesto reservado para discapacitados motores","pitch": -8,"yaw": 215},
+{"type": "info","text": "Adquisiciones recientes","pitch": 0,"yaw": 200},
+{"type": "info","text": "Ordenadores de Consulta/Escáner","pitch": -4,"yaw": 75},
+{"type": "info","text": "Puesto de Préstamo/Información Bibliográfica","pitch": -15,"yaw": 285},
+{"type": "scene","text": "Veamos el centro de la Sala","pitch": 0,"yaw": 180, "sceneId": "PSICO_BIBLIO_2", "targetPitch": -15, "targetYaw": 180},
+]},
+
+
+"PSICO_BIBLIO_2": {
+"title": "Centro de la Planta Baja","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_2", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Volvemos a la entrada","pitch": -8,"yaw": 0, "sceneId": "PSICO_BIBLIO_1", "targetPitch": -15, "targetYaw": 335},
+{"type": "info","text": "Ala Sur Biblioteca","pitch": 0,"yaw": 56},
+{"type": "scene","text": "Escalera Sur a la Entreplanta","pitch": -15,"yaw": 52, "sceneId": "PSICO_BIBLIO_4", "targetPitch": -15, "targetYaw": 15},
+{"type": "info","text": "Ala Norte Biblioteca","pitch": 0,"yaw": 306},
+{"type": "scene","text": "Escalera Norte a la Entreplanta","pitch": -15,"yaw": 312, "sceneId": "PSICO_BIBLIO_3", "targetPitch": -15, "targetYaw": 15},
+{"type": "info","text": "Entreplanta","pitch": 30,"yaw": 120},
+{"type": "info","text": "Entreplanta","pitch": 30,"yaw": 240},
+]},
+
+"PSICO_BIBLIO_3": {
+"title": "Escalera Norte a la Entreplanta","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_3", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "info","text": "Zona de trabajo de Bibliotecarios","pitch": -5,"yaw": 238},
+{"type": "scene","text": "Escalera Sur a la Entreplanta","pitch": -8,"yaw": -277, "sceneId": "PSICO_BIBLIO_4", "targetPitch": -15, "targetYaw": 15},
+{"type": "scene","text": "Escalera Norte a la Entreplanta","pitch": -15,"yaw": 345, "sceneId": "PSICO_BIBLIO_11", "targetPitch": -15, "targetYaw": 135},
+{"type": "scene","text": "Centro de la Planta Baja","pitch": -12,"yaw": 114, "sceneId": "PSICO_BIBLIO_2", "targetPitch": -15, "targetYaw": 135},
+{"type": "scene","text": "Entrada de la Biblioteca","pitch": -4,"yaw": 25, "sceneId": "PSICO_BIBLIO_1", "targetPitch": 0, "targetYaw": 0},
+]},
+
+
+"PSICO_BIBLIO_4": {
+"title": "Escalera Sur a la Entreplanta","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_4", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Escalera Norte a la Entreplanta","pitch": -7,"yaw": -85, "sceneId": "PSICO_BIBLIO_3", "targetPitch": -15, "targetYaw": 15},
+{"type": "scene","text": "Subimos Escalera Sur a la Entreplanta","pitch": 0,"yaw": 345, "sceneId": "PSICO_BIBLIO_5", "targetPitch": -15, "targetYaw": 15},
+{"type": "scene","text": "Centro de la Planta Baja","pitch": -9,"yaw": -113, "sceneId": "PSICO_BIBLIO_2", "targetPitch": -15, "targetYaw": 210},
+{"type": "info","text": "Sala de Trabajo en Grupo","pitch": -2,"yaw": 52},
+{"type": "info","text": "Zona de trabajo de Bibliotecarios","pitch": 0,"yaw": 135},
+]},
+
+"PSICO_BIBLIO_5": {
+"title": "Entreplanta Lado Sur 1","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_5", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Escalera Norte a la Planta Primera","pitch": 15,"yaw": 345, "sceneId": "PSICO_BIBLIO_13", "targetPitch": 0, "targetYaw": 105},
+{"type": "scene","text": "Avanzamos por la Entreplanta","pitch": 0,"yaw": 165, "sceneId": "PSICO_BIBLIO_6", "targetPitch": 0, "targetYaw": 180},
+{"type": "scene","text": "Volvemos a la Planta Baja","pitch": -38,"yaw": 197, "sceneId": "PSICO_BIBLIO_4", "targetPitch": -15, "targetYaw": 210},
+]},
+
+
+"PSICO_BIBLIO_6": {
+"title": "Entreplanta Lado Sur 2","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_6", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "A la escalara Sur","pitch": -6,"yaw": -5, "sceneId": "PSICO_BIBLIO_5", "targetPitch": -15, "targetYaw": 210},
+{"type": "scene","text": "Al fondo de la entreplanta","pitch": 0,"yaw": 180, "sceneId": "PSICO_BIBLIO_7", "targetPitch": -15, "targetYaw": 210},
+]},
+
+"PSICO_BIBLIO_7": {
+"title": "Entreplanta Lado Sur 3 - Fondo","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_7", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Volvemos al pasillo sur Sur","pitch": -5,"yaw": 24, "sceneId": "PSICO_BIBLIO_6", "targetPitch": -15, "targetYaw": 0},
+{"type": "scene","text": "Parte central del fondo entreplanta","pitch": -15,"yaw": 270, "sceneId": "PSICO_BIBLIO_8", "targetPitch": 0, "targetYaw": 280},
+]},
+
+"PSICO_BIBLIO_8": {
+"title": "Entreplanta Fondo","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_8", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Volvemos ","pitch": -5,"yaw": 86, "sceneId": "PSICO_BIBLIO_7", "targetPitch": -10, "targetYaw": 0},
+{"type": "scene","text": "Pasillo Norte entreplanta al fondo","pitch": -10,"yaw": 270, "sceneId": "PSICO_BIBLIO_9", "targetPitch": 0, "targetYaw": 280},
+]},
+
+"PSICO_BIBLIO_9": {
+"title": "Entreplanta Lado Norte 3 - Fondo","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_9", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Volvemos ","pitch": -5,"yaw": 90, "sceneId": "PSICO_BIBLIO_8", "targetPitch": -10, "targetYaw": 0},
+{"type": "scene","text": "Seguimos por Pasillo Norte entreplanta","pitch": -8 ,"yaw": 328, "sceneId": "PSICO_BIBLIO_10", "targetPitch": 0, "targetYaw": 195},
+]},
+
+"PSICO_BIBLIO_10": {
+"title": "Entreplanta Lado Norte 2","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_10", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Seguimos hacia Sillones de Lectura","pitch": -8,"yaw": 185, "sceneId": "PSICO_BIBLIO_11", "targetPitch": -10, "targetYaw": 345},
+{"type": "scene","text": "Vamos al Fondo","pitch": -8 ,"yaw": 8, "sceneId": "PSICO_BIBLIO_9", "targetPitch": 0, "targetYaw": 30},
+]},
+
+
+"PSICO_BIBLIO_11": {
+"title": "Entreplanta Lado Norte 1","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_11", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Subimos a la primera planta","pitch": 15,"yaw": 194, "sceneId": "PSICO_BIBLIO_12", "targetPitch": 0, "targetYaw": 255},
+{"type": "scene","text": "Volvemos al pasillo Norte","pitch": -8 ,"yaw": 15, "sceneId": "PSICO_BIBLIO_10", "targetPitch": 0, "targetYaw": 30},
+{"type": "scene","text": "Bajamos a la planta baja","pitch": -40 ,"yaw": 345, "sceneId": "PSICO_BIBLIO_3", "targetPitch": 0, "targetYaw": 30},
+]},
+
+"PSICO_BIBLIO_12": {
+"title": "Primera Planta desde Escalera Norte","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_12", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Volvemos a la Entrada","pitch": 0,"yaw": 152, "sceneId": "PSICO_8_ARRIBA", "targetPitch": 0, "targetYaw": 180},
+{"type": "scene","text": "Primera Planta - Sala Central","pitch": 15,"yaw": 240, "sceneId": "PSICO_BIBLIO_14", "targetPitch": 0, "targetYaw": 150},
+{"type": "scene","text": "Volvemos a la entreplanta - Lado Norte","pitch": -15,"yaw": 0, "sceneId": "PSICO_BIBLIO_11", "targetPitch": -15, "targetYaw": 15},
+]},
+
+"PSICO_BIBLIO_13": {
+"title": "Primera Planta desde Escalera Sur","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_13", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Volvemos a la Entrada","pitch": 0,"yaw": 210, "sceneId": "PSICO_8_ARRIBA", "targetPitch": 0, "targetYaw": 180},
+{"type": "scene","text": "Primera Planta - Sala Central","pitch": 15,"yaw": 120, "sceneId": "PSICO_BIBLIO_14", "targetPitch": 0, "targetYaw": 150},
+{"type": "scene","text": "Volvemos a la entreplanta - Lado Sur","pitch": -15,"yaw": 0, "sceneId": "PSICO_BIBLIO_5", "targetPitch": -15, "targetYaw": 180},
+]},
+
+"PSICO_BIBLIO_14": {
+"title": "Primera Planta","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_14", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Volvemos a la escalera Sur de bajada a entreplanta","pitch": -30,"yaw": 45, "sceneId": "PSICO_BIBLIO_13", "targetPitch": 0, "targetYaw": 0},
+{"type": "scene","text": "Volvemos a la escalera Norte de bajada a entreplanta","pitch": -30,"yaw": 315, "sceneId": "PSICO_BIBLIO_12", "targetPitch": 0, "targetYaw": 15},
+{"type": "scene","text": "Volvemos a la Entrada","pitch": -15,"yaw": 0, "sceneId": "PSICO_8_ARRIBA", "targetPitch": 0, "targetYaw": 150},
+{"type": "info","text": "Puesto de Información Bibliográfica","pitch": -10,"yaw": 255},
+{"type": "info","text": "Salas de Trabajo en Grupo","pitch": 0,"yaw": 210},
+{"type": "scene","text": "Echemos un vistazo","pitch": -8,"yaw": 105, "sceneId": "PSICO_BIBLIO_15", "targetPitch": 0, "targetYaw": 150},
+{"type": "scene","text": "Echemos un vistazo","pitch": -15,"yaw": 255, "sceneId": "PSICO_BIBLIO_16", "targetPitch": 0, "targetYaw": 150},
+{"type": "scene","text": "Vemos el fondo de la Sala","pitch": -8,"yaw": 180, "sceneId": "PSICO_BIBLIO_19", "targetPitch": 0, "targetYaw": 150},
+]},
+
+
+"PSICO_BIBLIO_15": {
+"title": "Primera Planta - Lado Sur","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_15", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "info","text": "Subida al Depósito (Sólo Bibliotecarios)","pitch": -15,"yaw": 345},
+{"type": "info","text": "Ordenador con Escáner","pitch": -30,"yaw": 15},
+{"type": "scene","text": "Entrada Salas de Trabajo en Grupo","pitch": -8,"yaw": 277, "sceneId": "PSICO_BIBLIO_16", "targetPitch": 0, "targetYaw": 150},
+{"type": "scene","text": "Primera Planta","pitch": -15,"yaw": 285, "sceneId": "PSICO_BIBLIO_14", "targetPitch": -8, "targetYaw": 300},
+
+]},
+
+"PSICO_BIBLIO_16": {
+"title": "Primera Planta - Lado Norte","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_16", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "info","text": "Subida a la Sala de Investigadores","pitch": -15,"yaw": 345},
+{"type": "info","text": "Adquisiciones Recientes","pitch": -30,"yaw": 150},
+{"type": "scene","text": "Primera Planta","pitch": -15,"yaw": 66, "sceneId": "PSICO_BIBLIO_14", "targetPitch": 0, "targetYaw": 0},
+{"type": "scene","text": "Salas de Trabajo en Grupo","pitch": -15,"yaw": 195, "sceneId": "PSICO_BIBLIO_17", "targetPitch": 0, "targetYaw": 180},
+{"type": "scene","text": "Bajamos a la Entreplanta por escalera Sur","pitch": -15,"yaw": 52, "sceneId": "PSICO_BIBLIO_13", "targetPitch": -8, "targetYaw": 300},
+{"type": "scene","text": "Ordenador con Escáner","pitch": -8,"yaw": 80, "sceneId": "PSICO_BIBLIO_15", "targetPitch": 0, "targetYaw": 30},
+]},
+
+
+"PSICO_BIBLIO_17": {
+"title": "Primera Planta - Lado Norte - Salas de Trabajo en Grupo","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_17", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Volvemos al mostrador de Información","pitch": -12,"yaw":32, "sceneId": "PSICO_BIBLIO_16", "targetPitch": 0, "targetYaw": 30},
+{"type": "scene","text": "Veamos una Sala de Trabajo en Grupo","pitch": -15,"yaw":180, "sceneId": "PSICO_BIBLIO_18", "targetPitch": -15, "targetYaw": 135},
+]},
+
+"PSICO_BIBLIO_18": {
+"title": "Primera Planta - Salas de Trabajo en Grupo - Fondo","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_18", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Volvemos a Entrada de Salas de Trabajo en Grupo","pitch": 0,"yaw":0, "sceneId": "PSICO_BIBLIO_17", "targetPitch": -15, "targetYaw": 135},
+]},
+
+"PSICO_BIBLIO_19": {
+"title": "Primera Planta - Sala Principal - Fondo","pitch": 0,"yaw": 0,
+"hfov": 150,"compass": true,"northOffset": 70,"type": "multires","multiRes": {"basePath": "./fotos360/VIAPOL/PSICO_BIBLIO_19", "path": "/%l/%s%y_%x","fallbackPath": "/fallback/%s","extension": "jpg","tileResolution": 512,"maxLevel": 3, "cubeResolution": 1928},
+"hotSpots": [
+{"type": "scene","text": "Primera Planta - Entrada","pitch": -4,"yaw": 0, "sceneId": "PSICO_BIBLIO_14", "targetPitch": 0, "targetYaw": 315},
+{"type": "info","text": "Salas de Trabajo en Grupo","pitch": 0,"yaw": 315},
+{"type": "scene","text": "Entrada Salas de Trabajo en Grupo","pitch": -4,"yaw": 342, "sceneId": "PSICO_BIBLIO_16", "targetPitch": 0, "targetYaw": 150},
+]},
+
+
+"PSICO_PATIO": {
+            "title": "Centro del Patio",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_PATIO",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": -22,
+                    "type": "info",
+                    "text": "Puerta Noreste Patio",
+                    "URL": ""
+                },
+                {
+                    "pitch": -1,
+                    "yaw": 18,
+                    "type": "scene",
+                    "text": "Puerta Sureste Patio",
+                    "sceneId": "PSICO_2",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -1,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Puerta SurCentro Patio",
+                    "sceneId": "PSICO_5",
+                    "targetYaw": 330,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -1,
+                    "yaw": 152,
+                    "type": "scene",
+                    "text": "Puerta Suroeste Patio (Biblioteca)",
+                    "sceneId": "PSICO_7",
+                    "targetYaw": 330,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -1,
+                    "yaw": 205,
+                    "type": "scene",
+                    "text": "Puerta Noroeste Patio (Biblioteca)",
+                    "sceneId": "PSICO_9",
+                    "targetYaw": 45,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 7,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Puerta Oeste Patio - 1ª Planta (Biblioteca)",
+                    "sceneId": "PSICO_8_ARRIBA",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "VIAPOL_23": {
+            "title": "Entrada Psicología desde Camilo José Cela",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 290,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/VIAPOL_23",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -8,
+                    "yaw": 30,
+                    "type": "info",
+                    "text": "Calle Camilo José Cela",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 165,
+                    "type": "info",
+                    "text": "Avda. San Francisco Javier",
+                    "URL": ""
+                },
+                {
+                    "pitch": 15,
+                    "yaw": 210,
+                    "type": "info",
+                    "text": "Edificio Catalana Occidente",
+                    "URL": ""
+                },
+                {
+                    "pitch": 15,
+                    "yaw": 300,
+                    "type": "info",
+                    "text": "Facultad de Psicología y Filosofía",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 270,
+                    "type": "scene",
+                    "text": "Entramos al Campus",
+                    "sceneId": "VIAPOL_22",
+                    "targetYaw": 345,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "VIAPOL_22": {
+            "title": "Entrada Psicologia desde lateral de Catalana Occidente",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/VIAPOL_22",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 270,
+                    "type": "info",
+                    "text": "Campus Viapol",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 270,
+                    "type": "scene",
+                    "text": "Entramos al Campus",
+                    "sceneId": "VIAPOL_21",
+                    "targetYaw": 75,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Entramos al Edificio",
+                    "sceneId": "PSICO_1",
+                    "targetYaw": 330,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 85,
+                    "type": "scene",
+                    "text": "Volvemos a Camilo José Cela",
+                    "sceneId": "VIAPOL_23",
+                    "targetYaw": 135,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "VIAPOL_21": {
+            "title": "Garita de seguridad Viapol",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/VIAPOL_21",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 15,
+                    "type": "info",
+                    "text": "Garita de Seguridad del Campus",
+                    "URL": ""
+                },
+                {
+                    "pitch": 15,
+                    "yaw": 135,
+                    "type": "info",
+                    "text": "Facultad de Turismo y Finanzas",
+                    "URL": ""
+                },
+                {
+                    "pitch": 5,
+                    "yaw": 175,
+                    "type": "info",
+                    "text": "Biblioteca Facultad de Turismo y Finanzas",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 195,
+                    "type": "info",
+                    "text": "Otra Entrada de la Facultad de Psicología",
+                    "URL": ""
+                },
+                {
+                    "pitch": 8,
+                    "yaw": 95,
+                    "type": "info",
+                    "text": "Facultad de Económicas y Empresariales",
+                    "URL": ""
+                },
+                {
+                    "pitch": -4,
+                    "yaw": 270,
+                    "type": "scene",
+                    "text": "Volvemos a la puerta de entrada",
+                    "sceneId": "VIAPOL_22",
+                    "targetYaw": 30,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "PSICO_1": {
+            "title": "Vestíbulo/Consejería/Secretaría de Psicología",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 135,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_1",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 315,
+                    "type": "info",
+                    "text": "Conserjeria",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 30,
+                    "type": "info",
+                    "text": "Secretaría",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 350,
+                    "type": "info",
+                    "text": "Patio Interior",
+                    "URL": ""
+                },
+                {
+                    "pitch": -4,
+                    "yaw": 340,
+                    "type": "info",
+                    "text": "Punto de Información PIUS",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Volvemos a la puerta de entrada",
+                    "sceneId": "VIAPOL_22",
+                    "targetYaw": 45,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 345,
+                    "type": "scene",
+                    "text": "Avanzamos por el pasillo de entrada",
+                    "sceneId": "PSICO_2",
+                    "targetYaw": 105,
+                    "targetPitch": -5
+                }
+            ]
+        },
+        "PSICO_2": {
+            "title": "Pasillo Este",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_2",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 15,
+                    "yaw": 300,
+                    "type": "info",
+                    "text": "Fuente de Agua",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 255,
+                    "type": "info",
+                    "text": "Máquinas Expendedoras",
+                    "URL": ""
+                },
+                {
+                    "pitch": -12,
+                    "yaw": 240,
+                    "type": "info",
+                    "text": "Contenedores de Reciclado",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 90,
+                    "type": "info",
+                    "text": "Escalera Noreste",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 270,
+                    "type": "info",
+                    "text": "Escalera Sureste",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Puerta Noreste de salida al patio",
+                    "sceneId": "PSICO_PATIO",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Volvemos a la puerta de entrada",
+                    "sceneId": "PSICO_1",
+                    "targetYaw": 165,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 105,
+                    "type": "scene",
+                    "text": "Avanzamos por el pasillo",
+                    "sceneId": "PSICO_3",
+                    "targetYaw": 105,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "PSICO_3": {
+            "title": "Puerta Sureste del Patio - Escalera Sureste",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_3",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 275,
+                    "type": "info",
+                    "text": "Escalera Noreste",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 60,
+                    "type": "info",
+                    "text": "Escalera Sureste",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 300,
+                    "type": "scene",
+                    "text": "Volvemos al pasillo de entrada",
+                    "sceneId": "PSICO_2",
+                    "targetYaw": 330,
+                    "targetPitch": -15
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 95,
+                    "type": "scene",
+                    "text": "Avanzamos por el pasillo hacia copisteria",
+                    "sceneId": "PSICO_4",
+                    "targetYaw": 195,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "PSICO_4": {
+            "title": "Esquina de Copistería",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 180,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_4",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 210,
+                    "type": "info",
+                    "text": "Copisteria",
+                    "URL": ""
+                },
+                {
+                    "pitch": -2,
+                    "yaw": -6,
+                    "type": "info",
+                    "text": "Aseos",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 90,
+                    "type": "info",
+                    "text": "Salida Sureste al Aparcamiento",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 270,
+                    "type": "scene",
+                    "text": "Volvemos a puerta lateral del patio",
+                    "sceneId": "PSICO_3",
+                    "targetYaw": 255,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 185,
+                    "type": "scene",
+                    "text": "Avanzamos por el pasillo hacia puerta Central patio",
+                    "sceneId": "PSICO_5",
+                    "targetYaw": 45,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "PSICO_5": {
+            "title": "Puerta Central al Patio",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_5",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 292,
+                    "type": "info",
+                    "text": "Directorio Realizado por los alumnos, la Biblioteca está a la derecha",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Volvemos al pasillo Este",
+                    "sceneId": "PSICO_4",
+                    "targetYaw": 255,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -4,
+                    "yaw": 82,
+                    "type": "scene",
+                    "text": "Vamos al Patio",
+                    "sceneId": "PSICO_PATIO",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Avanzamos por el pasillo Sur hacia Pasillo Oeste",
+                    "sceneId": "PSICO_6",
+                    "targetYaw": 165,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "PSICO_6": {
+            "title": "Entrada del Aparcamiento al Pasillo de Biblioteca",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_6",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "Salida Suroeste al Aparcamiento",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 345,
+                    "type": "info",
+                    "text": "Ascensor",
+                    "URL": ""
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 97,
+                    "type": "info",
+                    "text": "Aseos",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 268,
+                    "type": "scene",
+                    "text": "Volvemos a puerta Central Patio",
+                    "sceneId": "PSICO_5",
+                    "targetYaw": 150,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Avanzamos por el pasillo Oeste hacia la Biblioteca",
+                    "sceneId": "PSICO_7",
+                    "targetYaw": 45,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "PSICO_7": {
+            "title": "Puerta Suroeste del Patio - Escalera Suroeste - Pasillo Biblioteca",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_7",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "Escalera Noroeste",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 180,
+                    "type": "info",
+                    "text": "Escalera Suroeste",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 330,
+                    "type": "info",
+                    "text": "Directorio de la Biblioteca (4 Plantas)",
+                    "URL": ""
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 198,
+                    "type": "scene",
+                    "text": "Volvemos a pasillo Sur",
+                    "sceneId": "PSICO_6",
+                    "targetYaw": 315,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Curioseamos la Entreplanta",
+                    "sceneId": "PSICO_7_ARRIBA",
+                    "targetYaw": 45,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Vamos a la Puerta de la Biblioteca",
+                    "sceneId": "PSICO_8",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -4,
+                    "yaw": 4,
+                    "type": "scene",
+                    "text": "Puerta Noroeste Patio",
+                    "sceneId": "PSICO_9",
+                    "targetYaw": 240,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 105,
+                    "type": "scene",
+                    "text": "Puerta Suroeste Patio",
+                    "sceneId": "PSICO_PATIO",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "PSICO_7_ARRIBA": {
+            "title": "Escalera Suroeste - EntePlanta",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_7_ARRIBA",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -20,
+                    "yaw": 184,
+                    "type": "scene",
+                    "text": "Volvemos a Planta Baja",
+                    "sceneId": "PSICO_7",
+                    "targetYaw": 45,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "PSICO_8": {
+            "title": "Puerta de la Biblioteca - Planta Baja",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 180,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_8",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": -70,
+                    "type": "info",
+                    "text": "Buzón de Autodevolución",
+                    "URL": ""
+                },
+                {
+                    "pitch": -8,
+                    "yaw": 285,
+                    "type": "info",
+                    "text": "Fuente de Agua",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "BookCrossing",
+                    "URL": ""
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 78,
+                    "type": "scene",
+                    "text": "Puerta Suroeste al Patio",
+                    "sceneId": "PSICO_7",
+                    "targetYaw": 135,
+                    "targetPitch": -4
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Entrar a la Biblioteca (Planta Baja)",
+                    "sceneId": "PSICO_BIBLIO_1",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -78,
+                    "type": "scene",
+                    "text": "Puerta Noroeste al Patio",
+                    "sceneId": "PSICO_9",
+                    "targetYaw": 240,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "PSICO_8_ARRIBA": {
+            "title": "Puerta de la Biblioteca - Planta Primera",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_8_ARRIBA",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Vamos al centro del Patio",
+                    "sceneId": "PSICO_PATIO",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Entramos al descansillo de primera planta",
+                    "sceneId": "PSICO_BIBLIO_12",
+                    "targetYaw": 315,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -5,
+                    "yaw": -42,
+                    "type": "scene",
+                    "text": "Entramos al descansillo de primera planta",
+                    "sceneId": "PSICO_BIBLIO_13",
+                    "targetYaw": 55,
+                    "targetPitch": 0
+                },
+            ]
+        },
+        "PSICO_9": {
+            "title": "Puerta Noroeste del Patio - Escalera Noroeste - Pasillo Biblioteca",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_9",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": 315,
+                    "type": "info",
+                    "text": "Fuente de Agua",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 328,
+                    "type": "info",
+                    "text": "Buzón de Autodevolución de Libros",
+                    "URL": ""
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 180,
+                    "type": "info",
+                    "text": "Escalera Noroeste",
+                    "URL": ""
+                },
+                {
+                    "pitch": -4,
+                    "yaw": -8,
+                    "type": "scene",
+                    "text": "Puerta Suroeste Patio",
+                    "sceneId": "PSICO_7",
+                    "targetYaw": 135,
+                    "targetPitch": -4
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 266,
+                    "type": "scene",
+                    "text": "Vamos al centro del Patio",
+                    "sceneId": "PSICO_PATIO",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Vamos a la Puerta de la Biblioteca",
+                    "sceneId": "PSICO_8",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": 15,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Curioseamos la Entreplanta",
+                    "sceneId": "PSICO_9_ARRIBA",
+                    "targetYaw": 145,
+                    "targetPitch": 0
+                }
+            ]
+        },
+        "PSICO_9_ARRIBA": {
+            "title": "Escalera Suroeste - EntePlanta",
+            "hfov": 150,
+            "pitch": 0,
+            "yaw": 0,
+            "compass": true,
+            "northOffset": 70,
+            "type": "multires",
+            "multiRes": {
+                "basePath": "./../fotos360/VIAPOL/PSICO_9_ARRIBA",
+                "path": "/%l/%s%y_%x",
+                "fallbackPath": "/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 3,
+                "cubeResolution": 1928
+            },
+            "hotSpots": [
+                {
+                    "pitch": -20,
+                    "yaw": 184,
+                    "type": "scene",
+                    "text": "Volvemos a Planta Baja",
+                    "sceneId": "PSICO_9",
+                    "targetYaw": 45,
+                    "targetPitch": 0
+                }
+            ]
+        },
+
+
+    }
+});
+
+
+
+// Hot spot creation function
+function hotspot(hotSpotDiv, args) {
+    hotSpotDiv.classList.add('custom-tooltip');
+    var span = document.createElement('span');
+    span.innerHTML = args;
+    hotSpotDiv.appendChild(span);
+    span.style.width = span.scrollWidth - 20 + 'px';
+    span.style.marginLeft = -(span.scrollWidth - hotSpotDiv.offsetWidth) / 2 + 'px';
+    span.style.marginTop = -span.scrollHeight - 12 + 'px';
+}
+
+</script>
+
+<script>
+    // Espera a que el contenido de la página se haya cargado completamente
+document.addEventListener('DOMContentLoaded', function() {
+    // Encuentra el elemento div por sus clases
+    var compassElement = document.querySelector('.pnlm-compass.pnlm-controls.pnlm-control');
+
+    // Asegúrate de que el elemento existe en el documento
+    if(compassElement) {
+        // Agrega un event listener para el evento 'click'
+        compassElement.addEventListener('click', function() {
+            // Carga la página de Google
+            window.location.href = '#';
+        });
+    } else {
+        console.log('El elemento con las clases pnlm-compass pnlm-controls pnlm-control no se encontró en el documento.');
+    }
+});
+</script>
+
+<div></div></body></html>
