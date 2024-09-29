@@ -1,79 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+    <html lang="en">
+    <head>
+    <meta name="generator" content="Hugo 0.48" />
     <meta charset="utf-8">
-    <meta name="author" content="Álvaro Carmona Núñez,Patricia Serrano Angorilla, Gonzalo Martínez Fernández, Javier Escudero">
+    <meta name="author" content="Álvaro Carmona Núñez,
+                                 Patricia Serrano Angorilla, 
+                                 Gonzalo Martínez Fernández, 
+                                 Javier Escudero"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca de Psicología y Filosofía</title>
+    <title>Biblioteca de Facultad de Comunicación</title>
     <!--<script src="/cdn-cgi/apps/head/TEAHVq5cVsVoM9egFOAS6CBdXPk.js"></script>-->
     <link rel="stylesheet" href="https://pannellum.org/css/bootstrap.min.css">
-    <script type="text/javascript" src="./js/bootstrap-native.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-native.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600%7CSource+Code+Pro:400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./css/pygments.css">
-    <link rel="stylesheet" href="./css/pannellum.css" />
-    <script type="text/javascript" src="./js/pannellum.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-
-<style>
-
-    .custom-hotspot-yellow {
-        height: 8px;
-        width: 8px;
-        background: yellow;
-        border-radius: 50%;
-        border: 2px solid #000;
-    }
-
-    
-    .custom-hotspot-red {
-        height: 8px;
-        width: 8px;
-        background: red;
-        border-radius: 50%;
-        border: 2px solid #000;
-    }
-
-    .custom-hotspot-green {
-        height: 8px;
-        width: 8px;
-        background: greenyellow;
-        border-radius: 50%;
-        border: 2px solid #000;
-    }
-
-    div.custom-tooltip span {
-        visibility: hidden;
-        position: absolute;
-        border-radius: 3px;
-        background-color: #fff;
-        color: #000;
-        text-align: center;
-        max-width: 200px;
-        padding: 5px 10px;
-        margin-left: -220px;
-        cursor: default;
-    }
-    div.custom-tooltip:hover span{
-        visibility: visible;
-    }
-    div.custom-tooltip:hover span:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-width: 10px;
-        border-style: solid;
-        border-color: #fff transparent transparent transparent;
-        bottom: -20px;
-        left: -10px;
-        margin: 0 50%;
-    }
-</style></head>
-
-
-
-<body>
+    <link rel="stylesheet" href="css/pygments.css">
+    <link rel="stylesheet" href="css/pannellum.css" />
+    <script type="text/javascript" src="js/pannellum.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
 
     <div id="panorama" style="width:100%;height:100%;"></div>
         <script>
@@ -1240,18 +1186,6 @@
 });
 
 
-
-// Hot spot creation function
-function hotspot(hotSpotDiv, args) {
-    hotSpotDiv.classList.add('custom-tooltip');
-    var span = document.createElement('span');
-    span.innerHTML = args;
-    hotSpotDiv.appendChild(span);
-    span.style.width = span.scrollWidth - 20 + 'px';
-    span.style.marginLeft = -(span.scrollWidth - hotSpotDiv.offsetWidth) / 2 + 'px';
-    span.style.marginTop = -span.scrollHeight - 12 + 'px';
-}
-
 </script>
 
 <script>
@@ -1265,7 +1199,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Agrega un event listener para el evento 'click'
         compassElement.addEventListener('click', function() {
             // Carga la página de Google
-            window.location.href = '#';
+            window.location.href = 'index.html';
         });
     } else {
         console.log('El elemento con las clases pnlm-compass pnlm-controls pnlm-control no se encontró en el documento.');

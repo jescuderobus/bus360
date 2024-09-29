@@ -771,7 +771,7 @@
         "como_llegar_pie": [
             {
                 "imagen": "images/walk-svgrepo-com.svg",
-                "texto": "desde la calle",
+                "texto": "desde la calle <em>Camilo <br>José Cela</em>",
                 "url": "PSICO_CJCela.html",
                 "target": "_self"
             }
